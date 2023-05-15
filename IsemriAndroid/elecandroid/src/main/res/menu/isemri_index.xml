@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.medas.IndexActivity" >
+    <item android:id="@+id/durumKodGiris"  android:title="Abone Durum Kodu Girişi" android:textSize="12dp"></item>
+    <!--  <item android:id="@+id/sayacDurumKodGiris" android:title="Sayac Durum Kod Girişi"></item> -->
+    <item android:id="@+id/isemriDetay" android:title="İşemri Detay" android:textSize="12dp"></item>
+    <item android:id="@+id/ykpDetay" android:title="Yük Profili Görüntüle" android:textSize="12dp"></item>
+</menu>

@@ -1,0 +1,155 @@
+<PrintConfig>
+	<Properties>
+		<Property Name="FormTipi" Value="acma_form" />
+		<Property Name="Unit" Value="x10mm" />
+		<Property Name="Tur" Value="Yapisal" />
+		<Property Name="X-Referans" Value="0" />
+		<Property Name="Y-Referans" Value="150" />
+		<Property Name="CX-Sinir" Value="0" />
+		<Property Name="CY-Sinir" Value="0" />
+		<Property Name="XDPI" Value="203" />
+		<Property Name="YDPI" Value="203" />
+		<Property Name="PAGESIZE" Value="2050" />
+		<Property Name="PAGEWIDTH" Value="960" />
+		<Property Name="PAGEHEIGHT" Value="80" />
+		<Property Name="QUANTITY" Value="1" />
+		<Property Name="PrinterNo" Value="0" />
+		<Property Name="BlackMark" Value="0" />
+
+	</Properties>
+	<CPCLFonts>
+		<CPCLFont Id="1" Name="1" Size="1"/>
+		<CPCLFont Id="2" Name="2" Size="1"/>
+		<CPCLFont Id="3" Name="3" Size="1"/>
+	</CPCLFonts>
+	<PageItems>
+		<Image Value="1" Left="100" Right="566" Top="0" Bottom = "250" File="medas_logo.bmp" Suret="1" />
+		<Text Name="" Left="0" Top="80" Right="200" Bottom="230" FontId="3" Style="l">Sancak Mah. Yeni İstanbul Cad. No:92 </Text>
+		<Text Name=""  Left="0" Top="100" Right="520" Bottom="325" FontId="3" Style="l" >Selçuklu/KONYA</Text>
+		<Text Name=""  Left="0" Top="120" Right="520" Bottom="325" FontId="3" Style="l" >Tel: 0850 251 30 00 Fax: 0332 255 00 82</Text>
+		<Text Name=""  Left="0" Top="140" Right="520" Bottom="325" FontId="3" Style="l" >info@meramedas.com.tr</Text>
+
+		<Text Name="" Bottom="210" Top="200" Right="200" Left="0" Style="l" FontId="3">Sayaç No</Text>
+		<Text Name="" Left="115" Top="200" Right="200" Bottom="210" FontId="3" Style="l">:</Text>
+		<Text Name="sayac_no" Bottom="210" Top="200" Right="576" Left="130" Style="l" FontId="3"/>
+
+		<Text Name="" Left="0" Top="240" Right="200" Bottom="230" FontId="3" Style="l">İşemri No</Text>
+		<Text Name="" Left="115" Top="240" Right="200" Bottom="230" FontId="3" Style="l">:</Text>
+		<Text Name="isemri_no" Left="130" Top="240" Right="576" Bottom="230" FontId="3" Style="l"/>
+
+		<Text Name="" Left="0" Top="280" Right="200" Bottom="250" FontId="3" Style="l">İşletme Adı</Text>
+		<Text Name="" Left="115" Top="280" Right="200" Bottom="230" FontId="3" Style="l">:</Text>
+		<Text Name="bolge_adi" Left="130" Top="280" Right="576" Bottom="250" FontId="3" Style="l"/>
+
+		<Text Name="" Left="0" Top="320" Right="200" Bottom="290" FontId="3" Style="l">Tesisat No</Text>
+		<Text Name="" Left="115" Top="320" Right="200" Bottom="230" FontId="3" Style="l">:</Text>
+		<Text Name="tesisat_no" Left="130" Top="320" Right="576" Bottom="290" FontId="3" Style="l"/>
+
+		<Text Name="" Left="0" Top="360" Right="200" Bottom="330" FontId="3" Style="l">Karne/Sıra No</Text>
+		<Text Name="" Left="115" Top="360" Right="200" Bottom="230" FontId="3" Style="l">:</Text>
+		<Text Name="karne_no" Left="130" Top="360" Right="360" Bottom="330" FontId="3" Style="l"/>
+		<!--<Text Name="" Left="200" Top="360" Right="200" Bottom="330" FontId="3" Style="l">/</Text>-->
+		<Text Name="sira_no" Left="220" Top="360" Right="480" Bottom="330" FontId="3" Style="l"/>
+
+		<Text Name="" Left="0" Top="400" Right="200" Bottom="370" FontId="3" Style="l">Tarife</Text>
+		<Text Name="" Left="115" Top="400" Right="200" Bottom="230" FontId="3" Style="l">:</Text>
+		<Text Name="tarife_adi" Left="130" Top="400" Right="576" Bottom="370" FontId="3" Style="l"/>
+
+		<Text Name="" Left="0" Top="440" Right="200" Bottom="410" FontId="3" Style="l">Abone Adı</Text>
+		<Text Name="" Left="115" Top="440" Right="200" Bottom="230" FontId="3" Style="l">:</Text>
+		<Text Name="unvan" Left="130" Top="440" Right="576" Bottom="410" FontId="3" Style="l"/>
+
+		<Text Name="" Left="0" Top="480" Right="200" Bottom="450" FontId="3" Style="l">Abone Adresi</Text>
+		<Text Name="" Left="115" Top="480" Right="200" Bottom="230" FontId="3" Style="l">:</Text>
+		<Text Name="adres_1" Left="130" Top="480" Right="576" Bottom="490" FontId="3" Style="l"/>
+
+		<Text Name="" Left="0" Top="560" Right="576" Bottom="570" FontId="3" Style="l">Sayın Müşterimiz,</Text>
+
+		<Text Name="" Left="100" Top="600" Right="576" Bottom="650" FontId="3" Style="l">tarihinde elektriğiniz</Text>
+		<Text Name="tarih" Left="0" Top="600" Right="160" Bottom="650" FontId="3" Style="l"/>
+		<Text Name="" Left="270" Top="600" Right="576" Bottom="690" FontId="3" Style="l"> açılmış olup</Text>
+		<Text Name="muhur_seri" Left="380" Top="600" Right="350" Bottom="690" FontId="3" Style="l"/>
+
+		<Text Name="" Left="0" Top="640" Right="576" Bottom="690" FontId="3" Style="l">seri nolu</Text>
+		<Text Name="" Left="100" Top="640" Right="576" Bottom="730" FontId="3" Style="l">mühür ile sayacınız mühürlenmiştir.</Text>
+
+		<Text Name="" Left="0" Top="680" Right="576" Bottom="810" FontId="3" Style="l">Saygılarımızla.</Text>
+
+		<Text Name="" Left="0" Top="720" Right="576" Bottom="870" FontId="3" Style="l">Kullanıcı</Text>
+		<Text Name="" Left="115" Top="720" Right="200" Bottom="230" FontId="3" Style="l">:</Text>
+		<Text Name="okuyucu_kodu" Left="130" Top="720" Right="576" Bottom="870" FontId="3" Style="l"/>
+
+		<Text Name="" Left="0" Top="780" Right="576" Bottom="910" FontId="3" Style="l">Tarih</Text>
+		<Text Name="" Left="115" Top="780" Right="200" Bottom="230" FontId="3" Style="l">:</Text>
+		<Text Name="okuma_tarihi" Left="130" Top="780" Right="250" Bottom="910" FontId="3" Style="l"/>
+		<Text Name="tarih" Left="130" Top="780" Right="250" Bottom="910" FontId="3" Style="l"/>
+
+		<Text Name="" Left="240" Top="780" Right="200" Bottom="230" FontId="3" Style="l">Saat</Text>
+		<Text Name="" Left="315" Top="780" Right="200" Bottom="230" FontId="3" Style="l">:</Text>
+		<Text Name="okuma_saati" Left="350" Top="780" Right="500" Bottom="910" FontId="3" Style="l"/>
+
+		<Text Name="" Left="0" Top="830" Right="576" Bottom="950" FontId="3" Style="l">T</Text>
+		<Text Name="" Left="115" Top="830" Right="200" Bottom="230" FontId="3" Style="l">:</Text>
+		<Text Name="t_endeks" Left="130" Top="830" Right="576" Bottom="950" FontId="3" Style="l"/>
+		<Text Name="s10_endeks" Left="130" Top="830" Right="576" Bottom="950" FontId="3" Style="l"/>
+
+
+		<Text Name="" Left="0" Top="870" Right="576" Bottom="990" FontId="3" Style="l">T1</Text>
+		<Text Name="" Left="115" Top="870" Right="200" Bottom="230" FontId="3" Style="l">:</Text>
+		<Text Name="t1_endeks" Left="130" Top="870" Right="576" Bottom="990" FontId="3" Style="l"/>
+		<Text Name="s11_endeks" Left="130" Top="870" Right="576" Bottom="990" FontId="3" Style="l"/>
+
+
+		<Text Name="" Left="0" Top="910" Right="576" Bottom="1030" FontId="3" Style="l">T2</Text>
+		<Text Name="" Left="115" Top="910" Right="200" Bottom="230" FontId="3" Style="l">:</Text>
+		<Text Name="t2_endeks" Left="130" Top="910" Right="576" Bottom="1030" FontId="3" Style="l"/>
+		<Text Name="s12_endeks" Left="130" Top="910" Right="576" Bottom="1030" FontId="3" Style="l"/>
+
+
+		<Text Name="" Left="0" Top="950" Right="576" Bottom="1070" FontId="3" Style="l">T3</Text>
+		<Text Name="" Left="115" Top="950" Right="200" Bottom="230" FontId="3" Style="l">:</Text>
+		<Text Name="t3_endeks" Left="130" Top="950" Right="576" Bottom="1070" FontId="3" Style="l"/>
+		<Text Name="s13_endeks" Left="130" Top="950" Right="576" Bottom="1070" FontId="3" Style="l"/>
+
+
+		<Text Name="" Left="0" Top="990" Right="576" Bottom="1110" FontId="3" Style="l">Ri</Text>
+		<Text Name="" Left="115" Top="990" Right="200" Bottom="230" FontId="3" Style="l">:</Text>
+		<Text Name="r_endeks" Left="130" Top="990" Right="576" Bottom="1110" FontId="3" Style="l"/>
+		<Text Name="s2_endeks" Left="130" Top="990" Right="576" Bottom="1110" FontId="3" Style="l"/>
+
+
+		<Text Name="" Left="0" Top="1030" Right="576" Bottom="1150" FontId="3" Style="l">Rc</Text>
+		<Text Name="" Left="115" Top="1030" Right="200" Bottom="230" FontId="3" Style="l">:</Text>
+		<Text Name="k_endeks" Left="130" Top="1030" Right="576" Bottom="1150" FontId="3" Style="l"/>
+		<Text Name="s3_endeks" Left="130" Top="1030" Right="576" Bottom="1150" FontId="3" Style="l"/>
+
+
+		<!--
+        <RawText Name="xxx">
+
+
+
+
+ ��emri No      :{isemri_no}
+ ��letme Ad�    :{bolge_adi}
+ Tesisat No     :{tesisat_no}
+ Karne/S�ra No  :{karne_no} / {sira_no}
+ Tarife         :{tarife_adi}
+
+ Abone Ad�: {unvan}
+ Abone Adresi:
+   {adres_1}
+
+ Say�n Abonemiz,
+ {tarih} tarihinde elektri�iniz
+ a��lm�� olup {muhur_seri} seri nolu
+ m�h�r ile sayac�n�z m�h�rlenmi�tir.
+ Sayg�lar�m�zla.
+
+  {okuyucu_kodu}
+  {tarih}
+
+        </RawText>
+            -->
+	</PageItems>
+</PrintConfig>

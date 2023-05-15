@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="16dp"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mobit.elec.android.MuhurSorguActivity" >
+
+    <TextView
+        android:id="@+id/textTesisatNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Tesisat No:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="14dp"/>
+
+    <EditText
+        android:id="@+id/editTesisatNo"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textTesisatNo"
+        android:layout_marginStart="28dp"
+        android:layout_toEndOf="@+id/textTesisatNo"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="8"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:nextFocusForward="@+id/editKarneNo" >
+        <requestFocus />
+    </EditText>
+    <TextView
+        android:id="@+id/textKarneNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignStart="@+id/textTesisatNo"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/editTesisatNo"
+        android:text="Karne No:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="14dp"/>
+
+    <EditText
+        android:id="@+id/editKarneNo"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textKarneNo"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@+id/textKarneNo"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="7"
+        android:nextFocusForward="@+id/editMuhurSeri"
+        android:singleLine="true">
+        /></EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textKarneNo"
+        android:layout_below="@+id/textKarneNo"
+        android:layout_marginTop="20dp"
+        android:text="Mühür Seri/No:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="14dp"/>
+
+    <EditText
+        android:id="@+id/editMuhurSeri"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:ems="10"
+        android:maxLength="1"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:nextFocusForward="@+id/editMuhurNo"
+        android:layout_marginStart="8dp"/>
+
+    <EditText
+        android:id="@+id/editMuhurNo"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editMuhurSeri"
+        android:layout_toEndOf="@+id/editMuhurSeri"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="8"
+        android:singleLine="true"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="10dp"
+        android:text="Mühür Listesi"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="15dp"
+        android:textColor="#07667e"/>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/shape"
+        android:choiceMode="singleChoice" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/barkod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_below="@+id/list"
+        android:layout_marginTop="18dp"
+        android:text="Barkod"
+        android:background="#b8bab7"
+        android:textSize="12dp"/>
+
+    <Button
+        android:id="@+id/sorgu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editMuhurSeri"
+        android:layout_alignBottom="@+id/barkod"
+        android:text="Sorgula"
+
+        android:background="#78c158"
+
+        android:textColor="#fff"
+        android:textSize="12dp" />
+
+</RelativeLayout>

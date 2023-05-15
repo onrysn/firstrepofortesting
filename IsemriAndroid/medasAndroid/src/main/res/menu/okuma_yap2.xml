@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="mobit.elec.mbs.android.OkumaYapActivity" >
+
+    <item android:id="@+id/aboneDurumKodGiris" android:title="Tesisat Durum Kod Girişi" android:textSize="@dimen/elecTextSize"></item>
+    <!--  <item android:id="@+id/sayacDurumKodGiris" android:title="Sayac Durum Kod Girişi" android:textSize="@dimen/elecTextSize"></item>-->
+    <item android:id="@+id/tesisatDetay" android:title="Tesisat Detay" android:textSize="@dimen/elecTextSize"></item>
+    <item android:id="@+id/tekrarYazdirma" android:title="Tekrar Yazdırma" android:textSize="@dimen/elecTextSize"></item>
+    <item android:id="@+id/islemDetay" android:title="İşlem Detay" android:textSize="@dimen/elecTextSize"></item>
+    <item android:id="@+id/islemListe" android:title="İşlem Listesi" android:textSize="@dimen/elecTextSize"></item>
+    <item android:id="@+id/okumaRapor" android:title="Okuma Rapor" android:textSize="@dimen/elecTextSize"></item>
+	
+</menu>

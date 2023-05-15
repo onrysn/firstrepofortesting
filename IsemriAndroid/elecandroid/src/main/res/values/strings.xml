@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings2">Settings</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_login">KULLANICI GIRISI</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_menu">İş Emri Menü</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_isemri_indir">İş Emri İndirme</string>
+    <string name="title_activity_index">Endeks Girişi</string>
+    <string name="title_activity_abone_durum_giris">Abone Durum Girişi</string>
+    <string name="title_activity_bluetooth_discover">Bluetooth Aratma</string>
+    <string name="title_activity_yazici_ayar">Yazıcı Ayar</string>
+    <string name="title_activity_optik_port_ayar">Optik Port Ayar</string>
+    <string name="title_activity_ayarlar">Ayarlar</string>
+    <string name="title_activity_isemri_liste">İşemri Listesi</string>
+    <string name="title_activity_isemri_detay">Isemri Detay</string>
+    <string name="title_activity_tesisat_detay">Tesisat Detay</string>
+    <string name="title_activity_tesisat_sorgu">Tesisat Sorgulama</string>
+    <string name="title_activity_sayac_durum_giris">Sayaç Durum Girişi</string>
+    <string name="title_activity_muhur_sokme">Mühür Sökme</string>
+    <string name="title_activity_muhur_takma">Mühürleme</string>
+    <string name="title_activity_okuma_menu">Okuma Menü</string>
+    <string name="title_activity_tesisat_yukle">Tesisat Yükle</string>
+    <string name="title_activity_okuma_yap">Sayaç Okuma</string>
+    <string name="title_activity_sayac_takma">Sayaç Takma</string>
+    <string name="title_activity_tespit">Tespit</string>
+    <string name="title_activity_zabit">Zabıt Tutma</string>
+    <string name="title_activity_islem_liste">İşlem Listesi</string>
+    <string name="title_activity_muhur_islem">Mühür İşlemleri</string>
+    <string name="title_activity_islem_rapor">İşlem Raporu</string>
+    <string name="title_activity_sifre_degistir">Şifre Değiştirme</string>
+    <string name="title_activity_adres_tarif">Adres Tarif</string>
+    <string name="title_activity_muhur_sorgu">MuhurSorguActivity</string>
+
+</resources>

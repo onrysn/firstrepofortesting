@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false"
+    tools:context=".OlcuTakilanSayacEndexFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".OlcuTakilanSayacEndexFragment">
+
+        <TextView
+            android:id="@+id/Baslik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="Takılan Sayaç"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/takilanSerino_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Seri No:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/takilanSerino"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:inputType="number"
+            android:nextFocusDown="@+id/takilanMarkasi"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/takilanSerino_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/takilanSerino_text" />
+
+        <TextView
+            android:id="@+id/takilanMarkasi_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Markası:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/takilanSerino_text" />
+
+        <Spinner
+            android:id="@+id/takilanMarkasi"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:inputType="text"
+            android:nextFocusDown="@+id/takilanAkimO"
+            android:paddingTop="10dp"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingBottom="10dp"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/takilanMarkasi_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/takilanMarkasi_text" />
+
+        <TextView
+            android:id="@+id/takilanAkimO_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Akım Oranı:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/takilanMarkasi_text" />
+
+        <EditText
+            android:id="@+id/takilanAkimO"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:inputType="number"
+            android:nextFocusDown="@+id/takilanGerilimO"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/takilanAkimO_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/takilanAkimO_text" />
+
+        <TextView
+            android:id="@+id/takilanGerilimO_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Gerilim Oranı:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/takilanAkimO_text" />
+
+        <EditText
+            android:id="@+id/takilanGerilimO"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:inputType="number"
+            android:nextFocusDown="@+id/takilanSayacCarpani"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/takilanGerilimO_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/takilanGerilimO_text" />
+
+        <TextView
+            android:id="@+id/takilanSayacCarpani_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Sayaç Çarpanı:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/takilanGerilimO_text" />
+
+        <EditText
+            android:id="@+id/takilanSayacCarpani"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:inputType="numberDecimal"
+            android:nextFocusDown="@+id/takilanHaneAdeti"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/takilanSayacCarpani_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/takilanSayacCarpani_text" />
+
+        <TextView
+            android:id="@+id/takilanHaneAdeti_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Hane Adeti:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/takilanSayacCarpani_text" />
+
+        <EditText
+            android:id="@+id/takilanHaneAdeti"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:inputType="number"
+            android:nextFocusDown="@+id/takilanImalTarihi"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/takilanHaneAdeti_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/takilanHaneAdeti_text" />
+
+        <TextView
+            android:id="@+id/takilanImalTarihi_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="İmal Tarihi:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/takilanHaneAdeti_text" />
+
+        <EditText
+            android:id="@+id/takilanImalTarihi"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:inputType="number"
+            android:textSize="15sp"
+            android:nextFocusDown="@+id/editMuhurNo"
+            app:layout_constraintBottom_toBottomOf="@+id/takilanImalTarihi_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/takilanImalTarihi_text" />
+
+<!-- yeni mühür -->
+
+        <TextView
+            android:id="@+id/BaslikYeniMuhur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="24dp"
+            android:text="Yeni Mühür"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/takilanImalTarihi_text" />
+
+        <Spinner
+            android:id="@+id/muhurSeri"
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:imeOptions="actionNext"
+            android:maxLength="1"
+            android:nextFocusForward="@+id/editMuhurNo"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/BaslikYeniMuhur" />
+
+        <EditText
+            android:id="@+id/editMuhurNo"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:hint="Mühür No Girin..."
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="8"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:nextFocusForward="@+id/editGunduzTams"
+            app:layout_constraintBottom_toBottomOf="@+id/muhurSeri"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/muhurSeri" />
+
+<!-- endeksler -->
+
+        <TextView
+            android:id="@+id/Baslik2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="24dp"
+            android:text="Endeksler"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/muhurSeri" />
+
+        <TextView
+            android:id="@+id/BaslikMevcutSokulen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="5dp"
+            android:text="Mevcut / Sökülen"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Baslik2" />
+
+        <TextView
+            android:id="@+id/BaslikTakilan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Takılan"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/editGunduzTam"
+            app:layout_constraintTop_toBottomOf="@+id/Baslik2" />
+
+        <TextView
+            android:id="@+id/textGunduz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="T1:"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/BaslikMevcutSokulen" />
+
+        <EditText
+            android:id="@+id/editGunduzTams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:digits="0123456789"
+            android:ems="5"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:nextFocusDown="@+id/editGunduzKusurats"
+            android:singleLine="true"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textGunduz"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textGunduz" />
+
+        <TextView
+            android:id="@+id/textGunduzNoktas"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text=","
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/editGunduzTams"
+            app:layout_constraintStart_toEndOf="@+id/editGunduzTams"
+            app:layout_constraintTop_toTopOf="@+id/editGunduzTams" />
+
+        <EditText
+            android:id="@+id/editGunduzKusurats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:ems="3"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:nextFocusDown="@+id/editPuantTams"
+            android:singleLine="true"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textGunduzNoktas"
+            app:layout_constraintStart_toEndOf="@+id/textGunduzNoktas"
+            app:layout_constraintTop_toTopOf="@+id/textGunduzNoktas" />
+
+        <View
+            android:id="@+id/cizik1"
+            style="@style/Divider.Vertical"
+            android:layout_width="1dp"
+            android:layout_height="210dp"
+            android:layout_marginTop="35dp"
+            android:background="#A4C639"
+            app:layout_constraintEnd_toStartOf="@+id/editGunduzTam"
+            app:layout_constraintStart_toEndOf="@+id/editGunduzKusurats"
+            app:layout_constraintTop_toTopOf="@+id/Baslik2" />
+
+        <EditText
+            android:id="@+id/editGunduzTam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:ems="5"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:nextFocusDown="@+id/editGunduzKusurat"
+            android:singleLine="true"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/editGunduzKusurats"
+            app:layout_constraintEnd_toStartOf="@+id/textGunduzNokta"
+            app:layout_constraintTop_toTopOf="@+id/editGunduzKusurats" />
+
+        <TextView
+            android:id="@+id/textGunduzNokta"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text=","
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/editGunduzTam"
+            app:layout_constraintEnd_toStartOf="@+id/editGunduzKusurat"
+            app:layout_constraintTop_toTopOf="@+id/editGunduzTam" />
+
+        <EditText
+            android:id="@+id/editGunduzKusurat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:ems="3"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:nextFocusDown="@+id/editPuantTam"
+            android:singleLine="true"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textGunduzNokta"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textGunduzNokta" />
+
+        <TextView
+            android:id="@+id/textPuant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="T2:"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textGunduz" />
+
+        <EditText
+            android:id="@+id/editPuantTams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:digits="0123456789"
+            android:ems="5"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:nextFocusDown="@+id/editPuantKusurats"
+            android:singleLine="true"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textPuant"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textPuant" />
+
+        <TextView
+            android:id="@+id/textPuantNoktas"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text=","
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/editPuantTams"
+            app:layout_constraintStart_toEndOf="@+id/editPuantTams"
+            app:layout_constraintTop_toTopOf="@+id/editPuantTams" />
+
+        <EditText
+            android:id="@+id/editPuantKusurats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:ems="3"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:nextFocusDown="@+id/editGeceTam"
+            android:singleLine="true"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textPuantNoktas"
+            app:layout_constraintStart_toEndOf="@+id/textPuantNoktas"
+            app:layout_constraintTop_toTopOf="@+id/textPuantNoktas" />
+
+        <EditText
+            android:id="@+id/editPuantTam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:ems="5"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:nextFocusDown="@+id/editPuantKusurat"
+            android:singleLine="true"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textPuant"
+            app:layout_constraintEnd_toStartOf="@+id/textPuantNokta"
+            app:layout_constraintTop_toTopOf="@+id/textPuant" />
+
+        <TextView
+            android:id="@+id/textPuantNokta"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text=","
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/editPuantTam"
+            app:layout_constraintEnd_toStartOf="@+id/editPuantKusurat"
+            app:layout_constraintTop_toTopOf="@+id/editPuantTam" />
+
+        <EditText
+            android:id="@+id/editPuantKusurat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:ems="3"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:nextFocusDown="@+id/editGeceTam"
+            android:singleLine="true"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textPuantNokta"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textPuantNokta" />
+
+        <TextView
+            android:id="@+id/textGece"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="T3:"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textPuant" />
+
+        <EditText
+            android:id="@+id/editGeceTams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:digits="0123456789"
+            android:ems="5"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:nextFocusDown="@+id/editGeceKusurats"
+            android:singleLine="true"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textGece"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textGece" />
+
+        <TextView
+            android:id="@+id/textGeceNoktas"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text=","
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/editGeceTams"
+            app:layout_constraintStart_toEndOf="@+id/editGeceTams"
+            app:layout_constraintTop_toTopOf="@+id/editGeceTams" />
+
+        <EditText
+            android:id="@+id/editGeceKusurats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:ems="3"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:nextFocusDown="@+id/editEnduktifTams"
+            android:singleLine="true"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textGeceNoktas"
+            app:layout_constraintStart_toEndOf="@+id/textGeceNoktas"
+            app:layout_constraintTop_toTopOf="@+id/textGeceNoktas" />
+
+        <EditText
+            android:id="@+id/editGeceTam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:ems="5"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:nextFocusDown="@+id/editGeceKusurat"
+            android:singleLine="true"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textGece"
+            app:layout_constraintEnd_toStartOf="@+id/textGeceNokta"
+            app:layout_constraintTop_toTopOf="@+id/textGece" />
+
+        <TextView
+            android:id="@+id/textGeceNokta"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text=","
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/editGeceTam"
+            app:layout_constraintEnd_toStartOf="@+id/editGeceKusurat"
+            app:layout_constraintTop_toTopOf="@+id/editGeceTam" />
+
+        <EditText
+            android:id="@+id/editGeceKusurat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:ems="3"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:nextFocusDown="@+id/editEnduktifTam"
+            android:singleLine="true"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textGeceNokta"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textGeceNokta" />
+
+        <TextView
+            android:id="@+id/textEnduktif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Reaktif:"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textGece" />
+
+
+        <EditText
+            android:id="@+id/editEnduktifTams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:digits="0123456789"
+            android:ems="5"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:nextFocusDown="@+id/editEnduktifKusurats"
+            android:singleLine="true"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textEnduktif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textEnduktif" />
+
+        <TextView
+            android:id="@+id/textEnduktifNoktas"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text=","
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/editEnduktifTams"
+            app:layout_constraintStart_toEndOf="@+id/editEnduktifTams"
+            app:layout_constraintTop_toTopOf="@+id/editEnduktifTams" />
+
+        <EditText
+            android:id="@+id/editEnduktifKusurats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:ems="3"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:nextFocusDown="@+id/editKapasitifTams"
+            android:singleLine="true"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textEnduktifNoktas"
+            app:layout_constraintStart_toEndOf="@+id/textEnduktifNoktas"
+            app:layout_constraintTop_toTopOf="@+id/textEnduktifNoktas" />
+
+        <EditText
+            android:id="@+id/editEnduktifTam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:ems="5"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:nextFocusDown="@+id/editEnduktifKusurat"
+            android:singleLine="true"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textEnduktif"
+            app:layout_constraintEnd_toStartOf="@+id/textEnduktifNokta"
+            app:layout_constraintTop_toTopOf="@+id/textEnduktif" />
+
+        <TextView
+            android:id="@+id/textEnduktifNokta"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text=","
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/editEnduktifTam"
+            app:layout_constraintEnd_toStartOf="@+id/editEnduktifKusurat"
+            app:layout_constraintTop_toTopOf="@+id/editEnduktifTam" />
+
+        <EditText
+            android:id="@+id/editEnduktifKusurat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:ems="3"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:nextFocusDown="@+id/editKapasitifTam"
+            android:singleLine="true"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textEnduktifNokta"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textEnduktifNokta" />
+
+        <TextView
+            android:id="@+id/textKapasitif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Kapasitif:"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textEnduktif" />
+
+
+        <EditText
+            android:id="@+id/editKapasitifTams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:digits="0123456789"
+            android:ems="5"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:nextFocusDown="@+id/editKapasitifKusurats"
+            android:singleLine="true"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textKapasitif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textKapasitif" />
+
+        <TextView
+            android:id="@+id/textKapasitifNoktas"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text=","
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/editKapasitifTams"
+            app:layout_constraintStart_toEndOf="@+id/editKapasitifTams"
+            app:layout_constraintTop_toTopOf="@+id/editKapasitifTams" />
+
+        <EditText
+            android:id="@+id/editKapasitifKusurats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:ems="3"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textKapasitifNoktas"
+            app:layout_constraintStart_toEndOf="@+id/textKapasitifNoktas"
+            app:layout_constraintTop_toTopOf="@id/textKapasitifNoktas" />
+
+
+        <EditText
+            android:id="@+id/editKapasitifTam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:ems="5"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:nextFocusDown="@+id/editKapasitifKusurat"
+            android:singleLine="true"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textKapasitif"
+            app:layout_constraintEnd_toStartOf="@+id/textKapasitifNokta"
+            app:layout_constraintTop_toTopOf="@+id/textKapasitif" />
+
+        <TextView
+            android:id="@+id/textKapasitifNokta"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text=","
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/editKapasitifTam"
+            app:layout_constraintEnd_toStartOf="@+id/editKapasitifKusurat"
+            app:layout_constraintTop_toTopOf="@+id/editKapasitifTam" />
+
+        <EditText
+            android:id="@+id/editKapasitifKusurat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:ems="3"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textKapasitifNokta"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textKapasitifNokta" />
+
+
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Geri Dön"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textKapasitif" />
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kaydet"
+            app:layout_constraintBottom_toBottomOf="@+id/back_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@id/back_btn"
+            app:layout_constraintTop_toTopOf="@+id/back_btn" />
+
+    </android.support.constraint.ConstraintLayout>
+    <!--    </android.widget.HorizontalScrollView>-->
+</ScrollView>

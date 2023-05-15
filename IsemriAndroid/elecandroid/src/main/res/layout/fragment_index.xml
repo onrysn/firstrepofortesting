@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textToplam"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="1dp"
+        android:text="T"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/editToplam"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textToplam"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/textToplam"
+        android:digits="0123456789.,"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textGunduz"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textToplam"
+        android:layout_alignStart="@+id/textToplam"
+        android:layout_alignEnd="@+id/textToplam"
+        android:layout_marginTop="1dp"
+        android:text="T1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/editGunduz"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textGunduz"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/textGunduz"
+        android:digits="0123456789.,"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <!--
+    <LinearLayout
+        android:id="@+id/wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/editGunduz"
+        
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/elleOku"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Manuel" />
+
+        <Button
+            android:id="@+id/optikOku"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/elleOku"
+            android:layout_marginTop="10dp"
+            android:text="Optik" />
+
+    </LinearLayout>
+	-->
+    <TextView
+        android:id="@+id/textPuant"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textGunduz"
+        android:layout_alignStart="@+id/textGunduz"
+        android:layout_alignEnd="@+id/textGunduz"
+        android:layout_marginTop="8dp"
+        android:text="T2"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/editPuant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textPuant"
+        android:layout_alignStart="@+id/editGunduz"
+        android:layout_alignEnd="@+id/editGunduz"
+        android:digits="0123456789.,"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textGece"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textPuant"
+        android:layout_alignStart="@+id/textPuant"
+        android:layout_alignEnd="@+id/textPuant"
+        android:layout_marginTop="8dp"
+        android:text="T3"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/editGece"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textGece"
+        android:layout_alignStart="@+id/editPuant"
+        android:layout_alignEnd="@+id/editPuant"
+        android:digits="0123456789.,"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textEnduktif"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textGece"
+        android:layout_alignStart="@+id/textGece"
+        android:layout_alignEnd="@+id/textGece"
+        android:layout_marginTop="8dp"
+        android:text="Reaktif"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/editEnduktif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textEnduktif"
+        android:layout_alignStart="@+id/editGece"
+        android:layout_alignEnd="@+id/editGece"
+        android:digits="0123456789.,"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textKapasitif"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textEnduktif"
+        android:layout_alignStart="@+id/textEnduktif"
+        android:layout_alignEnd="@+id/textEnduktif"
+        android:layout_marginTop="8dp"
+        android:text="Kapasitif"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/editKapasitif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textKapasitif"
+        android:layout_alignStart="@+id/editEnduktif"
+        android:layout_alignEnd="@+id/editEnduktif"
+        android:digits="0123456789.,"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textDemand"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textKapasitif"
+        android:layout_alignStart="@+id/textKapasitif"
+        android:layout_alignEnd="@+id/textKapasitif"
+        android:layout_marginTop="8dp"
+        android:text="Demand"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/editDemand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textDemand"
+        android:layout_alignStart="@+id/editKapasitif"
+        android:layout_alignEnd="@+id/editKapasitif"
+        android:digits="0123456789.,"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/ZSDK_ANDROID_API" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/bixolon" />
+            <option value="$PROJECT_DIR$/bixolonandroid" />
+            <option value="$PROJECT_DIR$/common" />
+            <option value="$PROJECT_DIR$/cpcl" />
+            <option value="$PROJECT_DIR$/eemr" />
+            <option value="$PROJECT_DIR$/eemrlib" />
+            <option value="$PROJECT_DIR$/elec" />
+            <option value="$PROJECT_DIR$/elecandroid" />
+            <option value="$PROJECT_DIR$/google-play-services_lib" />
+            <option value="$PROJECT_DIR$/googlemapandroid" />
+            <option value="$PROJECT_DIR$/libdroid" />
+            <option value="$PROJECT_DIR$/mbs" />
+            <option value="$PROJECT_DIR$/medas" />
+            <option value="$PROJECT_DIR$/medasAndroid" />
+            <option value="$PROJECT_DIR$/mobit" />
+            <option value="$PROJECT_DIR$/sqldroid" />
+            <option value="$PROJECT_DIR$/webservice" />
+            <option value="$PROJECT_DIR$/zebraandroid" />
+            <option value="$PROJECT_DIR$/zebraprinter" />
+            <option value="$PROJECT_DIR$/zxing" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

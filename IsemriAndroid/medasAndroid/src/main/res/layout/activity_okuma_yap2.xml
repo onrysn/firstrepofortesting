@@ -1,0 +1,358 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingBottom="@dimen/activity_vertical_margin"
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+	android:paddingRight="@dimen/activity_horizontal_margin"
+	android:paddingTop="@dimen/activity_vertical_margin"
+	android:orientation="vertical"
+	android:background="@drawable/eleclogohigh_half_trans2"
+	tools:context="mobit.elec.android.OkumaYapActivity">
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<LinearLayout
+				android:id="@+id/filtre"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentStart="true"
+				android:layout_alignParentTop="true"
+				android:layout_marginTop="0dp"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/textTesisatSayacNo"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="T/S.No:"
+					android:textSize="@dimen/elecTextSize" />
+
+				<EditText
+					android:id="@+id/editTesisatSayacNo"
+					android:layout_width="120dp"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="5dp"
+					android:ems="10"
+					android:inputType="number"
+					android:maxLength="10"
+					android:singleLine="true"
+					android:imeOptions="actionDone"
+					android:textSize="@dimen/elecTextSize"
+					/>
+
+				<TextView
+					android:id="@+id/textKarneNo2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="5dp"
+					android:text="K.No:"
+					android:textSize="@dimen/elecTextSize"
+					/>
+
+				<EditText
+					android:id="@+id/editKarneNo"
+					android:layout_width="120dp"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="5dp"
+					android:ems="10"
+					android:inputType="number"
+					android:maxLength="10"
+					android:singleLine="true"
+					android:imeOptions="actionDone"
+					android:textSize="@dimen/elecTextSize"
+					/>
+
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/filtrekar"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentStart="true"
+				android:layout_alignParentTop="true"
+				android:layout_marginStart="0dp"
+				android:layout_marginTop="51dp"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/textKarneler"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="0dp"
+					android:background="@drawable/shape"
+					android:text="Karneler"
+					android:textSize="16dp" />
+
+			</LinearLayout>
+
+			<fragment
+				android:name="mobit.elec.android.TesisatBilgiFragment"
+				android:id="@+id/tesisatBilgiFragment"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/filtrekar"
+				android:layout_marginTop="11dp"
+				android:layout_alignStart="@+id/filtrekar" />
+
+			<fragment
+				android:id="@+id/indexFragment"
+				android:name="mobit.elec.android.IndexFragment2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/tesisatBilgiFragment"
+				android:layout_alignStart="@+id/tesisatBilgiFragment"
+				android:layout_marginTop="5dp" />
+
+			<LinearLayout
+				android:layout_width="380dp"
+				android:layout_height="wrap_content"
+				android:layout_alignTop="@+id/indexFragment"
+				android:layout_marginTop="210dp"
+				android:gravity="center_horizontal"
+				android:orientation="horizontal">
+
+
+				<Button
+					android:id="@+id/optikOku"
+					style="?android:attr/buttonStyleSmall"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@color/koyu_mavi"
+					android:paddingLeft="15dp"
+					android:paddingRight="15dp"
+					android:text="Optik"
+					android:textColor="@color/beyaz"
+					android:textSize="12dp" />
+
+				<CheckBox
+					android:id="@+id/topluOku"
+					android:layout_width="75dp"
+					android:layout_height="wrap_content"
+					android:text="Toplu"
+					android:textSize="12dp" />
+
+				<Button
+					android:id="@+id/elleOku"
+					style="?android:attr/buttonStyleSmall"
+					android:layout_width="80dp"
+					android:layout_height="wrap_content"
+					android:text="Manuel"
+					android:textSize="12dp"
+					android:visibility="gone" />
+
+				<CheckBox
+					android:id="@+id/optikAD"
+					android:layout_width="70dp"
+					android:layout_height="wrap_content"
+					android:text="O.A.D"
+					android:textSize="12dp" />
+
+				<Button
+					android:id="@+id/dialog_islemler"
+					style="?android:attr/buttonStyleSmall"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@color/koyu_mavi"
+					android:paddingLeft="15dp"
+					android:paddingRight="15dp"
+					android:text="İşlemler"
+					android:textColor="@color/beyaz"
+					android:textSize="12dp" />
+
+				<Button
+					android:id="@+id/haritaokuma"
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:background="@drawable/location_icon"
+					android:textSize="12dp"
+					android:visibility="gone" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="380dp"
+				android:layout_height="wrap_content"
+				android:layout_alignTop="@+id/indexFragment"
+				android:layout_marginStart="5dp"
+				android:layout_marginTop="240dp"
+				android:gravity="center_horizontal"
+				android:orientation="horizontal">
+
+
+				<Button
+					android:id="@+id/tekrarYazdirma2"
+					style="?android:attr/buttonStyleSmall"
+					android:layout_width="80dp"
+					android:layout_height="wrap_content"
+					android:text="T. Yazdır"
+					android:textSize="12dp"
+					android:visibility="gone" />
+
+				<Button
+					android:id="@+id/gps"
+					style="?android:attr/buttonStyleSmall"
+					android:layout_width="80dp"
+					android:layout_height="wrap_content"
+					android:text="GPS"
+					android:textSize="12dp"
+					android:visibility="gone" />
+
+				<Button
+					android:id="@+id/adressTarif"
+					style="?android:attr/buttonStyleSmall"
+					android:layout_width="80dp"
+					android:layout_height="wrap_content"
+					android:text="Ad.Tarif"
+					android:textSize="12dp"
+					android:visibility="gone" />
+
+				<Button
+					android:id="@+id/barkod"
+					style="?android:attr/buttonStyleSmall"
+					android:layout_width="80dp"
+					android:layout_height="wrap_content"
+					android:text="Barkod"
+					android:textSize="12dp"
+					android:visibility="invisible" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/indexFragment"
+				android:layout_alignStart="@+id/indexFragment"
+				android:layout_marginTop="80dp"
+				android:gravity="center_horizontal"
+				android:orientation="horizontal">
+
+				<Button
+					android:id="@+id/buttonOncekiOkunmayan"
+					style="?android:attr/buttonStyleSmall"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/blue_fill__rounded_color"
+					android:minWidth="42dip"
+
+					android:minHeight="42dip"
+					android:text="&lt;&lt;"
+					android:textColor="@color/beyaz"
+					android:textSize="12dp" />
+
+				<Button
+					android:id="@+id/buttonOnceki"
+					style="?android:attr/buttonStyleSmall"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="1dp"
+					android:background="@drawable/blue_fill__rounded_color"
+
+					android:minWidth="42dip"
+					android:minHeight="42dip"
+					android:text="&lt;"
+					android:textColor="@color/beyaz"
+					android:textSize="12dp" />
+
+				<Button
+					android:id="@+id/buttonSonraki"
+					style="?android:attr/buttonStyleSmall"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="10dp"
+					android:background="@drawable/blue_fill__rounded_color"
+					android:minWidth="42dip"
+
+					android:minHeight="42dip"
+					android:text="&gt;"
+					android:textColor="@color/beyaz"
+					android:textSize="12dp" />
+
+				<Button
+					android:id="@+id/buttonSonrakiOkunmayan"
+					style="?android:attr/buttonStyleSmall"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="1dp"
+					android:background="@drawable/blue_fill__rounded_color"
+
+					android:minWidth="42dip"
+					android:minHeight="42dip"
+					android:text="&gt;&gt;"
+					android:textColor="@color/beyaz"
+					android:textSize="12dp" />
+
+				<Button
+					android:id="@+id/aboneDurum"
+					style="?android:attr/buttonStyleSmall"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="15dp"
+					android:background="@color/koyu_mavi"
+					android:paddingLeft="6dp"
+					android:paddingRight="6dp"
+					android:text="A.D.Kodu"
+
+					android:textColor="@color/beyaz"
+					android:textSize="12dp" />
+
+				<Button
+					android:id="@+id/buttonTamam"
+					style="?android:attr/buttonStyleSmall"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="10dp"
+					android:background="@color/koyu_mavi"
+					android:paddingLeft="5dp"
+					android:paddingRight="5dp"
+					android:text="Tamam"
+
+					android:textColor="@color/beyaz"
+					android:textSize="12dp" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/indexFragment"
+				android:layout_alignStart="@+id/indexFragment"
+				android:layout_marginTop="150dp"
+				android:orientation="horizontal"
+				android:layout_marginBottom="20dp"
+				android:paddingTop="10dp">
+
+				<EditText
+					android:id="@+id/editUnvan"
+					android:layout_width="240dp"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="5dp"
+					android:layout_marginLeft="20dp"
+					android:inputType="textCapCharacters"
+					android:singleLine="true"
+					android:textSize="@dimen/elecTextSize" />
+
+				<Button
+					android:id="@+id/Ara"
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"
+					android:layout_marginStart="20dp"
+					android:background="@color/koyu_mavi"
+					android:gravity="center"
+					android:text="Ara"
+					android:textColor="@color/beyaz"
+					android:textSize="15dp" />
+			</LinearLayout>
+
+
+		</RelativeLayout>
+
+	</ScrollView>
+
+
+
+</RelativeLayout>

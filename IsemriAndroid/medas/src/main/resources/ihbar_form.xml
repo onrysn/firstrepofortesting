@@ -1,0 +1,139 @@
+<PrintConfig>
+	<Properties>
+	    <Property Name="FormTipi" Value="ihbar_form" />
+		<Property Name="Unit" Value="x10mm" />
+		<Property Name="Tur" Value="Yapisal" />
+		<Property Name="X-Referans" Value="0" />
+		<Property Name="Y-Referans" Value="150" />
+		<Property Name="CX-Sinir" Value="0" />
+		<Property Name="CY-Sinir" Value="0" />
+		<Property Name="XDPI" Value="203" />
+		<Property Name="YDPI" Value="203" />
+		<Property Name="PAGESIZE" Value="3020" />
+		<Property Name="PAGEWIDTH" Value="960" />
+		<Property Name="PAGEHEIGHT" Value="20" />
+		<Property Name="QUANTITY" Value="1" />
+		<Property Name="PrinterNo" Value="0" />
+		<Property Name="BlackMark" Value="0" />
+		
+	</Properties>
+	<CPCLFonts>
+		<CPCLFont Id="1" Name="1" Size="1"/>
+		<CPCLFont Id="2" Name="2" Size="1"/>
+		<CPCLFont Id="3" Name="3" Size="1"/>
+	</CPCLFonts>
+	<PageItems>
+		<Image Name="imza_sur" Value="1" Left="100" Right="566" Top="0" Bottom = "250" File="mepas_logo.bmp" Suret="1" />
+		<Text Name="" Left="0" Top="120" Right="200" Bottom="230" FontId="3" Style="l">MERAM ELEKTRİK PERAKENDE SATIŞ A.Ş</Text>
+		<Text Name=""  Left="0" Top="140" Right="520" Bottom="325" FontId="3" Style="l" >Nişantaş Mahallesi Kemerli Caddesi</Text>
+		<Text Name=""  Left="0" Top="160" Right="520" Bottom="325" FontId="3" Style="l" >B Blok No: 24 Selçuklu/KONYA</Text>
+		<Text Name=""  Left="0" Top="180" Right="520" Bottom="325" FontId="3" Style="l" >Tel : 444 7 786</Text>
+		<Text Name=""  Left="0" Top="200" Right="520" Bottom="325" FontId="3" Style="l" >Meram V.D. 6160398170</Text>
+		<Text Name=""  Left="0" Top="220" Right="520" Bottom="325" FontId="3" Style="l" >Mersis No: 0616039817000012</Text>
+		<Text Name=""  Left="0" Top="240" Right="520" Bottom="325" FontId="3" Style="l" >www.mepasenerji.com</Text>
+		<Image Value="1" Name="imza_sur" Suret="1" File="perakende_imza2.bmp" Bottom="250" Top="180" Right="566" Left="20"/>
+		<Text Name="" Left="60" Top="350" Right="200" Bottom="230" FontId="3" Style="l">ELEKTRIK TÜKETİM BORCUNA BAĞLI 2.BİLDİRİM </Text>
+		<!--<Text Name="" Left="180" Top="350" Right="200" Bottom="230" FontId="3" Style="l">( 2.İHBAR BİLDİRİMİ ) </Text>-->
+
+		<Text Name="" Left="0" Top="470" Right="200" Bottom="230" FontId="3" Style="l">İşemri No:    :</Text>
+		<Text Name="isemri_no" Left="230" Top="470" Right="576" Bottom="230" FontId="3" Style="l"/>
+
+		<Text Name="" Left="0" Top="510" Right="200" Bottom="250" FontId="3" Style="l">İşletme Adı   :</Text>
+		<Text Name="bolge_adi" Left="230" Top="510" Right="576" Bottom="250" FontId="3" Style="l"/>
+
+		<Text Name="" Left="0" Top="550" Right="200" Bottom="290" FontId="3" Style="l">Tesisat No    :</Text>
+		<Text Name="tesisat_no" Left="230" Top="550" Right="576" Bottom="290" FontId="3" Style="l"/>
+
+		<Text Name="" Left="0" Top="590" Right="200" Bottom="330" FontId="3" Style="l">Karne/Sıra No :        </Text>
+		<Text Name="karne_no" Left="230" Top="590" Right="360" Bottom="330" FontId="3" Style="l"/>
+		<Text Name="sira_no" Left="360" Top="590" Right="440" Bottom="330" FontId="3" Style="l"/>
+
+		<Text Name="" Left="0" Top="630" Right="200" Bottom="370" FontId="3" Style="l">Tarife        :</Text>
+		<Text Name="tarife_adi" Left="230" Top="630" Right="576" Bottom="370" FontId="3" Style="l"/>
+
+		<Text Name="" Left="0" Top="670" Right="200" Bottom="410" FontId="3" Style="l">Abone Adı     :</Text>
+		<Text Name="unvan" Left="230" Top="670" Right="576" Bottom="410" FontId="3" Style="l"/>
+
+		<Text Name="" Left="0" Top="710" Right="200" Bottom="450" FontId="3" Style="l">Abone Adresi  :</Text>
+		<Text Name="adres_1" Left="40" Top="750" Right="576" Bottom="490" FontId="3" Style="l"/>
+
+		<Text Name="" Left="0" Top="790" Right="576" Bottom="570" FontId="3" Style="l">Sayın Müşterimiz,</Text>
+
+		<Text Name="" Left="0" Top="870" Right="576" Bottom="650" FontId="3" Style="l">                    tarihi itibariyle yukarıda belirtilen aboneliğe</Text>
+		<Text Name="BELGE_TARIH" Left="0" Top="870" Right="60" Bottom="650" FontId="3" Style="l"/>
+
+		<Text Name="" Left="0" Top="910" Right="576" Bottom="690" FontId="3" Style="l">ilişkin               adet gecikme zammı hariç</Text>
+		<Text Name="borc_adet" Left="100" Top="910" Right="150" Bottom="690" FontId="3" Style="l"/>
+
+		<Text Name="" Left="0" Top="950" Right="576" Bottom="690" FontId="3" Style="l">                   TL tutarında vadesi geçmiş borcunuz bulunmaktadır.</Text>
+		<Text Name="borc_tutar" Left="0" Top="950" Right="50" Bottom="690" FontId="3" Style="l"/>
+
+		<Text Name="" Left="0" Top="1010" Right="576" Bottom="730" FontId="3" Style="l">Elektrik Piyasası Tüketici Hizmetleri Yönetmeliği 35'nci</Text>
+		<Text Name="" Left="0" Top="1050" Right="576" Bottom="730" FontId="3" Style="l">maddesi 1,4 ve 6'ncı fıkraları dikkate alınarak; söz</Text>
+		<Text Name="" Left="0" Top="1090" Right="576" Bottom="730" FontId="3" Style="l">konusu borcunuzun yazılı ve kalıcı veri saklayıcıları</Text>
+		<Text Name="" Left="0" Top="1130" Right="576" Bottom="730" FontId="3" Style="l">üzerinden yapılan bildirim tarihinden itibaren 5 iş günü</Text>
+		<Text Name="" Left="0" Top="1170" Right="576" Bottom="730" FontId="3" Style="l">içerisinde ödenmemesi halinde; elektriğiniz kesilecek,</Text>
+		<Text Name="" Left="0" Top="1210" Right="576" Bottom="730" FontId="3" Style="l">sayacınız mühürlenecek ayrıca mevcut ve güncel kullanımınızdan</Text>
+		<Text Name="" Left="0" Top="1250" Right="576" Bottom="730" FontId="3" Style="l">doğacak borçlarınızın  takip eden 30 gün içinde ödenmemesi</Text>
+		<Text Name="" Left="0" Top="1290" Right="576" Bottom="730" FontId="3" Style="l">halinde endekslenmiş güvence bedeliniz borçlarına mahsup</Text>
+		<Text Name="" Left="0" Top="1330" Right="576" Bottom="730" FontId="3" Style="l">edilecek, sözleşme iptali ve muaccel hale gelen borçlarınız</Text>
+		<Text Name="" Left="0" Top="1370" Right="576" Bottom="730" FontId="3" Style="l">için de icra takibi başlatılacaktır.</Text>
+
+
+		<Text Name="" Left="0" Top="1450" Right="576" Bottom="730" FontId="3" Style="l">NOT:Borcunuzu ödemişseniz bu ihbarnameyi dikkate</Text>
+		<Text Name="" Left="0" Top="1490" Right="576" Bottom="730" FontId="3" Style="l">almayınız.</Text>
+		<Text Name="" Left="0" Top="1530" Right="576" Bottom="730" FontId="3" Style="l">Saygılarımızla</Text>
+
+		<Text Name="" Left="0" Top="1610" Right="200" Bottom="230" FontId="3" Style="l">Eleman Kodu:</Text>
+		<Text Name="okuyucu_kodu" Left="125" Top="1610" Right="120" Bottom="770" FontId="3" Stylse="l"/>
+
+		<Text Name="" Left="0" Top="1650" Right="200" Bottom="230" FontId="3" Style="l">Tarih ve Saat:</Text>
+		<Text Name="BELGE_TARIH_SAAT" Left="125" Top="1650" Right="120" Bottom="770" FontId="3" Style="l"/>
+
+		<Text Name="" Left="0" Top="1730" Right="576" Bottom="730" FontId="3" Style="l">IHBARNAME BIRAKILAN KOORDINAT:</Text>
+		<Text Name="mytesisat_cbs" Left="0" Top="1760" Right="120" Bottom="770" FontId="3" Style="l"/>
+
+
+
+
+		<!--
+               <RawText Name="xxx">
+
+
+
+
+
+
+
+
+        ��emri No:       :{isemri_no}
+        ��letme Ad�:     :{bolge_adi}
+        Tesisat No:      :{tesisat_no}
+        Karne/S�ra No:   :{karne_no} / {sira_no}
+        Tarife           :{tarife_adi}
+        Abone Ad�: {UNVAN}
+        Abone Adresi:
+          {adres_1}
+
+        Say�n M��terimiz,
+        Ge�mi� d�nemlerden {borc_adet} adet fatura ve
+        {borc_tutar} TL anapara + {borc_gecikme} gecikme borcunuzun
+        �denmedi�i tespit edilmi�tir.
+
+        {BELGE_TARIH} tarihinden itibaren 5 i� g�n� i�inde
+        borcunuzu �demedi�iniz takdirde elektri�iniz
+        kesilecektir ve alaca��m�z hukuki yollardan
+        tahsil edilecektir.
+
+        Borcunuzu �demi�seniz bu ihbarnameyi dikkate
+        almay�n�z.
+
+        Sayg�lar�m�zla.
+
+         {USER}
+         {BELGE_TARIH}
+
+         </RawText>
+                    -->
+	</PageItems>
+</PrintConfig>

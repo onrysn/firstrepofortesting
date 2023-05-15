@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mobit.elec.mbs.medas.android.OrtakTrafoActivity" >
+
+    <TextView
+        android:id="@+id/textTesisatNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:text="Tesisat No:"
+        android:textSize="12dp"/>
+
+    <EditText
+        android:id="@+id/editKarneTesisatNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textTesisatNo"
+        android:layout_toEndOf="@+id/textTesisatNo"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="8" >
+
+        <requestFocus />
+    </EditText>
+
+
+    <Button
+        android:id="@+id/TesisatEkle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textTesisatNo"
+        android:layout_below="@+id/textTesisatNo"
+        android:layout_marginTop="29dp"
+        android:text="Listeye Ekle" />
+
+    <ListView
+        android:id="@+id/listTesisatlar"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/TesisatEkle"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape"
+        android:choiceMode="singleChoice" >
+    </ListView>
+
+    <Button
+        android:id="@+id/BtnKaydet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listTesisatlar"
+        android:layout_alignEnd="@+id/listTesisatlar"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="1dp"
+        android:text="Gönder" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_above="@+id/listTesisatlar"
+        android:layout_below="@+id/editKarneTesisatNo"
+        android:layout_alignEnd="@+id/listTesisatlar"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toEndOf="@+id/TesisatEkle"
+        android:text="Silmek istediğiniz tesisata basılı tutarak silebirsiniz."
+        android:textColor="@android:color/holo_red_dark" />
+
+
+</RelativeLayout>

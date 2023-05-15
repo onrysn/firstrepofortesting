@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mobit.elec.android.MuhurSokmeActivity" >
+
+    <TextView
+        android:id="@+id/textTesisatNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Tesisat No:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/editTesisatNo"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textTesisatNo"
+        android:layout_marginStart="19dp"
+        android:layout_toEndOf="@+id/textTesisatNo"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="8"
+        android:nextFocusForward="@+id/editMuhurSeri"
+        android:singleLine="true"
+        android:textSize="12dp">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTesisatNo"
+        android:layout_alignStart="@+id/textTesisatNo"
+        android:layout_marginTop="15dp"
+        android:text="Mühür Seri/No:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/editMuhurSeri"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:ems="10"
+        android:maxLength="1"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:textSize="12dp"
+        android:nextFocusForward="@+id/editMuhurNo" />
+
+    <EditText
+        android:id="@+id/editMuhurNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editMuhurSeri"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/editMuhurSeri"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="8"
+        android:textSize="12dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="10dp"
+        android:text="Mühür Durumu"
+        android:textSize="15dp"
+        android:textColor="#07667e"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <ListView
+        android:id="@+id/listMuhurDurum"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="12dp"
+        android:background="@drawable/shape"
+        android:choiceMode="singleChoice" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/listMuhurDurum"
+        android:layout_below="@+id/listMuhurDurum"
+        android:text="İptal Durumu"
+        android:textSize="15dp"
+        android:textColor="#07667e"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <ListView
+        android:id="@+id/listIptalDurum"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="2dp"
+        android:textSize="12dp"
+        android:background="@drawable/shape"
+        android:choiceMode="singleChoice" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/barkod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/listIptalDurum"
+        android:layout_marginTop="10dp"
+        android:textSize="12dp"
+        android:text="Barkod"
+        android:background="#b8bab7"/>
+    <Button
+        android:id="@+id/buttonTamam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/listIptalDurum"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:textSize="12dp"
+        android:background="#78c158"
+        android:text="Tamam" />    
+
+</RelativeLayout>

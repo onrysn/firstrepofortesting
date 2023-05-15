@@ -1,0 +1,277 @@
+﻿<PrintConfig>
+    <Properties>
+        <Property Name="FormTipi" Value="perakende_form" />
+        <Property Name="Unit" Value="x10mm" />
+        <Property Name="Tur" Value="Yapisal" />
+        <Property Name="X-Referans" Value="0" />
+        <Property Name="Y-Referans" Value="0" />
+        <Property Name="CX-Sinir" Value="0" />
+        <Property Name="CY-Sinir" Value="0" />
+        <Property Name="XDPI" Value="203" />
+        <Property Name="YDPI" Value="203" />
+        <Property Name="PAGESIZE" Value="3020" />
+        <Property Name="PAGEWIDTH" Value="960" />
+        <Property Name="PAGEHEIGHT" Value="120" />
+        <Property Name="QUANTITY" Value="1"/>
+        <Property Name="PrinterNo" Value="0" />
+        <Property Name="BlackMark" Value="0" />
+
+    </Properties>
+    <CPCLFonts>
+        <CPCLFont Id="1" Name="1" Size="1"/>
+        <CPCLFont Id="2" Name="2" Size="1"/>
+        <CPCLFont Id="3" Name="3" Size="1"/>
+    </CPCLFonts>
+
+    <PageItems>
+
+        <Image Name="imza_sur" Value="1" Left="20" Right="566" Top="0" Bottom = "250" File="perakende_imza2.bmp" Suret="1" />
+
+        <Text Name="m_fatura_seri"  Left="180" Top="135" Right="550" Bottom="320" FontId="2" Style="l" />
+	    <Text Name="donem"  Left="180" Top="153" Right="550" Bottom="320" FontId="2" Style="l" />
+        <Text Name="fatura_no"  Left="180" Top="135" Right="550" Bottom="320"  FontId="2" Style="l" />
+        <Text Name="m_fatura_no" Left="350" Top="135" Right="410" Bottom="320" FontId="2" Style="l" />
+
+
+        <Text Name="" Left="0" Top="1490" Right="660" Bottom="325" FontId="2" Style="l">Ettn:</Text>
+        <Text Name="m_uuid" Left="50" Top="1490" Right="520" Bottom="325" FontId="2" Style="l" />
+        <!-- <Text Name="fatura_no" Left="410" Top="185" Right="700" Bottom="320" FontId="2" Style="l" />-->
+
+        <Text Name="tesisat_no" Left="350" Top="213" Right="400" Bottom="395" FontId="4" Style="l" Bold="true" />
+        <!--   <Text Name="tekil_kod" Left="410" Top="205" Right="710" Bottom="395" FontId="2" Style="l" />-->
+
+        <Text Name="unvan" Left="185" Top="290" Right="710" Bottom="460" FontId="2" Style="l"  Bold="true"/>
+        <Text Name="adres_1" Left="185" Top="313" Right="710" Bottom="660" FontId="2" Style="l"/>
+        <Text Name="tarife_adi" Left="185" Top="355" Right="710" Bottom="725" FontId="2" Style="l" />
+        <Text Name="tedarik_durumu" Left="185" Top="374" Right="710" Bottom="765" FontId="2" Style="l" />
+        <Text Name="tc_kimlik_no" Left="185" Top="393" Right="710" Bottom="530" FontId="2" Style="l" />
+        <Text Name="vergi_no" Left="185" Top="393" Right="300" Bottom="580" FontId="2" Style="l"/>
+        <Text Name="vergi_daire" Left="350" Top="393" Right="710" Bottom="580" FontId="2" Style="l"/>
+
+        <Text Name="odenecek_tutar" Left="90" Top="540" Right="660" Bottom="2065" FontId="5" Style="c"  Bold="true" />
+        <!--<Text Name="" Left="510" Top="1540" Right="710" Bottom="2065" FontId="5" Style="c"  Bold="true" >TL</Text>-->
+        <Text Name="son_odeme_tarihi" Left="352" Top="490" Right="660" Bottom="2160" FontId="4" Style="c"  Bold="true" />
+
+
+        <!--<Text Name="" Left="360" Top="550" Right="200" Bottom="1346" FontId="2" Style="l">Ortalama Tük:</Text>-->
+        <Text Name="ortalama_tuketim" Left="360" Top="600" Right="490" Bottom="1346" FontId="4" Style="r" />
+
+
+        <!--<Text Name="" Left="0" Top="530" Right="200" Bottom="765" >Tedarik Durumu:</Text>-->
+
+
+        <Text Name="" Left="0" Top="1510" Right="200" Bottom="845" FontId="2" Style="l">EIC :</Text>
+        <Text Name="etso_kod" Left="50" Top="1510" Right="245" Bottom="845" FontId="2" Style="l" />
+
+        <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+        <Text Name="" Left="0" Top="1530" Right="200" Bottom="880" FontId="2" Style="l">Sözleşme Gücü :</Text>
+        <Text Name="sozlesme_gucu" Left="150" Top="1530" Right="710" Bottom="880" FontId="2" Style="l" />
+
+       	<Text Name="" Left="0" Top="1550" Right="280" Bottom="915" FontId="2" Style="l">Otomatik Ödeme Talimatı:</Text>
+        <Text Name="banka_talimat" Left="225" Top="1550" Right="375" Bottom="915" FontId="2" Style="l" />
+
+
+        <Text Name="" Left="0" Top="1570" Right="120" Bottom="960" FontId="2" Style="l">Sayaç No:</Text>
+        <Text Name="s1_sayac_no" Left="115" Top="1570" Right="200" Bottom="960" FontId="2" Style="r" />
+        <Text Name="" Left="225" Top="1570" Right="375" Bottom="960" FontId="2" Style="l">Sayaç Marka:</Text>
+        <Text Name="s1_marka" Left="370" Top="1570" Right="450" Bottom="960" FontId="2" Style="r" />
+        <Text Name="" Left="450" Top="1570" Right="550" Bottom="960" FontId="2" Style="l">Çarpan:</Text>
+        <Text Name="carpan" Left="520" Top="1570" Right="675" Bottom="960" FontId="2" Style="r" />
+
+        <Text Name="" Left="0" Top="1595" Right="140" Bottom="1185" FontId="2" Style="l">İlk Okuma</Text>
+        <Text Name="" Left="110" Top="1595" Right="245" Bottom="1185" FontId="2" Style="l">Son Okuma</Text>
+        <Text Name="" Left="230" Top="1595" Right="365" Bottom="1185" FontId="2" Style="l">Okuma Saati</Text>
+        <Text Name="" Left="350" Top="1595" Right="520" Bottom="1185" FontId="2" Style="l">Fatura Tar.</Text>
+        <Text Name="" Left="450" Top="1595" Right="690" Bottom="1185" FontId="2" Style="l">Sonraki Donem</Text>
+
+        <Text Name="ilk_okuma_tarihi" Left="0" Top="1620" Right="140" Bottom="1215" FontId="2" Style="l" />
+        <Text Name="okuma_tarihi" Left="110" Top="1620" Right="245" Bottom="1215" FontId="2" Style="l" />
+        <Text Name="okuma_saati" Left="230" Top="1620" Right="365" Bottom="1215" FontId="2" Style="l" />
+        <Text Name="tahakkuk_tarihi" Left="350" Top="1620" Right="520" Bottom="1215" FontId="2" Style="l" />
+        <Text Name="sonraki_donem_no" Left="450" Top="1620" Right="690" Bottom="1215" FontId="2" Style="l" />
+
+        <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+        <Text Name="" Left="0" Top="740" Right="200" Bottom="1100" FontId="2" Style="l">Aktif............:</Text>
+        <Text Name="s10_ilk_endeks" Left="150" Top="740" Right="305" Bottom="1100" FontId="2" Style="r" />
+        <Text Name="s10_endeks" Left="250" Top="740" Right="400" Bottom="1100" FontId="2" Style="r" />
+        <Text Name="s10_fark" Left="350" Top="740" Right="490" Bottom="1100" FontId="2" Style="r" />
+        <Text Name="s10_ilave_kwh" Left="450" Top="740" Right="665" Bottom="1100" FontId="2" Style="r" />
+
+        <Text Name="" Left="0" Top="760" Right="200" Bottom="1136" FontId="2" Style="l">Gündüz........:</Text>
+        <Text Name="s11_ilk_endeks" Left="150" Top="760" Right="305" Bottom="1136" FontId="2" Style="r" />
+        <Text Name="s11_endeks" Left="250" Top="760" Right="400" Bottom="1136" FontId="2" Style="r" />
+        <Text Name="s11_fark" Left="350" Top="760" Right="490" Bottom="1136" FontId="2" Style="r" />
+
+        <Text Name="" Left="0" Top="780" Right="200" Bottom="1166" FontId="2" Style="l">Puant..........:</Text>
+        <Text Name="s12_ilk_endeks" Left="150" Top="780" Right="305" Bottom="1166" FontId="2" Style="r" />
+        <Text Name="s12_endeks" Left="250" Top="780" Right="400" Bottom="1166" FontId="2" Style="r" />
+        <Text Name="s12_fark" Left="350" Top="780" Right="490" Bottom="1166" FontId="2" Style="r" />
+
+        <Text Name="" Left="0" Top="800" Right="200" Bottom="1196" FontId="2" Style="l">Gece............:</Text>
+        <Text Name="s13_ilk_endeks" Left="150" Top="800" Right="305" Bottom="1196" FontId="2" Style="r" />
+        <Text Name="s13_endeks" Left="250" Top="800" Right="400" Bottom="1196" FontId="2" Style="r" />
+        <Text Name="s13_fark" Left="350" Top="800" Right="490" Bottom="1196" FontId="2" Style="r" />
+
+        <Text Name="" Left="0" Top="820" Right="200" Bottom="1226" FontId="2" Style="l">Endüktif.......:</Text>
+        <Text Name="s2_ilk_endeks" Left="150" Top="820" Right="305" Bottom="1226" FontId="2" Style="r" />
+        <Text Name="s2_endeks" Left="250" Top="820" Right="400" Bottom="1226" FontId="2" Style="r" />
+        <Text Name="s2_fark" Left="350" Top="820" Right="490" Bottom="1226" FontId="2" Style="r" />
+
+        <Text Name="" Left="0" Top="840" Right="200" Bottom="1256" FontId="2" Style="l">Kapasitif......:</Text>
+        <Text Name="s3_ilk_endeks" Left="150" Top="840" Right="305" Bottom="1256" FontId="2" Style="r" />
+        <Text Name="s3_endeks" Left="250" Top="840" Right="400" Bottom="1256" FontId="2" Style="r" />
+        <Text Name="s3_fark" Left="350" Top="840" Right="490" Bottom="1256" FontId="2" Style="r" />
+
+        <Text Name="" Left="0" Top="860" Right="200" Bottom="1286" FontId="2" Style="l">Trafo kaybı...:</Text>
+        <Text Name="s10_trafo_kaybi_kwh" Left="480" Top="860" Right="490" Bottom="1286" FontId="2" Style="r" />
+
+        <Text Name="" Left="0" Top="880" Right="200" Bottom="1436" FontId="2" Style="l">Demand.......:</Text>
+        <Text Name="cekilen_guc" Left="480" Top="970" Right="490" Bottom="1436" FontId="2" Style="r" />
+
+        <!--<Text Name="" Left="0" Top="930" Right="200" Bottom="1376" FontId="2" Style="l">Yıllık Tük......:</Text>-->
+        <!--<Text Name="yillik_tuketim" Left="385" Top="930" Right="490" Bottom="1376" FontId="2" Style="r" />-->
+
+        <!--<Text Name="" Left="0" Top="950" Right="200" Bottom="1406" FontId="2" Style="l">Cari Yıl Tük...:</Text>-->
+        <!--<Text Name="cari_yil_tuketim" Left="385" Top="950" Right="490" Bottom="1406" FontId="2" Style="r" />-->
+
+        <!--  -->
+
+        <Text Name="" Left="0" Top="970" Right="220" Bottom="1560" FontId="2" Style="l">Aktif Tüketim......:</Text>
+        <Text Name="s10_fark" Left="175" Top="970" Right="340" Bottom="1560" FontId="2" Style="r" />
+        <Text Name="s10_birim_fiyat" Left="330" Top="970" Right="510" Bottom="1560" FontId="2" Style="r" />
+        <Text Name="s10_tuketim_bedeli" Left="490" Top="970" Right="660" Bottom="1560" FontId="2" Style="r" />
+
+        <Text Name="" Left="0" Top="990" Right="220" Bottom="1590" FontId="2" Style="l">Gündüz Tüketim..:</Text>
+        <Text Name="s11_fark" Left="175" Top="990" Right="340" Bottom="1590" FontId="2" Style="r" />
+        <Text Name="s11_birim_fiyat" Left="330" Top="990" Right="510" Bottom="1590" FontId="2" Style="r" />
+        <Text Name="s11_tuketim_bedeli" Left="490" Top="990" Right="630" Bottom="1590" FontId="2" Style="r" />
+
+        <Text Name="" Left="0" Top="1010" Right="220" Bottom="1620" FontId="2" Style="l">Puant Tüketim....:</Text>
+        <Text Name="s12_fark" Left="175" Top="1010" Right="340" Bottom="1620" FontId="2" Style="r" />
+        <Text Name="s12_birim_fiyat" Left="330" Top="1010" Right="510" Bottom="1620" FontId="2" Style="r" />
+        <Text Name="s12_tuketim_bedeli" Left="490" Top="1010" Right="630" Bottom="1620" FontId="2" Style="r" />
+
+        <Text Name="" Left="0" Top="1030" Right="220" Bottom="1650" FontId="2" Style="l">Gece Tüketim......:</Text>
+        <Text Name="s13_fark" Left="175" Top="1030" Right="340" Bottom="1650" FontId="2" Style="r" />
+        <Text Name="s13_birim_fiyat" Left="330" Top="1030" Right="510" Bottom="1650" FontId="2" Style="r" />
+        <Text Name="s13_tuketim_bedeli" Left="490" Top="1030" Right="630" Bottom="1650" FontId="2" Style="r" />
+
+        <Text Name="" Left="0" Top="1050" Right="220" Bottom="1680" FontId="2" Style="l">Endüktif Tüketim.:</Text>
+        <Text Name="s2_fark" Left="175" Top="1050" Right="340" Bottom="1680" FontId="2" Style="r" />
+        <Text Name="s2_birim_fiyat" Left="330" Top="1050" Right="510" Bottom="1680" FontId="2" Style="r" />
+        <Text Name="s2_tuketim_bedeli" Left="490" Top="1050" Right="630" Bottom="1680" FontId="2" Style="r" />
+
+        <Text Name="" Left="0" Top="1070" Right="220" Bottom="1710" FontId="2" Style="l">Kapasitif Tüketim:</Text>
+        <Text Name="s3_fark" Left="175" Top="1070" Right="340" Bottom="1710" FontId="2" Style="r" />
+        <Text Name="s3_birim_fiyat" Left="330" Top="1070" Right="510" Bottom="1710" FontId="2" Style="r" />
+        <Text Name="s3_tuketim_bedeli" Left="490" Top="1070" Right="630" Bottom="1710" FontId="2" Style="r" />
+
+        <Text Name="" Left="0" Top="1110" Right="220" Bottom="1740" FontId="2" Style="l">ELK.Tüketim Bed..:</Text>
+        <Text Name="aktif_tuketim" Left="175" Top="1110" Right="340" Bottom="1740" FontId="2" Style="r" />
+<!--        <Text Name="aktif_tuketim" Left="175" Top="1090" Right="630" Bottom="1740" FontId="2" Style="r" />-->
+
+
+        <Text Name="" Left="320" Top="1110" Right="220" Bottom="2200" FontId="2" Style="l">Trf Brm Fyt Fark:</Text>
+        <Text Name="psh_bedeli" Left="485" Top="1110" Right="350" Bottom="2200" FontId="2" Style="c" />
+
+        <Text Name="" Left="320" Top="1130" Right="220" Bottom="1740" FontId="2" Style="l">Dağıtım Bedeli..:</Text>
+        <!--<Text Name="dagitim_birim_fiyat" Left="485" Top="1130" Right="510" Bottom="1740" FontId="2" Style="r" />-->
+        <Text Name="dagitim_bedeli" Left="485" Top="1130" Right="630" Bottom="1740" FontId="2" Style="r" />
+
+        <Text Name="" Left="320" Top="1150" Right="220" Bottom="1770" FontId="2" Style="l">Güç Bedeli........:</Text>
+        <Text Name="guc_birim_fiyat" Left="485" Top="1150" Right="510" Bottom="1770" FontId="2" Style="r" />
+        <Text Name="guc_bedeli" Left="485" Top="1130" Right="630" Bottom="1770" FontId="2" Style="r" />
+
+        <Text Name="" Left="0" Top="1130" Right="220" Bottom="1800" FontId="2" Style="l">Güç Aşım Bedeli...:</Text>
+        <Text Name="guc_asimi_birim_fiyat" Left="175" Top="1130" Right="510" Bottom="1800" FontId="2" Style="r" />
+        <Text Name="guc_asimi_bedeli" Left="175" Top="1130" Right="630" Bottom="1800" FontId="2" Style="r" />
+
+        <Text Name="" Left="0" Top="1150" Right="220" Bottom="1830" FontId="2" Style="l">Sis.Kul Bed..........:</Text>
+        <Text Name="siskul_bedeli" Left="175" Top="1150" Right="630" Bottom="1830" FontId="2" Style="r" />
+
+        <Text Name="" Left="320" Top="1170" Right="220" Bottom="1860" FontId="2" Style="l">Kesme Bağlama:</Text>
+        <Text Name="acma_kapama_bedeli" Left="485" Top="1170" Right="310" Bottom="1860" FontId="2" Style="r" />
+
+        <Text Name="" Left="0" Top="1170" Right="550" Bottom="1860" FontId="2" Style="l">Syç.Knt.Bed.........:</Text>
+        <Text Name="sayac_ayar_bedeli" Left="175" Top="1170" Right="710" Bottom="1860" FontId="2" Style="r" />
+
+        <Text Name="" Left="320" Top="1190" Right="220" Bottom="1950" FontId="2" Style="l">Gecikme Bedeli.:</Text>
+        <Text Name="devir_gecikme" Left="485" Top="1190" Right="300" Bottom="1950" FontId="2" Style="r" />
+
+        <Text Name="" Left="0" Top="1190" Right="220" Bottom="1980" FontId="2" Style="l">Fatura Tutarı........:</Text>
+        <Text Name="fatura_tutar" Left="155" Top="1190" Right="350" Bottom="1980" FontId="2" Style="r" />
+
+        <Text Name="" Left="320" Top="1210" Right="550" Bottom="1980" FontId="2" Style="l">Mahsup...........:</Text>
+        <Text Name="mahsup" Left="485" Top="1210" Right="710" Bottom="1980" FontId="2" Style="r" />
+
+        <Text Name="" Left="0" Top="1210" Right="220" Bottom="2010" FontId="2" Style="l">Yuvarlama............:</Text>
+        <Text Name="yuvarlama" Left="175" Top="1210" Right="350" Bottom="2010" FontId="2" Style="r" />
+
+        <Text Name="" Left="320" Top="1230" Right="550" Bottom="2010" FontId="2" Style="l">Devir Yuv.........:</Text>
+        <Text Name="devir_yuvarlama" Left="485" Top="1230" Right="710" Bottom="2010" FontId="2" Style="r" />
+
+        <Text Name="" Left="0" Top="1400" Right="220" Bottom="1890" FontId="1" Style="l">Enerji Fonu:</Text>
+        <Text Name="ee_fonu" Left="185" Top="1400" Right="340" Bottom="1890" FontId="1" Style="r" />
+        <Text Name="" Left="0" Top="1420" Right="550" Bottom="1890" FontId="1" Style="l">TRT Payı:</Text>
+        <Text Name="trt_payi" Left="185" Top="1420" Right="710" Bottom="1890" FontId="1" Style="r" />
+
+        <Text Name="" Left="350" Top="1400" Right="220" Bottom="1920" FontId="1" Style="l">B.T.V.:</Text>
+        <Text Name="belediye_vergisi" Left="430" Top="1400" Right="300" Bottom="1920" FontId="1" Style="r" />
+        <Text Name="" Left="350" Top="1420" Right="550" Bottom="1920" FontId="1" Style="l">K.D.V.:</Text>
+        <Text Name="toplam_kdv" Left="430" Top="1420" Right="710" Bottom="1920" FontId="1" Style="r" />
+
+        <Text Name="" Left="0" Top="1700" Right="550" Bottom="2010" FontId="2" Style="l">2022</Text>
+        <Text Name="yillik_tuketim" Left="250" Top="1700" Right="710" Bottom="2010" FontId="2" Style="r" />
+        <Text Name="yillik_ortalama" Left="480" Top="1700" Right="710" Bottom="2010" FontId="2" Style="r" />
+        <Text Name="" Left="0" Top="1720" Right="550" Bottom="2010" FontId="2" Style="l">2023</Text>
+        <Text Name="cari_yil_tuketim" Left="250" Top="1720" Right="710" Bottom="2010" FontId="2" Style="r" />
+        <Text Name="cari_yil_ortalama" Left="480" Top="1720" Right="710" Bottom="2010" FontId="2" Style="r" />
+
+        <!--  -->
+
+        <!--<Text Name="odenecek_tutar" Left="300" Top="1540" Right="660" Bottom="2065" FontId="5" Style="c"  Bold="true" />-->
+        <!--<Text Name="" Left="320" Top="1540" Right="710" Bottom="2065" FontId="5" Style="c"  Bold="true" >TL</Text>-->
+        <!--<Text Name="son_odeme_tarihi" Left="300" Top="1600" Right="660" Bottom="2160" FontId="4" Style="c"  Bold="true" />-->
+
+        <Text Name="" Left="0" Top="1230" Right="220" Bottom="2200" FontId="2" Style="l">Geçmiş Borç........:</Text>
+        <Text Name="borc_tutar" Left="175" Top="1230" Right="350" Bottom="2200" FontId="2" Style="c" />
+
+
+        <!--
+                <Text Name="" Left="0" Top="1670" Right="220" Bottom="2230" FontId="2" Style="l">Taahhüdün Süresi.:</Text>
+                <Text Name="taahhut_suresi" Left="235" Top="1670" Right="350" Bottom="2230" FontId="2" Style="c" />
+
+                <Text Name="" Left="320" Top="1670" Right="520" Bottom="2230" FontId="2" Style="l">Taahhüt Son Tarih:</Text>
+                <Text Name="taahhut_bitis" Left="500" Top="1670" Right="700" Bottom="2230" FontId="2" Style="c" />
+
+                <Text Name="" Left="0" Top="1690" Right="220" Bottom="2260" FontId="2" Style="l">Sürenin Kaçıncı Ayı:</Text>
+                <Text Name="taahhut_ay" Left="235" Top="1690" Right="350" Bottom="2260" FontId="2" Style="c" />
+
+                <Text Name="" Left="320" Top="1690" Right="520" Bottom="2260" FontId="2" Style="l">Cayma Şartı.........:</Text>
+                <Text Name="cayma_sarti" Left="500" Top="1690" Right="700" Bottom="2260" FontId="2" Style="c" />
+        -->
+        <!-- <Text Name="ISEMRI_MESAJ" Left="0" Top="1690" Right="220" Bottom="2230" FontId="2" Style="l" />-->
+        <Text Name="ISEMRI_MESAJ" Left="0" Top="1720" Right="700" Bottom="2560" FontId="1" Style="l" />
+        <Text Name="mesaj_1" Left="0" Top="1740" Right="710" Bottom="2300" FontId="1" Style="l" />
+        <Text Name="mesaj_2" Left="0" Top="1770" Right="710" Bottom="2330" FontId="1" Style="l" />
+        <Text Name="mesaj_3" Left="0" Top="1790" Right="710" Bottom="2330" FontId="1" Style="l" />
+        <!--<Text Name="ISEMRI_MESAJ" Left="" Top="1800" Right="700" Bottom="2535" FontId="6" Style="l" /> -->
+        <Text Name="PUANT_MESAJ"  Left="0" Top="1810" Right="700" Bottom="2535" FontId="2" Style="l" />
+        <!--<Text Name="" Left="0" Top="1810" Right="710" Bottom="2330" FontId="2" Style="l">Ulusal fiyatlarda değişikliklerinin olduğu fatura dönemlerinde</Text>-->
+        <!--<Text Name="" Left="0" Top="1830" Right="710" Bottom="2330" FontId="2" Style="l">faturalarınız, ilgili tüketim dönemi için geçerli olan ve ulusal fiyatlar</Text>-->
+        <!--<Text Name="" Left="0" Top="1850" Right="710" Bottom="2330" FontId="2" Style="l">tablosunda yer alan birim bedeller ile kısıt hesabı uygulanarak</Text>-->
+        <!--<Text Name="" Left="0" Top="1870" Right="710" Bottom="2330" FontId="2" Style="l">düzenlenmektedir. Faturalarınızı EPDK’nın web sitesinde yer alan</Text>-->
+        <!--<Text Name="" Left="0" Top="1890" Right="710" Bottom="2330" FontId="2" Style="l">“Fatura Hesaplama” bölümünden kontrol edebilirsiniz.</Text>-->
+        <!--        <Text Name="" Left="0" Top="1810" Right="710" Bottom="2330" FontId="2" Style="l">Sayın Müşterimiz, çağrı merkezimiz ile yapacağınız görüşmelerde</Text>-->
+        <!--		<Text Name="" Left="0" Top="1830" Right="710" Bottom="2330" FontId="2" Style="l">TESİSAT/ABONE numaranızı paylaşmanız sizlere daha hızlı ve</Text>-->
+        <!--		<Text Name="" Left="0" Top="1850" Right="710" Bottom="2330" FontId="2" Style="l">kaliteli hizmet vermemizi sağlayacaktır.</Text>-->
+
+        <!--Dikkat! barkod koordinatları tam uyuşmuyor değiştirirken dikkat edilmesi gerekiyor-->
+        <!--<Barcode Name="tesisat_no" Left="30" Top="1890" Right="700" Bottom="2530" FontId="1" Type="CODE128" Height="30" Ratio="2" Style="l" />-->
+        <Barcode Name="tesisat_no" Left="30" Top="1900" Right="700" Bottom="2590" FontId="1" Type="CODE128" Height="30" Ratio="2" Style="l" />
+
+
+    </PageItems>
+
+</PrintConfig>

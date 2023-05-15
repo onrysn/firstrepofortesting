@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textToplam"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="1dp"
+        android:text="T"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/editToplamTam"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textToplam"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/textToplam"
+        android:digits="0123456789"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textToplamNokta"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textToplam"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/editToplamTam"
+        android:text=","
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/editToplamKusurat"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textToplam"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/textToplamNokta"
+        android:digits="0123456789"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textGunduz"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textToplam"
+        android:layout_alignStart="@+id/textToplam"
+        android:layout_alignEnd="@+id/textToplam"
+        android:layout_marginTop="1dp"
+        android:text="T1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/editGunduzTam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textGunduz"
+        android:layout_alignStart="@+id/editToplamTam"
+        android:layout_alignEnd="@+id/editToplamTam"
+        android:digits="0123456789"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textGunduzNokta"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textGunduz"
+        android:layout_alignStart="@+id/textToplamNokta"
+        android:layout_alignEnd="@+id/textToplamNokta"
+        android:text=","
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/editGunduzKusurat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textGunduz"
+        android:layout_alignStart="@+id/editToplamKusurat"
+        android:layout_alignEnd="@+id/editToplamKusurat"
+        android:digits="0123456789"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textPuant"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textGunduz"
+        android:layout_alignStart="@+id/textGunduz"
+        android:layout_alignEnd="@+id/textGunduz"
+        android:layout_marginTop="8dp"
+        android:text="T2"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/editPuantTam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textPuant"
+        android:layout_alignStart="@+id/editToplamTam"
+        android:layout_alignEnd="@+id/editToplamTam"
+        android:digits="0123456789"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textPuantNokta"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textPuant"
+        android:layout_alignStart="@+id/textToplamNokta"
+        android:layout_alignEnd="@+id/textToplamNokta"
+        android:text=","
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/editPuantKusurat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textPuant"
+        android:layout_alignStart="@+id/editToplamKusurat"
+        android:layout_alignEnd="@+id/editToplamKusurat"
+        android:digits="0123456789"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textGece"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textPuant"
+        android:layout_alignStart="@+id/textPuant"
+        android:layout_alignEnd="@+id/textPuant"
+        android:layout_marginTop="8dp"
+        android:text="T3"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/editGeceTam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textGece"
+        android:layout_alignStart="@+id/editToplamTam"
+        android:layout_alignEnd="@+id/editToplamTam"
+        android:digits="0123456789"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textGeceNokta"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textGece"
+        android:layout_alignStart="@+id/textToplamNokta"
+        android:layout_alignEnd="@+id/textToplamNokta"
+        android:text=","
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/editGeceKusurat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textGece"
+        android:layout_alignStart="@+id/editToplamKusurat"
+        android:layout_alignEnd="@+id/editToplamKusurat"
+        android:digits="0123456789"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textEnduktif"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textGece"
+        android:layout_alignStart="@+id/textGece"
+        android:layout_alignEnd="@+id/textGece"
+        android:layout_marginTop="8dp"
+        android:text="Reaktif"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/editEnduktifTam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textEnduktif"
+        android:layout_alignStart="@+id/editToplamTam"
+        android:layout_alignEnd="@+id/editToplamTam"
+        android:digits="0123456789"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textEnduktifNokta"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textEnduktif"
+        android:layout_alignStart="@+id/textToplamNokta"
+        android:layout_alignEnd="@+id/textToplamNokta"
+        android:text=","
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/editEnduktifKusurat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textEnduktif"
+        android:layout_alignStart="@+id/editToplamKusurat"
+        android:layout_alignEnd="@+id/editToplamKusurat"
+        android:digits="0123456789"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textKapasitif"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textEnduktif"
+        android:layout_alignStart="@+id/textEnduktif"
+        android:layout_alignEnd="@+id/textEnduktif"
+        android:layout_marginTop="8dp"
+        android:text="Kapasitif"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/editKapasitifTam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textKapasitif"
+        android:layout_alignStart="@+id/editToplamTam"
+        android:layout_alignEnd="@+id/editToplamTam"
+        android:digits="0123456789"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textKapasitifNokta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textKapasitif"
+        android:layout_alignStart="@+id/textToplamNokta"
+        android:layout_alignEnd="@+id/textToplamNokta"
+        android:text=","
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/editKapasitifKusurat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textKapasitif"
+        android:layout_alignStart="@+id/editToplamKusurat"
+        android:layout_alignEnd="@+id/editToplamKusurat"
+        android:digits="0123456789"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textDemand"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textKapasitif"
+        android:layout_alignStart="@+id/textKapasitif"
+        android:layout_alignEnd="@+id/textKapasitif"
+        android:layout_marginTop="8dp"
+        android:text="Demand"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/editDemandTam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textDemand"
+        android:layout_alignStart="@+id/editToplamTam"
+        android:layout_alignEnd="@+id/editToplamTam"
+        android:digits="0123456789"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textDemandNokta"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textDemand"
+        android:layout_alignStart="@+id/textToplamNokta"
+        android:layout_alignEnd="@+id/textToplamNokta"
+        android:text=","
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/editDemandKusurat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textDemand"
+        android:layout_alignStart="@+id/editToplamKusurat"
+        android:layout_alignEnd="@+id/editToplamKusurat"
+        android:digits="0123456789"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/textDemand"
+        android:layout_alignStart="@+id/textDemand"
+        android:layout_alignEnd="@+id/textDemand"
+        android:layout_marginTop="8dp"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

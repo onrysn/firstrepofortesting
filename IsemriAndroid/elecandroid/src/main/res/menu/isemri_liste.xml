@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.medas.android.IsemriListeActivity" >
+
+     <item
+        android:id="@+id/sirala"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+         android:textSize="12dp"
+        android:title="Sırala"/>
+    <item
+        android:id="@+id/guncelle"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+          android:textSize="12dp"
+        android:title="Güncelle"/>
+    <item
+        android:id="@+id/hepsini_guncelle"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:textSize="12dp"
+        android:title="Atanmış Emir Getir"/>
+      <item
+        android:id="@+id/harita"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+          android:textSize="12dp"
+        android:title="Harita"/>
+    <item
+        android:id="@+id/gonder"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:textSize="12dp"
+        android:title="Kuyruktan Gönder" />
+
+</menu>

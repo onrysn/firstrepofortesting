@@ -1,0 +1,366 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mobit.elec.mbs.medas.android.SayacTakmaActivity2" >
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/shape"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/yeniSayac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="Yeni Sayaç" />
+
+        <RadioButton
+            android:id="@+id/eskiSayac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:textSize="12dp"
+            android:text="Eski Sayaç" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/radio"
+        android:layout_below="@+id/radio"
+        android:layout_marginTop="11dp"
+        android:text="Marka Seçim:"
+        android:textSize="@dimen/elecTextSize" />
+    
+     <TextView
+        android:id="@+id/markaSecim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignEnd="@+id/editSayacNo"
+        android:layout_alignStart="@+id/editSayacNo"
+        android:background="@drawable/shape"
+        android:focusable="false"
+        android:textSize="@dimen/elecTextSize"
+        android:hint="sayaç marka seçin..." />
+     
+     <TextView
+        android:id="@+id/textCoktanSecmeli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="7dp"
+        android:text="Sayaç No:"
+        android:textSize="@dimen/elecTextSize" />
+
+    <EditText
+        android:id="@+id/editSayacNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textCoktanSecmeli"
+        android:layout_marginStart="100dp"
+        android:layout_toEndOf="@+id/textCoktanSecmeli"
+        android:ems="10"
+        android:hint="sayaç numarası girin..."
+        android:inputType="number"
+        android:maxLength="9"
+        android:singleLine="true"
+        android:textSize="@dimen/elecTextSize">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textCoktanSecmeli"
+        android:layout_below="@+id/textCoktanSecmeli"
+        android:layout_marginTop="10dp"
+        android:text="Sayaç No:"
+        android:textSize="@dimen/elecTextSize" />
+    
+    <TextView
+        android:id="@+id/textSayacNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView13"
+        android:layout_alignEnd="@+id/editSayacNo"
+        android:layout_alignStart="@+id/editSayacNo"
+        android:text=""
+        android:textSize="@dimen/elecTextSize"
+        android:background="@drawable/shape" />
+    
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView13"
+        android:layout_below="@+id/textView13"
+        android:layout_marginTop="11dp"
+        android:text="Sayaç Marka:"
+        android:textSize="@dimen/elecTextSize" />
+
+    <TextView
+        android:id="@+id/textMarka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView12"
+        android:layout_alignEnd="@+id/editSayacNo"
+        android:layout_alignStart="@+id/editSayacNo"
+        android:background="@drawable/shape"
+        android:focusable="false"
+        android:textSize="@dimen/elecTextSize" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView12"
+        android:layout_below="@+id/textView12"
+        android:layout_marginTop="11dp"
+        android:text="Sayaç Kodu:"
+        android:textSize="@dimen/elecTextSize" />
+
+    <TextView
+        android:id="@+id/textSayacKodu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignEnd="@+id/editSayacNo"
+        android:layout_alignStart="@+id/editSayacNo"
+        android:background="@drawable/shape"
+        android:focusable="false"
+        android:textSize="@dimen/elecTextSize" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="11dp"
+        android:text="Sayaç Cinsi:"
+        android:textSize="@dimen/elecTextSize" />
+
+    <TextView
+        android:id="@+id/textSayacCinsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignEnd="@+id/editSayacNo"
+        android:layout_alignStart="@+id/editSayacNo"
+        android:background="@drawable/shape"
+        android:textSize="@dimen/elecTextSize" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="11dp"
+        android:text="Hane Sayısı:"
+        android:textSize="@dimen/elecTextSize" />
+
+    <TextView
+        android:id="@+id/textHaneSayisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignEnd="@+id/editSayacNo"
+        android:layout_alignStart="@+id/editSayacNo"
+        android:background="@drawable/shape"
+        android:textSize="@dimen/elecTextSize" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="11dp"
+        android:text="Faz Sayısı:"
+        android:textSize="@dimen/elecTextSize" />
+
+    <TextView
+        android:id="@+id/textFazSayisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignEnd="@+id/editSayacNo"
+        android:layout_alignStart="@+id/editSayacNo"
+        android:background="@drawable/shape"
+        android:textSize="@dimen/elecTextSize" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_below="@+id/textView7"
+        android:layout_marginTop="11dp"
+        android:text="Gerilim:"
+        android:textSize="@dimen/elecTextSize" />
+
+    <TextView
+        android:id="@+id/textGerilim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView8"
+        android:layout_alignEnd="@+id/editSayacNo"
+        android:layout_alignStart="@+id/editSayacNo"
+        android:background="@drawable/shape"
+        android:textSize="@dimen/elecTextSize" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_below="@+id/textView8"
+        android:layout_marginTop="11dp"
+        android:text="Mülkiyet:"
+        android:textSize="@dimen/elecTextSize" />
+
+    <TextView
+        android:id="@+id/textMulkiyet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView10"
+        android:layout_alignEnd="@+id/editSayacNo"
+        android:layout_alignStart="@+id/editSayacNo"
+        android:background="@drawable/shape"
+        android:textSize="@dimen/elecTextSize" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView10"
+        android:layout_below="@+id/textView10"
+        android:layout_marginTop="11dp"
+        android:text="Akım:"
+        android:textSize="@dimen/elecTextSize" />
+
+    <TextView
+        android:id="@+id/textAkim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView9"
+        android:layout_alignEnd="@+id/editSayacNo"
+        android:layout_alignStart="@+id/editSayacNo"
+        android:background="@drawable/shape"
+        android:textSize="@dimen/elecTextSize" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_below="@+id/textView9"
+        android:layout_marginTop="11dp"
+        android:text="İmal Yılı:"
+        android:textSize="@dimen/elecTextSize" />
+
+    <TextView
+        android:id="@+id/textImalYili"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignEnd="@+id/editSayacNo"
+        android:layout_alignStart="@+id/editSayacNo"
+        android:background="@drawable/shape"
+        android:textSize="@dimen/elecTextSize" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="11dp"
+        android:text="Mühür Seri/No:"
+        android:textSize="@dimen/elecTextSize" />
+
+    <Spinner
+        android:id="@+id/muhurSeri"
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView11"
+        android:layout_alignStart="@+id/editSayacNo"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:maxLength="1"
+        android:nextFocusForward="@+id/editMuhurNo"
+        android:singleLine="true"
+        android:textSize="@dimen/elecTextSize" />
+
+    <EditText
+        android:id="@+id/editMuhurNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView11"
+        android:layout_toEndOf="@+id/muhurSeri"
+        android:layout_alignEnd="@+id/editSayacNo"
+        android:ems="10"
+        android:hint="mühür no girin..."
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:maxLength="8"
+        android:singleLine="true"
+        android:textSize="@dimen/elecTextSize" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView11"
+        android:layout_below="@+id/textView11"
+        android:layout_marginTop="25dp">
+
+        <Button
+            android:id="@+id/optikOku"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Optik Oku"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/barkod"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Barkod"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/sayacBilgi"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sayaç Bilgi"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/buttonKaydet"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tamam"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+</RelativeLayout>

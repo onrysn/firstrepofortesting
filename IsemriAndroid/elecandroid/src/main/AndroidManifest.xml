@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mobit.elec.android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application android:allowBackup="true" >
+
+
+        <receiver
+            android:name=".LoginActivityReceiver"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".LoginServiceReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".LoginService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <uses-library
+            android:name="tr.com.mobit.eemr"
+            android:required="false" />
+
+        <activity
+            android:name=".FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_fullscreen"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateUnchanged|adjustPan" />
+        <activity
+            android:name=".IsemriMenuActivity"
+            android:label="@string/title_activity_menu" />
+        <activity
+            android:name=".IsemriIndirActivity"
+            android:label="@string/title_activity_isemri_indir" />
+        <activity
+            android:name=".IsemriIndexActivity"
+            android:label="@string/title_activity_index" />
+        <activity
+            android:name=".SunucuAyarActivity"
+            android:label="@string/title_activity_sunucu_ayar" />
+        <activity
+            android:name=".AboneDurumGirisActivity"
+            android:label="@string/title_activity_abone_durum_giris" />
+        <activity
+            android:name=".BluetoothDiscoverActivity"
+            android:label="@string/title_activity_bluetooth_discover" />
+        <activity
+            android:name=".YaziciAyarActivity"
+            android:label="@string/title_activity_yazici_ayar" />
+        <activity
+            android:name=".SendFileDemo"
+            android:label="@string/title_activity_yazici_ayar" />
+        <activity
+            android:name=".OptikPortAyarActivity"
+            android:label="@string/title_activity_optik_port_ayar" />
+        <activity
+            android:name=".AyarlarActivity"
+            android:label="@string/title_activity_ayarlar" />
+        <activity
+            android:name=".IsemriListeActivity"
+            android:label="@string/title_activity_isemri_liste" />
+        <activity
+            android:name=".IsemriDetayActivity"
+            android:label="@string/title_activity_isemri_detay" />
+        <activity
+            android:name=".TesisatDetayActivity"
+            android:label="@string/title_activity_tesisat_detay" />
+        <activity
+            android:name=".TesisatSorguActivity"
+            android:label="@string/title_activity_tesisat_sorgu" />
+        <activity
+            android:name=".SayacDurumGirisActivity"
+            android:label="@string/title_activity_sayac_durum_giris" />
+        <activity
+            android:name=".MuhurSokmeActivity"
+            android:label="@string/title_activity_muhur_sokme" />
+        <activity
+            android:name=".MuhurTakmaActivity"
+            android:label="@string/title_activity_muhur_takma" />
+        <activity
+            android:name=".OkumaMenuActivity"
+            android:label="@string/title_activity_okuma_menu" />
+        <activity
+            android:name=".TesisatYukleActivity"
+            android:label="@string/title_activity_tesisat_yukle" />
+        <activity
+            android:name=".OkumaYapActivity"
+            android:label="@string/title_activity_okuma_yap" />
+        <activity
+            android:name=".SayacTakmaActivity"
+            android:label="@string/title_activity_sayac_takma" />
+        <activity
+            android:name=".TespitActivity"
+            android:label="@string/title_activity_tespit" />
+        <activity
+            android:name=".ZabitActivity"
+            android:label="@string/title_activity_zabit" />
+        <activity
+            android:name=".IslemListeActivity"
+            android:label="@string/title_activity_islem_liste" />
+        <activity
+            android:name=".EndeksActivity"
+            android:label="@string/title_activity_index" />
+        <activity
+            android:name=".MuhurIslemMenuActivity"
+            android:label="@string/title_activity_muhur_islem" />
+        <activity
+            android:name=".IslemRaporActivity"
+            android:label="@string/title_activity_islem_rapor" />
+        <activity
+            android:name=".SifreDegistirActivity"
+            android:label="@string/title_activity_sifre_degistir" />
+        <activity
+            android:name=".IsemriRaporActivity"
+            android:label="Rapor" />
+        <activity
+            android:name=".SahaIsemriActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="SAHA ISEMRI" />
+        <activity
+            android:name=".AdresTarifActivity"
+            android:label="@string/title_activity_adres_tarif" />
+        <activity
+            android:name=".SendingListActivity"
+            android:label="İşlem Liste" />
+        <activity
+            android:name=".MuhurSorguActivity"
+            android:label="Mühür Sorgulama" />
+        <activity
+            android:name=".OkumaRaporActivity"
+            android:label="Okuma Raporu" />
+    </application>
+
+</manifest>

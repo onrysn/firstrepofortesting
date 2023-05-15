@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">Settings</string>
+    <string name="yes">Evet</string>
+    <string name="no">Hayır</string>
+    <string name="ok">Tamam</string>
+    <string name="cancel">İptal</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="title_activity_camera">Forograf Çekme</string>
+    <string name="title_activity_update">Yazılım Güncelleme</string>
+    <string name="title_activity_gps">GpsActivity</string>
+    <string name="title_activity_web_browser">Web Tarayıcı</string>
+
+</resources>

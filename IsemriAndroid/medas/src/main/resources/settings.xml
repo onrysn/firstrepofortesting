@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <Parameter Name="ver" Value="Ver. 8.1.0.1"></Parameter>
+    
+    <Parameter Name="Host" Value="10.23"></Parameter>
+    <Parameter Name="Port" Value="12"></Parameter>
+    <Parameter Name="Apn" Value="mes"></Parameter>
+    <!--  <Parameter Name="servVer" Value="1117"></Parameter>-->
+    <Parameter Name="servVer" Value="11"></Parameter>
+
+    <Parameter Name="verURL" Value="ftp://tablet_firma:Mb!t4b*2@/versiyon/versiyon.txt"></Parameter>
+    <Parameter Name="appURL" Value="ftp://tablet_firma:Mb!t4b*2@/versiyon/medasAndroid.apk"></Parameter>
+    <Parameter Name="verCheckPeriod" Value="3600000"></Parameter>
+
+    <!--
+    <Parameter Name="Application" Value="mobit.elec.mbs.MbsApplication"></Parameter>
+    -->
+    <Parameter Name="Server" Value="mobit.elec.mbs.MbsServer"></Parameter>
+
+    <!--
+       <Printer Name="0" PrinterNo="0" Value="com.mobit.BluetoothPrinter" Emulation="mobit.printer.bixolon.BixolonAndroid"></Printer>
+
+
+       <Printer Name="1" PrinterNo="1" Value="com.mobit.BluetoothPrinter"  Emulation="mobit.printer.bixolon.BixolonAndroid"></Printer>
+      -->
+
+       <!--
+       <Printer Name="0" PrinterNo="0" Value="com.mobit.BluetoothPrinter" Emulation="mobit.printer.bixolon.Bixolon"></Printer>
+       <Printer Name="1" PrinterNo="1" Value="com.mobit.BluetoothPrinter"  Emulation="mobit.printer.bixolon.Bixolon"></Printer>
+       -->
+
+    <!--
+    <Printer Name="0" PrinterNo="0" Value="com.mobit.BluetoothPrinter" Emulation="mobit.printer.CPCL"></Printer>
+    <Printer Name="1" PrinterNo="1" Value="com.mobit.BluetoothPrinter"  Emulation="mobit.printer.CPCL"></Printer>
+    -->
+
+        <Printer Name="0" PrinterNo="0" Value="com.mobit.BluetoothPrinter" Emulation="mobit.printer.bixolon.CPCL"></Printer>
+        <Printer Name="1" PrinterNo="1" Value="com.mobit.BluetoothPrinter"  Emulation="mobit.printer.bixolon.CPCL"></Printer>
+
+
+
+        <PrintForm Name= "perakende_form" Value="perakende_form" File = "perakende_form" printerNo="0"></PrintForm>
+        <PrintForm Name= "perakende_kdm_form" Value="perakende_kdm_form" File = "perakende_kdm_form" printerNo="0"></PrintForm>
+        <PrintForm Name= "okuma_bildirim_form" Value="okuma_bildirim_form" File="okuma_bildirim_form" printerNo="0"></PrintForm>
+        <PrintForm Name= "dagitim_form" Value="dagitim_form" File="dagitim_form" printerNo="0"></PrintForm>
+        <PrintForm Name= "ihbar_form" Value="ihbar_form" File="ihbar_form" printerNo="0"></PrintForm>
+        <PrintForm Name= "acma_form" Value="bl" File="acma_form" printerNo="0"></PrintForm>
+        <PrintForm Name= "kesme_form2" Value="kesme_form2" File="kesme_form2" printerNo="0"></PrintForm>
+        <PrintForm Name= "kesme_form3" Value="kesme_form3" File="kesme_form3" printerNo="0"></PrintForm>
+        <PrintForm Name= "kesme_form_luyalt" Value="kesme_form_luyalt" File="kesme_form_luyalt" printerNo="0"></PrintForm>
+        <PrintForm Name= "ack_form" Value="ack_form" File="ack_form2" printerNo="0"></PrintForm>
+        <PrintForm Name= "sayac_degistirme_form" Value="sayac_degistirme_form" File="sayac_degistirme_form" printerNo="0"></PrintForm>
+        <PrintForm Name= "sayac_takma_form" Value="sayac_takma_form" File="sayac_takma_form" printerNo="0"></PrintForm>
+        <PrintForm Name= "kesme_ihbar_form" Value="kesme_ihbar_form" File="kesme_ihbar_form" printerNo="0"></PrintForm>
+        <PrintForm Name= "aysonu_form" Value="aysonu_form" File="aysonu_form" printerNo="0"></PrintForm>
+        <PrintForm Name= "aysonu_kdm_form" Value="aysonu_kdm_form" File="aysonu_kdm_form" printerNo="0"></PrintForm>
+        <PrintForm Name= "olcu_devre_akim_var_form" Value="olcu_devre_akim_var_form" File="olcu_devre_akim_var_form" printerNo="0"></PrintForm>
+        <PrintForm Name= "olcu_devre_akim_yok_form" Value="olcu_devre_akim_yok_form" File="olcu_devre_akim_yok_form" printerNo="0"></PrintForm>
+
+
+        <!--
+
+
+        <PrintForm Name= "tah_kes_form" Value="tah_kes_form" File="tah_kes_form" printerNo="0"></PrintForm>
+        <PrintForm Name= "ytu_form" Value="ytu_form" File="ytu_form" printerNo="0"></PrintForm>
+        -->
+
+    
+   
+</resources>

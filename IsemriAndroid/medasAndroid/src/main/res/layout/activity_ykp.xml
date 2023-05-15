@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    tools:context=".YkpActivity">
+
+    <TextView
+        android:id="@+id/txtSayacMarka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="26dp"
+        android:text="Sayac Marka :"
+        android:textSize="12dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtTarihAraligi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtSayacMarka"
+        android:layout_below="@+id/txtSayacMarka"
+        android:layout_marginTop="41dp"
+        android:text="Tarih Aralığı :"
+        android:textSize="12dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtPeriyot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtTarihAraligi"
+        android:layout_below="@+id/txtTarihAraligi"
+        android:layout_marginTop="38dp"
+        android:text="Okuma Periyodu :"
+        android:textSize="12dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/SayacMarka"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtSayacMarka"
+        android:layout_alignBottom="@+id/txtSayacMarka"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="-21dp"
+        android:layout_toEndOf="@+id/txtSayacMarka"
+        android:ems="10"
+        android:inputType="textCapSentences"
+        android:maxLength="1"
+        android:textSize="12dp">
+
+    </Spinner>
+
+    <EditText
+        android:id="@+id/editTarih2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtTarihAraligi"
+        android:layout_alignStart="@+id/SayacMarka"
+        android:layout_alignBottom="@+id/txtTarihAraligi"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="-12dp"
+        android:focusable="false"
+        android:ems="10"
+        android:maxLength="8"
+        android:hint="(yıl.ay.gun)"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/editTarih1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtTarihAraligi"
+        android:layout_alignStart="@+id/SayacMarka"
+        android:layout_alignBottom="@+id/txtTarihAraligi"
+        android:layout_marginStart="-99dp"
+        android:layout_marginBottom="-13dp"
+        android:ems="10"
+        android:maxLength="8"
+        android:hint="(yıl.ay.gun)"
+        android:focusable="false"
+        android:textSize="12dp" />
+
+    <Spinner
+        android:id="@+id/OkumaPeriyot"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtPeriyot"
+        android:layout_alignBottom="@+id/txtPeriyot"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="124dp"
+        android:layout_marginBottom="-21dp"
+        android:layout_toEndOf="@+id/txtPeriyot"
+        android:textSize="12dp">
+
+    </Spinner>
+
+    <Button
+        android:id="@+id/YkpSettingsKaydet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/OkumaPeriyot"
+        android:layout_below="@+id/OkumaPeriyot"
+        android:layout_marginTop="58dp"
+        android:textSize="12dp"
+        android:text="Kaydet" />
+
+
+</RelativeLayout>

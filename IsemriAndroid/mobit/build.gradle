@@ -1,0 +1,14 @@
+apply plugin: 'java-library'
+
+compileJava.options.encoding = 'UTF-8'
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    api project(':common')
+    api project(':eemr')
+    implementation files('libs/ZSDK_ANDROID_API.jar')
+    implementation files('libs/android-4.1.1.4.jar')
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"

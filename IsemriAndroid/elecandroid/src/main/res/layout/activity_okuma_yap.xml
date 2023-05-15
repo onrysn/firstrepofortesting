@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="mobit.elec.android.OkumaYapActivity"
+     >
+    <LinearLayout
+        android:id="@+id/filtre"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentStart="true"
+    	android:layout_alignParentTop="true"
+    	android:layout_marginTop="0dp"
+    	android:orientation="horizontal">
+    	
+    <TextView
+        android:id="@+id/textTesisatSayacNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="T/S.No:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <EditText
+        android:id="@+id/editTesisatSayacNo"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="10"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+         />
+    
+    <TextView
+        android:id="@+id/textKarneNo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Karne.No:"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+         />
+    
+    <EditText
+        android:id="@+id/editKarneNo"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="10"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+         />
+
+     
+     </LinearLayout>
+	<LinearLayout android:id="@+id/filtrekar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="0dp"
+		android:orientation="horizontal">
+	<TextView
+		android:id="@+id/textKarneler"
+		android:layout_width="350dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="5dp"
+		android:layout_marginTop="45dp"
+		android:background="@drawable/shape"
+		android:textSize="16dp"
+		android:text="Karneler" />
+</LinearLayout>
+	<fragment
+		android:id="@+id/tesisatBilgiFragment"
+		android:name="mobit.elec.android.TesisatBilgiFragment"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/filtre"
+		android:layout_alignStart="@+id/filtre"
+		android:layout_marginStart="-9dp"
+		android:layout_marginTop="24dp" />
+    	
+    <fragment
+        android:name="mobit.elec.android.IndexFragment"
+        android:id="@+id/indexFragment"
+        android:layout_width="250dp" 
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/tesisatBilgiFragment"
+        android:layout_alignStart="@+id/tesisatBilgiFragment" />
+
+	<LinearLayout
+		android:layout_width="348dp"
+		android:layout_height="144dp"
+		android:layout_marginStart="50dp"
+		android:layout_marginTop="220dp"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/optikOku"
+			style="?android:attr/buttonStyleSmall"
+			android:layout_width="70dp"
+			android:layout_height="wrap_content"
+			android:text="Optik" />
+
+		<Button
+			android:id="@+id/elleOku"
+			style="?android:attr/buttonStyleSmall"
+			android:layout_width="70dp"
+			android:layout_height="wrap_content"
+			android:text="Manuel" />
+
+		<Button
+			android:id="@+id/aboneDurum"
+			style="?android:attr/buttonStyleSmall"
+			android:layout_width="70dp"
+			android:layout_height="wrap_content"
+			android:text="A.D.Kodu" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="318dp"
+		android:layout_height="90dp"
+		android:layout_marginStart="50dp"
+		android:layout_marginTop="300dp"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/buttonSonraki"
+			style="?android:attr/buttonStyleSmall"
+			android:layout_width="90dp"
+			android:layout_height="wrap_content"
+			android:text="Sonraki" />
+
+		<Button
+			android:id="@+id/buttonOnceki"
+			style="?android:attr/buttonStyleSmall"
+			android:layout_width="90dp"
+			android:layout_height="wrap_content"
+			android:text="Önceki" />
+
+		<Button
+			android:id="@+id/buttonTamam"
+			style="?android:attr/buttonStyleSmall"
+			android:layout_width="90dp"
+			android:layout_height="wrap_content"
+			android:text="Tamam" />
+	</LinearLayout>
+
+  
+     
+</RelativeLayout>

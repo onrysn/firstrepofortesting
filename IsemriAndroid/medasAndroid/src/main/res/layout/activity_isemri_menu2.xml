@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mobit.elec.android.IsemriMenuActivity"
+    tools:ignore="MergeRootFrame"
+    android:orientation="vertical" >
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@drawable/eleclogohigh_half_trans"
+
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cikis"
+            android:minHeight="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buton_arkaplan_kirmizi"
+            android:text="Çıkış"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="12dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp"
+            android:textAllCaps="false"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mobit.elec.mbs.medas.android"
+    android:versionCode="7">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="true" /> <!-- Google play service -->
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="mobit.android.xMyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/medaslogo"
+        android:label="Medaş İş Emri"
+        android:theme="@style/medasTheme">
+        <activity android:name=".OsosSoruActivity"></activity>
+        <activity android:name=".OrtakTrafoActivity" />
+        <activity
+            android:name=".OlcuDevreActivity"
+            android:label="Olcu Devre Formu" />
+        <activity
+            android:name=".YkpActivity"
+            android:label="Yük Profil Okuma" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCP0kxu7HNPEZP_S5Mq2JypOyViOxlDX2o" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="5089000" />
+
+        <activity android:name="mobit.android.xMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".IsemriMenuActivity2"
+            android:label="@string/title_activity_okuma_yap2"
+            />
+        <activity
+            android:name=".SayacTakmaActivity2"
+            android:label="@string/title_activity_sayac_takma2" />
+        <activity
+            android:name=".SayacTakmaAciklamaActivity"
+            android:label="@string/title_activity_sayac_takma_aciklama" />
+        <activity
+            android:name=".EndeksActivity2"
+            android:label="@string/title_activity_endeks_activity2" />
+        <activity
+            android:name=".KacakGirisActivity"
+            android:label="@string/title_activity_kacak_giris" />
+        <activity
+            android:name=".YikikGirisActivity"
+            android:label="Yıkık Bildirimi" />
+        <activity
+            android:name=".TespitActivity2"
+            android:label="@string/title_activity_tespit2" />
+        <activity
+            android:name=".ZabitActivity2"
+            android:label="@string/title_activity_zabit2" />
+        <activity
+            android:name=".IsemriIndexActivity2"
+            android:label="@string/title_activity_index2"
+            />
+        <activity
+            android:name=".OkumaYapActivity2"
+            android:label="@string/title_activity_okuma_yap2" />
+        <activity android:name=".CameraBarcodeScanActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,356 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/eleclogohigh_half_trans2"
+    tools:context="mobit.elec.mbs.medas.android.KacakGirisActivity" >
+
+    <TextView
+        android:id="@+id/textAdresTarif"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:textSize="12dp"
+        android:text="Adres Tarif :" />
+    
+    <EditText
+        android:id="@+id/editAdresTarif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textAdresTarif"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textAdresTarif"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:textSize="12dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textKacakciUnvan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textAdresTarif"
+        android:layout_alignEnd="@+id/textAdresTarif"
+        android:layout_below="@+id/textAdresTarif"
+        android:layout_marginTop="10dp"
+        android:textSize="12dp"
+        android:text="Kaçakçı Unvan :" />
+    
+    <EditText
+        android:id="@+id/editKacakciUnvan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textKacakciUnvan"
+        android:layout_toEndOf="@+id/textKacakciUnvan"
+        android:layout_alignParentEnd="true"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:textSize="12dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textKacakciTelefon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textAdresTarif"
+        android:layout_alignEnd="@+id/textAdresTarif"
+        android:layout_below="@+id/textKacakciUnvan"
+        android:layout_marginTop="10dp"
+        android:textSize="12dp"
+        android:text="Kaçakçı Telefon:" />
+    
+    <EditText
+        android:id="@+id/editKacakciTelefon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textKacakciTelefon"
+        android:layout_toEndOf="@+id/textKacakciTelefon"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:inputType="phone"
+        android:imeOptions="actionNext"
+        android:textSize="12dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/textKacakciEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textAdresTarif"
+        android:layout_alignEnd="@+id/textAdresTarif"
+        android:layout_below="@+id/textKacakciTelefon"
+        android:layout_marginTop="10dp"
+        android:textSize="12dp"
+        android:text="Kaçakçı E-Mail:" />
+    
+    <EditText
+        android:id="@+id/editKacakciEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textKacakciEmail"
+       android:layout_toEndOf="@+id/textKacakciEmail"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionNext"
+        android:textSize="12dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/textKacakTipi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textAdresTarif"
+        android:layout_alignEnd="@+id/textAdresTarif"
+        android:layout_below="@+id/textKacakciEmail"
+        android:layout_marginTop="10dp"
+        android:textSize="12dp"
+        android:text="Kaçak Tipi:" />
+
+    <TextView
+        android:id="@+id/kacakTipi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textKacakTipi"
+        android:layout_toEndOf="@+id/textKacakTipi"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/shape"
+        android:textSize="12dp"
+         />
+    
+    <TextView
+        android:id="@+id/textIhbarEdenUnvan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textAdresTarif"
+        android:layout_alignEnd="@+id/textAdresTarif"
+        android:layout_below="@+id/textKacakTipi"
+        android:layout_marginTop="15dp"
+        android:textSize="12dp"
+        android:text="İhbar Eden Ünvan:" />
+    
+    <EditText
+        android:id="@+id/editIhbarEdenUnvan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textIhbarEdenUnvan"
+        android:layout_toEndOf="@+id/textIhbarEdenUnvan"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:textSize="12dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/textIhbarEdenTelefon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textAdresTarif"
+        android:layout_alignEnd="@+id/textAdresTarif"
+        android:layout_below="@+id/textIhbarEdenUnvan"
+        android:layout_marginTop="10dp"
+        android:textSize="12dp"
+        android:text="İhbar Eden Telefon:" />
+    
+    <EditText
+        android:id="@+id/editIhbarEdenTelefon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textIhbarEdenTelefon"
+        android:layout_toEndOf="@+id/textIhbarEdenTelefon"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:inputType="phone"
+        android:imeOptions="actionNext"
+        android:textSize="12dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/textIhbarEdenEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textAdresTarif"
+        android:layout_alignEnd="@+id/textAdresTarif"
+        android:layout_below="@+id/textIhbarEdenTelefon"
+        android:layout_marginTop="10dp"
+        android:textSize="12dp"
+        android:text="İhbar Eden E-mail:" />
+    
+    <EditText
+        android:id="@+id/editIhbarEdenEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textIhbarEdenEmail"
+        android:layout_toEndOf="@+id/textIhbarEdenEmail"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionNext"
+        android:textSize="12dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/textTesisatNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textAdresTarif"
+        android:layout_alignEnd="@+id/textAdresTarif"
+        android:layout_below="@+id/textIhbarEdenEmail"
+        android:layout_marginTop="10dp"
+        android:textSize="12dp"
+        android:text="Tesisat No:" />
+    
+    <EditText
+        android:id="@+id/editTesisatNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textTesisatNo"
+        android:layout_toEndOf="@+id/textTesisatNo"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:inputType="number"
+        android:imeOptions="actionNext"
+        android:textSize="12dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/textReferansTesisatNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textAdresTarif"
+        android:layout_alignEnd="@+id/textAdresTarif"
+        android:layout_below="@+id/textTesisatNo"
+        android:layout_marginTop="10dp"
+        android:textSize="12dp"
+        android:text="Referans Tesisat No:" />
+    
+    <EditText
+        android:id="@+id/editReferansTesisatNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textReferansTesisatNo"
+        android:layout_toEndOf="@+id/textReferansTesisatNo"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:inputType="number"
+        android:imeOptions="actionNext"
+        android:textSize="12dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/textDirekNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textAdresTarif"
+        android:layout_alignEnd="@+id/textAdresTarif"
+        android:layout_below="@+id/textReferansTesisatNo"
+        android:layout_marginTop="10dp"
+        android:textSize="12dp"
+        android:text="Direk No:" />
+    
+    <EditText
+        android:id="@+id/editDirekNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textDirekNo"
+        android:layout_toEndOf="@+id/textDirekNo"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:inputType="number"
+        android:imeOptions="actionNext"
+        android:textSize="12dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/textBoxNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textAdresTarif"
+        android:layout_alignEnd="@+id/textAdresTarif"
+        android:layout_below="@+id/textDirekNo"
+        android:layout_marginTop="10dp"
+        android:textSize="12dp"
+        android:text="Box No:" />
+    
+    <EditText
+        android:id="@+id/editBoxNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBaseline="@+id/textBoxNo"
+        android:layout_toEndOf="@+id/textBoxNo"
+        android:ems="10"
+        android:inputType="number"
+        android:imeOptions="actionNext"
+        android:textSize="12dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/textSayacNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textAdresTarif"
+        android:layout_alignEnd="@+id/textAdresTarif"
+        android:layout_below="@+id/textBoxNo"
+        android:layout_marginTop="10dp"
+        android:textSize="12dp"
+        android:text="Sayaç No:" />
+    
+    <EditText
+        android:id="@+id/editSayacNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textSayacNo"
+        android:layout_toEndOf="@+id/textSayacNo"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="12dp"
+        android:imeOptions="actionNext"
+        android:singleLine="true" />
+    <TextView
+        android:id="@+id/textAciklama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textAdresTarif"
+        android:layout_alignEnd="@+id/textAdresTarif"
+        android:layout_below="@+id/textSayacNo"
+        android:layout_marginTop="10dp"
+        android:textSize="12dp"
+        android:text="Açıklama" />
+
+    <EditText
+        android:id="@+id/editAciklama"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textAciklama"
+        android:ems="10"
+        android:textSize="12dp"
+        android:singleLine="true"
+    />
+    
+    <Button
+        android:id="@+id/buttonKaydet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/editAciklama"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:textSize="12dp"
+        android:background="#78c158"
+        android:text="Kaydet"  
+    />
+
+</RelativeLayout>

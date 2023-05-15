@@ -1,0 +1,59 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="libdroidBaseTheme" parent="Theme.AppCompat.Light">
+
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="libdroidTheme" parent="libdroidBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+
+
+        <!--
+    	<item name="colorPrimary">#a0a0a0</item>
+    	<item name="colorPrimaryDark">#b0b0b0</item>
+    	<item name="colorAccent">#808080</item>
+    	 -->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textSize">12dp</item>
+
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/koyu_mavi</item>
+        <item name="colorPrimaryDark">@color/koyu_mavi</item>
+        <item name="android:textColorPrimary">@color/siyah</item>
+
+    </style>
+
+    <style name="optionMenuTextApearance" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textSize">@dimen/libdroidTextSize</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:background">#FFFFFF</item>
+    </style>
+
+    <style name="button">
+        <item name="android:textSize">@dimen/libdroidTextSize</item>
+    </style>
+    <style name="SpinnerThemeLight" >
+        <item name="android:colorBackground">#FFFFFF</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:textColorSecondary">#000000</item>
+        <item name="android:textColorTertiary">#000000</item>
+        <item name="android:textColorPrimaryDisableOnly">#000000</item>
+    </style>
+
+</resources>

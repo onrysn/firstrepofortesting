@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mobit.elec.android.ZabitActivity" >
+
+    <TextView
+        android:id="@+id/textZabitSeri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="26dp"
+        android:textSize="12dp"
+        android:text="Zabıt Seri :"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textZabitNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textZabitSeri"
+        android:layout_below="@+id/textZabitSeri"
+        android:layout_marginTop="41dp"
+        android:textSize="12dp"
+        android:text="Zabıt No :"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textKullanici2Kodu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textZabitNo"
+        android:layout_below="@+id/textZabitNo"
+        android:layout_marginTop="38dp"
+        android:textSize="12dp"
+        android:text="2 nci Kullanıcı Kodu :"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editZabitSeri"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textZabitSeri"
+        android:layout_alignBottom="@+id/textZabitSeri"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="-11dp"
+        android:layout_toRightOf="@+id/textZabitSeri"
+        android:ems="10"
+        android:maxLength="1"
+        android:textSize="12dp">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editZabitNo"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textZabitNo"
+        android:layout_alignLeft="@+id/editZabitSeri"
+        android:layout_alignBottom="@+id/textZabitNo"
+        android:layout_marginBottom="-11dp"
+
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="8"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/editKullanici2Kodu"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textKullanici2Kodu"
+        android:layout_alignLeft="@+id/editZabitSeri"
+        android:layout_alignBottom="@+id/textKullanici2Kodu"
+        android:layout_marginBottom="-11dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/buttonKaydet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editKullanici2Kodu"
+        android:layout_alignLeft="@+id/editKullanici2Kodu"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="33dp"
+        android:text="Kaydet"
+        android:textColor="#fff"
+        android:textSize="12dp"
+        android:background="#78c158" />
+
+</RelativeLayout>

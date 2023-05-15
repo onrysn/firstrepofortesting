@@ -1,0 +1,228 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    tools:context="mobit.elec.android.IsemriIndexActivity" >
+
+    <fragment
+        android:id="@+id/tesisatBilgiFragment"
+        android:name="mobit.elec.android.TesisatBilgiFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/muhurSeriNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tesisatBilgiFragment"
+        android:layout_below="@+id/tesisatBilgiFragment"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textSeri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M.Seri:"
+            android:textSize="12dp"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <Spinner
+            android:id="@+id/muhurSeri"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:ems="10"
+            android:maxLength="1"
+            android:singleLine="true"
+            android:textSize="12dp"
+            android:layout_alignBaseline="@id/textSeri"
+            android:imeOptions="actionNext" />
+
+        <TextView
+            android:id="@+id/textMuhurNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_alignBaseline="@id/muhurSeri"
+            android:text="No:"
+            android:textSize="12dp"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/editMuhurNo"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_alignBaseline="@id/textMuhurNo"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="8"
+            android:singleLine="true"
+            android:textSize="12dp"
+            android:imeOptions="actionNext" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/indexFragment"
+        android:name="mobit.elec.android.IndexFragment2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/muhurSeriNo"
+        android:layout_below="@+id/muhurSeriNo" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tesisatBilgiFragment"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/optikOku"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+
+            android:text="Optik" 
+            android:textSize="12dp"
+            android:textColor="@color/beyaz"
+            android:background="@color/koyu_mavi"/>
+        
+        <Button
+            android:id="@+id/ososOku"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="OSOS"
+            android:layout_marginLeft="5dp"
+            android:textSize="12dp"
+            android:textColor="@color/beyaz"
+            android:background="@color/koyu_mavi"/>
+
+        <Button
+            android:id="@+id/elleOku"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Manuel"
+            android:layout_marginLeft="5dp"
+            android:textSize="12dp"
+            android:textColor="@color/beyaz"
+            android:background="@color/koyu_mavi"/>
+        
+        <Button
+            android:id="@+id/aboneDurum"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="A.D.Kodu" 
+            android:textSize="12dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/beyaz"
+            android:background="@color/koyu_mavi"/>
+        <Button
+            android:id="@+id/haritaokuma"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/location_icon"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tesisatBilgiFragment"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/fotoCek"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Fotograf"
+
+            android:textSize="12dp"
+            android:textColor="@color/beyaz"
+            android:background="@color/koyu_mavi"/>
+
+        <Button
+            android:id="@+id/barkod"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:text="Barkod"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/beyaz"
+            android:background="@color/koyu_mavi"/>
+        <Button
+            android:id="@+id/ykp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:text="Yük Profili"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/beyaz"
+            android:background="@color/koyu_mavi"/>
+        <Button
+            android:id="@+id/gps"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="8dp"
+            android:text="GPS"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/beyaz"
+            android:background="@color/koyu_mavi"/>
+
+        <Button
+            android:id="@+id/ykpBirGunluk"
+            android:visibility="gone"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:text="YKP-BİR GÜN"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/beyaz"
+            android:background="@color/koyu_mavi"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/muhurSeriNo"
+        android:layout_below="@+id/muhurSeriNo"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="245dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/buttonTamam"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:text="Tamam"
+
+            android:textColor="@color/beyaz"
+            android:background="@color/koyu_mavi"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

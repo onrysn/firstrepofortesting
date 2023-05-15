@@ -1,0 +1,12 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <drawable name="bg_list_even">#FF0000</drawable>
+    <drawable name="bg_list_odd">#00FF00</drawable>
+
+
+    <color name="siyah">#171717</color>
+    <color name="beyaz">#FFFFFF</color>
+    <color name="koyu_mavi">#1566E0</color>
+    <color name="acik_mavi">#008AD1</color>
+</resources>

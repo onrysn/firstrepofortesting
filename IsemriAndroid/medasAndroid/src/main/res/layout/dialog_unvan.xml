@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="Unvan Bilgisi Güncelleyiniz"
+        android:textColor="@color/contents_text"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TxtUnvan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:textColorHighlight="@color/colorPrimary"
+        android:textColorLink="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/dUnvan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Unvan Giriniz"
+        android:inputType="text"
+        android:textColorHighlight="@color/colorPrimary"
+        android:textColorLink="@color/colorPrimary" />
+
+
+
+    <EditText
+        android:id="@+id/dTCkimlikno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Tc Kimlik No Giriniz"
+        android:inputType="number"
+        android:textColorHighlight="@color/colorPrimary"
+        android:textColorLink="@color/colorPrimary" />
+
+
+    <EditText
+        android:id="@+id/dVergiNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Vergi No Giriniz"
+        android:inputType="number"
+        android:textColorHighlight="@color/colorPrimary"
+        android:textColorLink="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/btnUnvanBas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:text="Gönder"
+        android:textColor="@android:color/white" />
+</LinearLayout>

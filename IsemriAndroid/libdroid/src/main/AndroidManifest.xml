@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mobit.android"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+
+    <application
+        android:name=".xMyApplication"
+        android:allowBackup="true">
+        <activity android:name=".FotoActivity"></activity>
+
+        <uses-library
+            android:name="tr.com.mobit.eemr"
+            android:required="false" />
+
+        <service
+            android:name=".LocationService"
+            android:enabled="true" />
+        <!--
+        <activity
+            android:name="com.android.settings.ApnSettings"
+            android:label="Apn Ayarlama" >
+        </activity>
+        <activity
+            android:name="mobit.eemr.OpticMeterReadActivity"
+            android:label="Optik Port Okuma" >
+        </activity>
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2" >
+        </activity>
+        -->
+        <activity
+            android:name=".CameraActivity"
+            android:label="Fotograf Çekme"></activity>
+        <activity
+            android:name=".UpdateActivity"
+            android:label="@string/title_activity_update"></activity>
+        <activity
+            android:name=".DetayActivity"
+            android:label="Detay"></activity>
+        <activity
+            android:name=".GpsActivity"
+            android:label="GPS"></activity>
+        <activity
+            android:name=".WebBrowserActivity"
+            android:label="@string/title_activity_web_browser"></activity>
+    </application>
+
+</manifest>

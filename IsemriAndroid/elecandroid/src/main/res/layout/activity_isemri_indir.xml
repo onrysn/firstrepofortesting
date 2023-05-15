@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+	android:background="@drawable/eleclogohigh_half_trans2"
+	tools:context="mobit.elec.android.IsemriIndirActivity" >
+
+	<TextView
+		android:id="@+id/textIslemTipi"
+		android:layout_width="170dp"
+		android:layout_height="30dp"
+		android:background="@drawable/shape"
+		android:padding="5px"
+
+		android:text="Tümü"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:textSize="14dp" />
+
+
+	<TextView
+		android:id="@+id/textAltEmirTuru"
+		android:layout_width="match_parent"
+		android:layout_height="30dp"
+		android:layout_alignBaseline="@+id/textIslemTipi"
+		android:layout_marginStart="10dp"
+		android:layout_toEndOf="@+id/textIslemTipi"
+		android:background="@drawable/shape"
+		android:ems="10"
+		android:padding="5px"
+		android:singleLine="true"
+		android:textSize="14dp"></TextView>
+
+	<TextView
+		android:id="@+id/textKarneTesisatNo"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="60dp"
+		android:text="Karne No/Tesisat No:"
+		android:textSize="14dp" />
+
+	<EditText
+		android:id="@+id/editKarneTesisatNo"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBaseline="@+id/textKarneTesisatNo"
+		android:layout_toEndOf="@+id/textKarneTesisatNo"
+		android:ems="10"
+		android:hint="Karne veya tesisat no..."
+		android:inputType="number"
+		android:maxLength="8"
+		android:textSize="12dp">
+
+		<requestFocus />
+	</EditText>
+    
+    <Button
+        android:id="@+id/buttonKarneIndir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textKarneTesisatNo"
+        android:layout_below="@+id/textKarneTesisatNo"
+        android:layout_marginTop="29dp"
+		android:textSize="12dp"
+        android:text="KARNE İNDİR" />
+    
+     <Button
+        android:id="@+id/buttonTesisatIndir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonKarneIndir"
+        android:layout_toEndOf="@+id/buttonKarneIndir"
+        android:layout_marginStart="10dp"
+		 android:textSize="12dp"
+        android:text="TESİSAT İNDİR" />
+     
+     <Button
+        android:id="@+id/buttonKarneBirak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonTesisatIndir"
+        android:layout_toEndOf="@+id/buttonTesisatIndir"
+        android:layout_marginStart="10dp"
+		 android:textSize="12dp"
+        android:text="KARNE BIRAK" />
+
+	<ListView
+		android:id="@+id/listSerbest"
+		android:layout_width="match_parent"
+		android:layout_height="260dp"
+		android:layout_below="@+id/buttonKarneIndir"
+		android:layout_alignParentStart="true"
+		android:layout_marginTop="20dp"
+		android:background="@drawable/shape"
+		android:choiceMode="singleChoice"
+		android:textSize="12dp"></ListView>
+
+	<Button
+		android:id="@+id/buttonSerbest"
+		android:layout_width="wrap_content"
+		android:layout_height="80dp"
+		android:layout_below="@+id/listSerbest"
+		android:layout_alignStart="@+id/textKarneTesisatNo"
+		android:text="SERBEST İŞ EMRİ"
+		android:textSize="12dp" />
+
+	<Button
+		android:id="@+id/karneListe"
+		android:layout_width="wrap_content"
+		android:layout_height="80dp"
+		android:layout_below="@+id/listSerbest"
+		android:layout_alignBottom="@+id/buttonSerbest"
+		android:layout_marginStart="15dp"
+		android:layout_toEndOf="@+id/buttonSerbest"
+		android:text="Karneler"
+		android:textSize="12dp" />
+
+</RelativeLayout>

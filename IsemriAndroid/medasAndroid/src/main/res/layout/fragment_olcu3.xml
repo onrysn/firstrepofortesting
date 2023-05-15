@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Olcu2Fragment">
+    <android.widget.HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/horizontalScrollView">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Olcu3Fragment">
+
+
+        <TextView
+            android:id="@+id/GerilimTrafoBaslik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gerilim Trafo Bilgileri"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/gt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Gerilim Trafo 1:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/GerilimTrafoBaslik" />
+
+        <TextView
+            android:id="@+id/marka1baslik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marka"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gt1" />
+
+        <Spinner
+            android:id="@+id/gt_1_Marka"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="45dp"
+            app:layout_constraintBottom_toBottomOf="@+id/marka1baslik"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/marka1baslik" />
+
+        <TextView
+            android:id="@+id/oran1baslik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Oran"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintStart_toEndOf="@+id/gt_1_Marka"
+            app:layout_constraintTop_toBottomOf="@+id/gt1" />
+
+        <EditText
+            android:id="@+id/gt_1_Oran"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="45dp"
+            android:ems="8"
+            android:inputType="number"
+            android:nextFocusDown="@+id/gt_1_Orankusur"
+            app:layout_constraintStart_toEndOf="@+id/gt_1_Marka"
+            app:layout_constraintTop_toTopOf="@+id/oran1baslik"
+            app:layout_constraintBottom_toBottomOf="@+id/oran1baslik" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="/"
+            app:layout_constraintStart_toEndOf="@+id/gt_1_Oran"
+            app:layout_constraintTop_toBottomOf="@+id/oran1baslik" />
+
+        <EditText
+            android:id="@+id/gt_1_Orankusur"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="45dp"
+            android:ems="8"
+            android:inputType="number"
+            android:nextFocusDown="@+id/gt_1_seri"
+            app:layout_constraintStart_toEndOf="@+id/textView17"
+            app:layout_constraintTop_toTopOf="@+id/oran1baslik"
+            app:layout_constraintBottom_toBottomOf="@+id/oran1baslik" />
+
+        <TextView
+            android:id="@+id/guc1baslik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Gücü"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintStart_toEndOf="@+id/gt_1_Orankusur"
+            app:layout_constraintTop_toBottomOf="@+id/gt1" />
+
+        <Spinner
+            android:id="@+id/gt_1_gucu"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="45dp"
+            app:layout_constraintStart_toEndOf="@+id/gt_1_Orankusur"
+            app:layout_constraintTop_toTopOf="@+id/guc1baslik"
+            app:layout_constraintBottom_toBottomOf="@+id/guc1baslik" />
+
+        <TextView
+            android:id="@+id/sinif1baslik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Sınıf"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintStart_toStartOf="@+id/gt_1_Marka"
+            app:layout_constraintTop_toBottomOf="@+id/gt_1_Marka" />
+
+        <TextView
+            android:id="@+id/seri1baslik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Seri"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintStart_toStartOf="@+id/oran1baslik"
+            app:layout_constraintTop_toBottomOf="@+id/gt_1_Oran" />
+
+        <EditText
+            android:id="@+id/gt_1_seri"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="45dp"
+            android:ems="8"
+            android:inputType="number"
+            android:nextFocusDown="@+id/gt_1_imalyili"
+            app:layout_constraintStart_toStartOf="@+id/seri1baslik"
+            app:layout_constraintTop_toTopOf="@+id/seri1baslik"
+            app:layout_constraintBottom_toBottomOf="@+id/seri1baslik" />
+
+        <Spinner
+            android:id="@+id/gt_1_sinif"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="45dp"
+            app:layout_constraintStart_toStartOf="@+id/sinif1baslik"
+            app:layout_constraintTop_toTopOf="@+id/sinif1baslik"
+            app:layout_constraintBottom_toBottomOf="@+id/sinif1baslik" />
+
+        <TextView
+            android:id="@+id/imalyil1baslik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="İmal Yılı"
+            app:layout_constraintStart_toStartOf="@+id/guc1baslik"
+            app:layout_constraintTop_toBottomOf="@+id/gt_1_gucu" />
+
+        <EditText
+            android:id="@+id/gt_1_imalyili"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="45dp"
+            android:ems="8"
+            android:inputType="number"
+            android:nextFocusDown="@+id/gt_1_sinifdiger"
+            app:layout_constraintStart_toStartOf="@+id/imalyil1baslik"
+            app:layout_constraintTop_toTopOf="@+id/imalyil1baslik"
+            app:layout_constraintBottom_toBottomOf="@+id/imalyil1baslik" />
+
+        <TextView
+            android:id="@+id/sinif1baslikdigerr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Sınıf(Diger)"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintStart_toStartOf="@+id/gt_1_sinif"
+            app:layout_constraintTop_toBottomOf="@+id/gt_1_sinif" />
+
+        <TextView
+            android:id="@+id/marka1baslikdiger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Marka(Diğer)"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintStart_toStartOf="@+id/oran1baslik"
+            app:layout_constraintTop_toBottomOf="@+id/gt_1_seri" />
+
+        <EditText
+            android:id="@+id/gt_1_Markadiger"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="45dp"
+            android:ems="8"
+            android:inputType="textPersonName"
+            android:nextFocusDown="@+id/gt_1_gucudiger"
+            app:layout_constraintStart_toStartOf="@+id/marka1baslikdiger"
+            app:layout_constraintTop_toTopOf="@+id/marka1baslikdiger"
+            app:layout_constraintBottom_toBottomOf="@+id/marka1baslikdiger" />
+
+        <EditText
+            android:id="@+id/gt_1_sinifdiger"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="45dp"
+            android:inputType="numberDecimal"
+            android:nextFocusDown="@+id/gt_1_Markadiger"
+            app:layout_constraintStart_toStartOf="@+id/sinif1baslikdigerr"
+            app:layout_constraintTop_toTopOf="@+id/sinif1baslikdigerr"
+            app:layout_constraintBottom_toBottomOf="@+id/sinif1baslikdigerr" />
+
+        <TextView
+            android:id="@+id/guc1baslikdiger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Güç(Diğer)"
+            app:layout_constraintStart_toStartOf="@+id/imalyil1baslik"
+            app:layout_constraintTop_toBottomOf="@+id/gt_1_imalyili" />
+
+        <EditText
+            android:id="@+id/gt_1_gucudiger"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="45dp"
+            android:ems="8"
+            android:inputType="number"
+            android:nextFocusDown="@+id/gt_2_Oran"
+            app:layout_constraintStart_toStartOf="@+id/guc1baslikdiger"
+            app:layout_constraintTop_toTopOf="@+id/guc1baslikdiger"
+            app:layout_constraintBottom_toBottomOf="@+id/guc1baslikdiger" />
+
+        <View
+            android:id="@+id/cizik1gt"
+            style="@style/Divider.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="75dp"
+            android:background="#A4C639"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gt_1_sinif" />
+
+        <TextView
+            android:id="@+id/gt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Gerilim Trafo 2:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cizik1gt" />
+
+        <TextView
+            android:id="@+id/marka2baslik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marka"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gt2" />
+
+        <Spinner
+            android:id="@+id/gt_2_Marka"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="45dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/marka2baslik"
+            app:layout_constraintBottom_toBottomOf="@+id/marka2baslik" />
+
+        <TextView
+            android:id="@+id/oran2baslik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Oran"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintStart_toEndOf="@+id/gt_2_Marka"
+            app:layout_constraintTop_toBottomOf="@+id/gt2" />
+
+        <EditText
+            android:id="@+id/gt_2_Oran"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="45dp"
+            android:ems="8"
+            android:inputType="number"
+            android:nextFocusDown="@+id/gt_2_Orankusur"
+            app:layout_constraintStart_toEndOf="@+id/gt_2_Marka"
+            app:layout_constraintTop_toTopOf="@+id/oran2baslik"
+            app:layout_constraintBottom_toBottomOf="@+id/oran2baslik" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="/"
+            app:layout_constraintStart_toEndOf="@+id/gt_2_Oran"
+            app:layout_constraintTop_toBottomOf="@+id/oran2baslik" />
+
+        <EditText
+            android:id="@+id/gt_2_Orankusur"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="45dp"
+            android:ems="8"
+            android:inputType="number"
+            android:nextFocusDown="@+id/gt_2_seri"
+            app:layout_constraintStart_toEndOf="@+id/textView18"
+            app:layout_constraintTop_toTopOf="@+id/oran2baslik"
+            app:layout_constraintBottom_toBottomOf="@+id/oran2baslik" />
+
+        <TextView
+            android:id="@+id/guc2baslik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Gücü"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintStart_toEndOf="@+id/gt_2_Orankusur"
+            app:layout_constraintTop_toBottomOf="@+id/gt2" />
+
+        <Spinner
+            android:id="@+id/gt_2_gucu"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="45dp"
+            app:layout_constraintStart_toEndOf="@+id/gt_2_Orankusur"
+            app:layout_constraintTop_toTopOf="@+id/guc2baslik"
+            app:layout_constraintBottom_toBottomOf="@+id/guc2baslik" />
+
+        <TextView
+            android:id="@+id/sinif2baslik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Sınıf"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintStart_toStartOf="@+id/gt_2_Marka"
+            app:layout_constraintTop_toBottomOf="@+id/gt_2_Marka" />
+
+        <TextView
+            android:id="@+id/seri2baslik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Seri"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintStart_toStartOf="@+id/oran2baslik"
+            app:layout_constraintTop_toBottomOf="@+id/gt_2_Oran" />
+
+        <EditText
+            android:id="@+id/gt_2_seri"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="45dp"
+            android:ems="8"
+            android:inputType="number"
+            android:nextFocusDown="@+id/gt_2_imalyili"
+            app:layout_constraintStart_toStartOf="@+id/seri2baslik"
+            app:layout_constraintTop_toTopOf="@+id/seri2baslik"
+            app:layout_constraintBottom_toBottomOf="@+id/seri2baslik" />
+
+        <Spinner
+            android:id="@+id/gt_2_sinif"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="45dp"
+            app:layout_constraintStart_toStartOf="@+id/sinif2baslik"
+            app:layout_constraintTop_toTopOf="@+id/sinif2baslik"
+            app:layout_constraintBottom_toBottomOf="@+id/sinif2baslik" />
+
+        <TextView
+            android:id="@+id/imalyil2baslik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="İmal Yılı"
+            app:layout_constraintStart_toStartOf="@+id/guc2baslik"
+            app:layout_constraintTop_toBottomOf="@+id/gt_2_gucu" />
+
+        <EditText
+            android:id="@+id/gt_2_imalyili"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="45dp"
+            android:ems="8"
+            android:inputType="number"
+            android:nextFocusDown="@+id/gt_2_sinifdiger"
+            app:layout_constraintStart_toStartOf="@+id/imalyil2baslik"
+            app:layout_constraintTop_toTopOf="@+id/imalyil2baslik"
+            app:layout_constraintBottom_toBottomOf="@+id/imalyil2baslik" />
+
+        <TextView
+            android:id="@+id/sinif2baslikdigerr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Sınıf(Diger)"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintStart_toStartOf="@+id/gt_2_sinif"
+            app:layout_constraintTop_toBottomOf="@+id/gt_2_sinif" />
+
+        <TextView
+            android:id="@+id/marka2baslikdiger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Marka(Diğer)"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintStart_toStartOf="@+id/oran2baslik"
+            app:layout_constraintTop_toBottomOf="@+id/gt_2_seri" />
+
+        <EditText
+            android:id="@+id/gt_2_Markadiger"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="50dp"
+            android:ems="8"
+            android:inputType="textPersonName"
+            android:nextFocusDown="@+id/gt_2_gucudiger"
+            app:layout_constraintStart_toStartOf="@+id/marka2baslikdiger"
+            app:layout_constraintTop_toTopOf="@+id/marka2baslikdiger"
+            app:layout_constraintBottom_toBottomOf="@+id/marka2baslikdiger" />
+
+        <EditText
+            android:id="@+id/gt_2_sinifdiger"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="45dp"
+            android:inputType="numberDecimal"
+            android:nextFocusDown="@+id/gt_2_Markadiger"
+            app:layout_constraintBottom_toBottomOf="@+id/sinif2baslikdigerr"
+            app:layout_constraintStart_toStartOf="@+id/sinif2baslikdigerr"
+            app:layout_constraintTop_toTopOf="@+id/sinif2baslikdigerr" />
+
+        <TextView
+            android:id="@+id/guc2baslikdiger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Güç(Diğer)"
+            app:layout_constraintStart_toStartOf="@+id/imalyil2baslik"
+            app:layout_constraintTop_toBottomOf="@+id/gt_2_imalyili" />
+
+        <EditText
+            android:id="@+id/gt_2_gucudiger"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="45dp"
+            android:ems="8"
+            android:inputType="number"
+            android:nextFocusDown="@+id/gt_3_Oran"
+            app:layout_constraintStart_toStartOf="@+id/guc2baslikdiger"
+            app:layout_constraintTop_toTopOf="@+id/guc2baslikdiger"
+            app:layout_constraintBottom_toBottomOf="@+id/guc2baslikdiger" />
+
+        <View
+            android:id="@+id/cizik2gt"
+            style="@style/Divider.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="75dp"
+            android:background="#A4C639"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gt_2_sinif" />
+
+        <TextView
+            android:id="@+id/gt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Gerilim Trafo 3:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cizik2gt" />
+
+        <TextView
+            android:id="@+id/marka3baslik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marka"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gt3" />
+
+        <Spinner
+            android:id="@+id/gt_3_Marka"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="45dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/marka3baslik"
+            app:layout_constraintBottom_toBottomOf="@+id/marka3baslik" />
+
+        <TextView
+            android:id="@+id/oran3baslik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Oran"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintStart_toEndOf="@+id/gt_3_Marka"
+            app:layout_constraintTop_toBottomOf="@+id/gt3" />
+
+        <EditText
+            android:id="@+id/gt_3_Oran"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="45dp"
+            android:ems="8"
+            android:inputType="number"
+            android:nextFocusDown="@+id/gt_3_Orankusur"
+            app:layout_constraintStart_toEndOf="@+id/gt_3_Marka"
+            app:layout_constraintTop_toTopOf="@+id/oran3baslik"
+            app:layout_constraintBottom_toBottomOf="@+id/oran3baslik" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="/"
+            app:layout_constraintStart_toEndOf="@+id/gt_3_Oran"
+            app:layout_constraintTop_toBottomOf="@+id/oran3baslik" />
+
+        <EditText
+            android:id="@+id/gt_3_Orankusur"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="45dp"
+            android:ems="8"
+            android:inputType="number"
+            android:nextFocusDown="@+id/gt_3_seri"
+            app:layout_constraintStart_toEndOf="@+id/textView19"
+            app:layout_constraintTop_toTopOf="@+id/oran3baslik"
+            app:layout_constraintBottom_toBottomOf="@+id/oran3baslik" />
+
+        <TextView
+            android:id="@+id/guc3baslik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Gücü"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintStart_toEndOf="@+id/gt_3_Orankusur"
+            app:layout_constraintTop_toBottomOf="@+id/gt3" />
+
+        <Spinner
+            android:id="@+id/gt_3_gucu"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="45dp"
+            app:layout_constraintStart_toEndOf="@+id/gt_3_Orankusur"
+            app:layout_constraintTop_toTopOf="@+id/guc3baslik"
+            app:layout_constraintBottom_toBottomOf="@+id/guc3baslik" />
+
+        <TextView
+            android:id="@+id/sinif3baslik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Sınıf"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintStart_toStartOf="@+id/gt_3_Marka"
+            app:layout_constraintTop_toBottomOf="@+id/gt_3_Marka" />
+
+        <TextView
+            android:id="@+id/seri3baslik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Seri"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintStart_toStartOf="@+id/oran3baslik"
+            app:layout_constraintTop_toBottomOf="@+id/gt_3_Oran" />
+
+        <EditText
+            android:id="@+id/gt_3_seri"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="45dp"
+            android:ems="8"
+            android:inputType="number"
+            android:nextFocusDown="@+id/gt_3_imalyili"
+            app:layout_constraintStart_toStartOf="@+id/seri3baslik"
+            app:layout_constraintTop_toTopOf="@+id/seri3baslik"
+            app:layout_constraintBottom_toBottomOf="@+id/seri3baslik" />
+
+        <Spinner
+            android:id="@+id/gt_3_sinif"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="45dp"
+            app:layout_constraintStart_toStartOf="@+id/sinif3baslik"
+            app:layout_constraintTop_toTopOf="@+id/sinif3baslik"
+            app:layout_constraintBottom_toBottomOf="@+id/sinif3baslik" />
+
+        <TextView
+            android:id="@+id/imalyil3baslik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="İmal Yılı"
+            app:layout_constraintStart_toStartOf="@+id/guc3baslik"
+            app:layout_constraintTop_toBottomOf="@+id/gt_3_gucu" />
+
+        <EditText
+            android:id="@+id/gt_3_imalyili"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="45dp"
+            android:ems="8"
+            android:inputType="number"
+            android:nextFocusDown="@+id/gt_3_sinifdiger"
+            app:layout_constraintStart_toStartOf="@+id/imalyil3baslik"
+            app:layout_constraintTop_toTopOf="@+id/imalyil3baslik"
+            app:layout_constraintBottom_toBottomOf="@+id/imalyil3baslik" />
+
+        <TextView
+            android:id="@+id/sinif3baslikdigerr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Sınıf(Diger)"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintStart_toStartOf="@+id/gt_3_sinif"
+            app:layout_constraintTop_toBottomOf="@+id/gt_3_sinif" />
+
+        <TextView
+            android:id="@+id/marka3baslikdiger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Marka(Diğer)"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintStart_toStartOf="@+id/oran3baslik"
+            app:layout_constraintTop_toBottomOf="@+id/gt_3_seri" />
+
+        <EditText
+            android:id="@+id/gt_3_Markadiger"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="45dp"
+            android:ems="8"
+            android:inputType="textPersonName"
+            android:nextFocusDown="@+id/gt_3_gucudiger"
+            app:layout_constraintStart_toStartOf="@+id/marka3baslikdiger"
+            app:layout_constraintTop_toTopOf="@+id/marka3baslikdiger"
+            app:layout_constraintBottom_toBottomOf="@+id/marka3baslikdiger" />
+
+        <EditText
+            android:id="@+id/gt_3_sinifdiger"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="45dp"
+            android:inputType="numberDecimal"
+            android:nextFocusDown="@+id/gt_3_Markadiger"
+            app:layout_constraintStart_toStartOf="@+id/sinif3baslikdigerr"
+            app:layout_constraintTop_toTopOf="@+id/sinif3baslikdigerr"
+            app:layout_constraintBottom_toBottomOf="@+id/sinif3baslikdigerr" />
+
+        <TextView
+            android:id="@+id/guc3baslikdiger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Güç(Diğer)"
+            app:layout_constraintStart_toStartOf="@+id/imalyil3baslik"
+            app:layout_constraintTop_toBottomOf="@+id/gt_3_imalyili" />
+
+        <EditText
+            android:id="@+id/gt_3_gucudiger"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="45dp"
+            android:ems="8"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="@+id/guc3baslikdiger"
+            app:layout_constraintTop_toTopOf="@+id/guc3baslikdiger"
+            app:layout_constraintBottom_toBottomOf="@+id/guc3baslikdiger" />
+
+        <Button
+            android:id="@+id/gd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="85dp"
+            android:text="Geri Dön"
+            app:layout_constraintStart_toStartOf="@+id/gt_3_sinifdiger"
+            app:layout_constraintTop_toBottomOf="@+id/gt_3_sinif" />
+
+        <Button
+            android:id="@+id/bf3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="85dp"
+            android:text="Kaydet"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/gd2"
+            app:layout_constraintTop_toBottomOf="@+id/gt_3_imalyili" />
+
+
+    </android.support.constraint.ConstraintLayout>
+    </android.widget.HorizontalScrollView>
+</ScrollView>

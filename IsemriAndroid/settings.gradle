@@ -1,0 +1,2 @@
+include ':common', ':mobit', ':bixolon', ':bixolonandroid', ':cpcl', ':eemr', ':eemrlib', ':elec', ':elecandroid', ':google-play-services_lib', ':googlemapandroid', ':libdroid', ':mbs', ':medas', ':webservice', ':sqldroid', ':sqldroid', ':medasAndroid', ':app', ':zebraandroid', ':ZSDK_ANDROID_API', ':zebraprinter'
+include ':zxing'

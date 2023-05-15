@@ -1,0 +1,283 @@
+﻿<PrintConfig>
+    <Properties>
+        <Property Name="FormTipi" Value="olcu_devre_akim_var_form" />
+        <Property Name="Unit" Value="x10mm" />
+        <Property Name="Tur" Value="Yapisal" />
+        <Property Name="X-Referans" Value="0" />
+        <Property Name="Y-Referans" Value="0" />
+        <Property Name="CX-Sinir" Value="0" />
+        <Property Name="CY-Sinir" Value="0" />
+        <Property Name="XDPI" Value="203" />
+        <Property Name="YDPI" Value="203" />
+        <Property Name="PAGESIZE" Value="3020" />
+        <Property Name="PAGEWIDTH" Value="960" />
+        <Property Name="PAGEHEIGHT" Value="120" />
+        <Property Name="QUANTITY" Value="1"/>
+        <Property Name="PrinterNo" Value="0" />
+        <Property Name="BlackMark" Value="0" />
+
+    </Properties>
+    <CPCLFonts>
+        <CPCLFont Id="1" Name="1" Size="1"/>
+        <CPCLFont Id="2" Name="2" Size="1"/>
+        <CPCLFont Id="3" Name="3" Size="1"/>
+    </CPCLFonts>
+
+    <PageItems>
+
+        <Image Name="imza_sur" Value="1" Left="0" Top="0" File="medas_logo.bmp" Suret="1" />
+
+		<Text Name="" Left="320" Top="100" FontId="2" Style="l">Seri No:</Text>
+        <Text Name="isemri_no"  Left="400" Top="100" FontId="2" Style="l" />
+
+		<Text Name="" Left="320" Top="120" FontId="2" Style="l">Tarih:</Text>
+        <Text Name="date"  Left="400" Top="120" FontId="2" Style="l" />
+
+		<Text Name="" Left="320" Top="140" FontId="2" Style="l">Saat:</Text>
+        <Text Name="time"  Left="400" Top="140" FontId="2" Style="l" />
+
+
+		<Text Name="" Left="20" Top="180" FontId="3" Style="l">MEDAŞ ÖLÇÜ DEVRELERİ KONTROL VE DEĞİŞTİRME TUTANAĞI</Text>
+		<Text Name="" Left="0" Top="205" FontId="3" Style="l">TESİSATIN SİSTEME KAYITLI BİLGİLERİ</Text>
+
+
+		<Text Name="" Left="0" Top="240" FontId="2" Style="l">Adı Soyadı:</Text>
+        <Text Name="unvan_txt"  Left="100" Top="240" FontId="2" Style="l" />
+
+		<Text Name="" Left="0" Top="260" FontId="2" Style="l">Adres:</Text>
+        <Text Name="adres_txt"  Left="100" Top="260" FontId="2" Style="l" />
+		<Text Name=""  Left="100" Top="280" FontId="2" Style="l"></Text>
+		
+		<Text Name="" Left="0" Top="300" FontId="2" Style="l">Abone No:</Text>
+        <Text Name="tesisat_no"  Left="100" Top="300" FontId="2" Style="l" />
+		
+		<Text Name="" Left="320" Top="300" FontId="2" Style="l">Kurulu Güç:</Text>
+        <Text Name=""  Left="420" Top="300" FontId="2" Style="l" />
+
+		<Text Name="" Left="0" Top="320" FontId="2" Style="l">Tarife Kodu:</Text>
+        <Text Name="tarifeKodu"  Left="120" Top="320" FontId="2" Style="l" />
+
+		<Text Name="" Left="0" Top="340" FontId="2" Style="l">Sözleşme Gücü:</Text>
+        <Text Name=""  Left="140" Top="340" FontId="2" Style="l" />
+
+
+		<!-- R - S - T -->
+		<Text Name="" Left="0" Top="450" FontId="2" Style="l">R</Text>
+		<Text Name="" Left="0" Top="470" FontId="2" Style="l">S</Text>
+		<Text Name="" Left="0" Top="490" FontId="2" Style="l">T</Text>
+
+		<!-- POLARİTE KONT. -->
+		<Text Name="" Left="20" Top="400" FontId="3" Style="l">POLARİTE KONTROL</Text>
+		<Text Name="" Left="20" Top="425" FontId="2" Style="l">AKM T.</Text>
+		
+		<Text Name="polarite_1" Left="20" Top="450" FontId="2" Style="l" />
+		<Text Name="polarite_2" Left="20" Top="470" FontId="2" Style="l" />
+		<Text Name="polarite_3" Left="20" Top="490" FontId="2" Style="l" />
+		
+		<!-- SAYACIN -->
+		<Text Name="" Left="300" Top="400" FontId="3" Style="l">SAYACIN</Text>
+		<Text Name="" Left="300" Top="425" FontId="2" Style="l">GERİLİM</Text>
+		<Text Name="" Left="395" Top="425" FontId="2" Style="l">/</Text>
+		<Text Name="" Left="420" Top="425" FontId="2" Style="l">AKIM</Text>
+
+		<Text Name="sayac_gerili_1" Left="300" Top="450" FontId="2" Style="l" />
+		<Text Name="sayac_akim_1" Left="420" Top="450" FontId="2" Style="l" />
+		<Text Name="sayac_gerili_2" Left="300" Top="470" FontId="2" Style="l" />
+		<Text Name="sayac_akim_2" Left="420" Top="470" FontId="2" Style="l" />
+		<Text Name="sayac_gerili_3" Left="300" Top="490" FontId="2" Style="l" />
+		<Text Name="sayac_akim_3" Left="420" Top="490" FontId="2" Style="l" />
+
+
+		<!-- SAYAÇ BİLGİLERİ -->
+		<Text Name="" Left="20" Top="550" FontId="3" Style="l">SAYAÇ BİLGİLERİ</Text>
+		<Text Name="" Left="140" Top="575" FontId="2" Style="l">Mevcut/Sökülen</Text>
+		<Text Name="" Left="280" Top="575" FontId="2" Style="l">Takılan</Text>
+		
+		<Text Name="" Left="0" Top="600" FontId="2" Style="l">Seri No:</Text>
+		<Text Name="sayac_no_txt" Left="140" Top="600" FontId="2" Style="l" />
+		<Text Name="takilan_no" Left="280" Top="600" FontId="2" Style="l" />
+		
+		<Text Name="" Left="0" Top="620" FontId="2" Style="l">Markası:</Text>
+		<Text Name="sayac_marka_spn" Left="140" Top="620" FontId="2" Style="l" />
+		<Text Name="takilan_marka" Left="280" Top="620" FontId="2" Style="l" />
+
+		<Text Name="" Left="0" Top="640" FontId="2" Style="l">Akım Oranı:</Text>
+		<Text Name="amperaj" Left="140" Top="640" FontId="2" Style="l" />
+		<Text Name="takilan_akim" Left="280" Top="640" FontId="2" Style="l" />
+		
+		<Text Name="" Left="0" Top="660" FontId="2" Style="l">Ger.Oranı:</Text>
+		<Text Name="voltaj" Left="140" Top="660" FontId="2" Style="l" />
+		<Text Name="takilan_gerilim" Left="280" Top="660" FontId="2" Style="l" />
+		
+		<Text Name="" Left="0" Top="680" FontId="2" Style="l">Say.Çarpanı:</Text>
+		<Text Name="" Left="140" Top="680" FontId="2" Style="l">1.0</Text>
+		<Text Name="" Left="280" Top="680" FontId="2" Style="l">1.0</Text>
+<!--		<Text Name="takilan_carpan" Left="280" Top="680" FontId="2" Style="l" />-->
+
+		<Text Name="" Left="0" Top="700" FontId="2" Style="l">Hane Adeti:</Text>
+		<Text Name="hane_sayisi_txt" Left="140" Top="700" FontId="2" Style="l" />
+		<Text Name="takilan_haneadeti" Left="280" Top="700" FontId="2" Style="l" />
+		
+		<Text Name="" Left="0" Top="720" FontId="2" Style="l">İmal Tarihi:</Text>
+		<Text Name="imal_yili_txt" Left="140" Top="720" FontId="2" Style="l" />
+		<Text Name="takilan_imalyili" Left="280" Top="720" FontId="2" Style="l" />
+
+		<Text Name="" Left="0" Top="740" FontId="2" Style="l">Gücü:</Text>
+
+
+		<!-- GÜÇ TRAFOSU -->
+		<Text Name="" Left="420" Top="550" FontId="3" Style="l" Value="guc_trafosu">GÜÇ TRAFOSU</Text>
+
+		<Text Name="trafoSerino_txt" Left="420" Top="600" FontId="2" Style="l" Value="guc_trafosu_trafoSerino" />
+		<Text Name="trafoMarkasi_txt" Left="420" Top="620" FontId="2" Style="l" Value="guc_trafosu_trafoMarkasi" />
+		<Text Name="trafoGerilimi_txt" Left="420" Top="660" FontId="2" Style="l" Value="guc_trafosu_trafoGerilimi" />
+		<Text Name="trafoImalYili_txt" Left="420" Top="720" FontId="2" Style="l" Value="guc_trafosu_trafoImalYili" />
+		<Text Name="trafoGucu_txt" Left="420" Top="740" FontId="2" Style="l" Value="guc_trafosu_trafoGucu" />
+
+		
+		<!-- AKIM TRAFOLARI -->
+		<Text Name="" Left="20" Top="820" FontId="3" Style="l">AKIM TRAFOLARI</Text>
+		<Text Name="" Left="140" Top="845" FontId="2" Style="l">AKIM 1</Text>
+		<Text Name="" Left="280" Top="845" FontId="2" Style="l">AKIM 2</Text>
+		<Text Name="" Left="420" Top="845" FontId="2" Style="l">AKIM 3</Text>
+
+		<Text Name="" Left="0" Top="870" FontId="2" Style="l">Markası:</Text>
+		<Text Name="AT_1_Marka" Left="140" Top="870" FontId="2" Style="l" />
+		<Text Name="AT_2_Marka" Left="280" Top="870" FontId="2" Style="l" />
+		<Text Name="AT_3_Marka" Left="420" Top="870" FontId="2" Style="l" />
+
+		<Text Name="" Left="0" Top="890" FontId="2" Style="l">İmal Tarihi:</Text>
+		<Text Name="at_1_imalyili" Left="140" Top="890" FontId="2" Style="l" />
+		<Text Name="at_2_imalyili" Left="280" Top="890" FontId="2" Style="l" />
+		<Text Name="at_3_imalyili" Left="420" Top="890" FontId="2" Style="l" />
+
+		<Text Name="" Left="0" Top="910" FontId="2" Style="l">Oranı:</Text>
+		<Text Name="AT_1_Oran" Left="140" Top="910" FontId="2" Style="l" />
+		<Text Name="AT_2_Oran" Left="280" Top="910" FontId="2" Style="l" />
+		<Text Name="AT_3_Oran" Left="420" Top="910" FontId="2" Style="l" />
+
+		<Text Name="" Left="0" Top="930" FontId="2" Style="l">Sınıf / Gücü:</Text>
+		<Text Name="at_1_sinif_gucu" Left="140" Top="930" FontId="2" Style="l" />
+		<Text Name="at_2_sinif_gucu" Left="280" Top="930" FontId="2" Style="l" />
+		<Text Name="at_3_sinif_gucu" Left="420" Top="930" FontId="2" Style="l" />
+
+		<Text Name="" Left="0" Top="950" FontId="2" Style="l">Seri No:</Text>
+		<Text Name="at_1_seri" Left="140" Top="950" FontId="2" Style="l" />
+		<Text Name="at_2_seri" Left="280" Top="950" FontId="2" Style="l" />
+		<Text Name="at_3_seri" Left="420" Top="950" FontId="2" Style="l" />
+
+
+		<!-- GERİLİM TRAFOLARI -->
+		<Text Name="" Left="20" Top="1010" FontId="3" Style="l">GERİLİM TRAFOLARI</Text>
+		<Text Name="" Left="140" Top="1035" FontId="3" Style="l">GERİLİM 1</Text>
+		<Text Name="" Left="280" Top="1035" FontId="3" Style="l">GERİLİM 2</Text>
+		<Text Name="" Left="420" Top="1035" FontId="3" Style="l">GERİLİM 3</Text>
+
+		<Text Name="" Left="0" Top="1060" FontId="2" Style="l">Markası:</Text>
+		<Text Name="gt_1_Marka" Left="140" Top="1060" FontId="2" Style="l" />
+		<Text Name="gt_2_Marka" Left="280" Top="1060" FontId="2" Style="l" />
+		<Text Name="gt_3_Marka" Left="420" Top="1060" FontId="2" Style="l" />
+
+		<Text Name="" Left="0" Top="1080" FontId="2" Style="l">İmal Tarihi:</Text>
+		<Text Name="gt_1_imalyili" Left="140" Top="1080" FontId="2" Style="l" />
+		<Text Name="gt_2_imalyili" Left="280" Top="1080" FontId="2" Style="l" />
+		<Text Name="gt_3_imalyili" Left="420" Top="1080" FontId="2" Style="l" />
+
+		<Text Name="" Left="0" Top="1100" FontId="2" Style="l">Oranı:</Text>
+		<Text Name="gt_1_Oran" Left="140" Top="1100" FontId="2" Style="l" />
+		<Text Name="gt_2_Oran" Left="280" Top="1100" FontId="2" Style="l" />
+		<Text Name="gt_3_Oran" Left="420" Top="1100" FontId="2" Style="l" />
+
+		<Text Name="" Left="0" Top="1120" FontId="2" Style="l">Sınıf / Gücü:</Text>
+		<Text Name="gt_1_sinif_gucu" Left="140" Top="1120" FontId="2" Style="l" />
+		<Text Name="gt_2_sinif_gucu" Left="280" Top="1120" FontId="2" Style="l" />
+		<Text Name="gt_3_sinif_gucu" Left="420" Top="1120" FontId="2" Style="l" />
+
+		<Text Name="" Left="0" Top="1140" FontId="2" Style="l">Seri No:</Text>
+		<Text Name="gt_1_seri" Left="140" Top="1140" FontId="2" Style="l" />
+		<Text Name="gt_2_seri" Left="280" Top="1140" FontId="2" Style="l" />
+		<Text Name="gt_3_seri" Left="420" Top="1140" FontId="2" Style="l" />
+
+
+		<Text Name="" Left="0" Top="1175" FontId="3" Style="l">ÇARPAN:</Text>
+		<Text Name="carpan" Left="100" Top="1175" FontId="2" Style="c" Right="550" />
+
+
+		<!-- ENDEKSLER -->
+		<Text Name="" Left="20" Top="1210" FontId="3" Style="l">ENDEKSLER</Text>
+		
+		<Text Name="" Left="0" Top="1235" FontId="2" Style="l">T:</Text>
+		<Text Name="t" Left="50" Top="1235" FontId="2" Style="l" />
+		
+		<Text Name="" Left="0" Top="1255" FontId="2" Style="l">T1:</Text>
+		<Text Name="t1" Left="50" Top="1255" FontId="2" Style="l" />
+		
+		<Text Name="" Left="0" Top="1275" FontId="2" Style="l">T2:</Text>
+		<Text Name="t2" Left="50" Top="1275" FontId="2" Style="l" />
+		
+		<Text Name="" Left="0" Top="1295" FontId="2" Style="l">T3:</Text>
+		<Text Name="t3" Left="50" Top="1295" FontId="2" Style="l" />
+		
+		<Text Name="" Left="0" Top="1315" FontId="2" Style="l">Ri:</Text>
+		<Text Name="enduktif" Left="50" Top="1315" FontId="2" Style="l" />
+		
+		<Text Name="" Left="0" Top="1335" FontId="2" Style="l">Rc:</Text>
+		<Text Name="kapasitif" Left="50" Top="1335" FontId="2" Style="l" />
+		
+		<Text Name="" Left="0" Top="1355" FontId="2" Style="l">Demant:</Text>
+		<Text Name="demand" Left="100" Top="1355" FontId="2" Style="l" />
+		
+		<Text Name="" Left="0" Top="1375" FontId="2" Style="l">Demant Tarihi:</Text>
+		<Text Name="demand_tarihi" Left="140" Top="1375" FontId="2" Style="l" />
+
+
+		<!-- GÜÇ TESPİTİ -->
+		<Text Name="" Left="410" Top="1210" FontId="3" Style="l" Value="guc_tespiti">GÜÇ TESPİTİ</Text>
+		<Text Name="" Left="410" Top="1235" FontId="2" Style="l" Value="guc_tespiti_cins">Cins</Text>
+		<Text Name="" Left="475" Top="1235" FontId="2" Style="l" Value="guc_tespiti_adet">Adet</Text>
+		<Text Name="" Left="520" Top="1235" FontId="2" Style="l" Value="guc_tespiti_guc">Güç</Text>
+
+		<Text Name="guc_tespit_cins" Left="410" Top="1260" FontId="2" Style="l" />
+		<Text Name="guc_tespit_adet" Left="475" Top="1260" FontId="2" Style="l" />
+		<Text Name="guc_tespit_guc" Left="520" Top="1260" FontId="2" Style="l" />
+<!--		<Text Name="guc_tespit_list" Left="420" Top="1260" FontId="2" Style="l" />-->
+
+		
+		<!-- MÜHÜR BİLGİLERİ -->
+		<Text Name="" Left="0" Top="1435" FontId="3" Style="l">MÜHÜR BİLGİLERİ</Text>
+		<Text Name="" Left="0" Top="1460" FontId="3" Style="l">Eski Mühür:</Text>
+		<Text Name="sokulen_muhur_list" Left="120" Top="1460" FontId="2" Style="l" />
+		
+		<Text Name="" Left="0" Top="1480" FontId="3" Style="l">Yeni Mühür:</Text>
+		<Text Name="yeni_muhur" Left="120" Top="1480" FontId="2" Style="l" />
+		
+		<!-- KOORDİNAT -->
+		<Text Name="" Left="420" Top="1435" FontId="3" Style="l">KOORDİNAT</Text>
+		<Text Name="cbs1" Left="420" Top="1460" FontId="2" Style="l" />
+		<Text Name="cbs2" Left="420" Top="1480" FontId="2" Style="l" />
+
+
+<!--		<Text Name="" Left="0" Top="1600" FontId="3" Style="l">Kontrol Neticesinde;</Text>-->
+		<Text Name="aciklama" Left="0" Top="1540" FontId="2" Style="l" />
+<!--		<Text Name="" Left="0" Top="1620" FontId="2" Style="l">X</Text>-->
+<!--		<Text Name="" Left="0" Top="1640" FontId="2" Style="l">X</Text>-->
+<!--		<Text Name="" Left="0" Top="1660" FontId="2" Style="l">X</Text>-->
+<!--		<Text Name="" Left="0" Top="1680" FontId="2" Style="l">X</Text>-->
+<!--		<Text Name="" Left="0" Top="1700" FontId="2" Style="l">X</Text>-->
+
+		<Text Name="ihbar_control" Left="0" Top="1620" FontId="2" Style="l" />
+
+		<Text Name="" Left="0" Top="1760" FontId="2" Style="l">EKİP SORUMLUSU MEDAŞ TEMSİLCİSİ</Text>
+		<Text Name="" Left="100" Top="1780" FontId="2" Style="l">KOD ve İMZA</Text>
+		<Text Name="user_code" Left="100" Top="1800" FontId="2" Style="l" />
+		
+		<Text Name="" Left="370" Top="1760" FontId="2" Style="l">MÜŞTERİ TEMSİLCİSİ</Text>
+		<Text Name="" Left="410" Top="1780" FontId="2" Style="l">İSİM ve İMZA</Text>
+		<Text Name="" Left="410" Top="1800" FontId="2" Style="l" />
+
+
+
+
+    </PageItems>
+
+</PrintConfig>

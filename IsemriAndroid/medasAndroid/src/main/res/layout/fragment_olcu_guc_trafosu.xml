@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false"
+    tools:context=".OlcuGucTrafosuFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".OlcuGucTrafosuFragment">
+
+        <TextView
+            android:id="@+id/GucTrafosuBaslik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="Güç Trafosu"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/trafoMarkasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Markası:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/trafoMarkasi_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:inputType="text"
+            android:nextFocusDown="@+id/trafoSerino_text"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/trafoMarkasi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/trafoMarkasi"
+            app:layout_constraintTop_toTopOf="@+id/trafoMarkasi" />
+
+
+        <TextView
+            android:id="@+id/trafoSerino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Seri No:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/trafoMarkasi" />
+
+        <EditText
+            android:id="@+id/trafoSerino_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:inputType="number"
+            android:nextFocusDown="@+id/trafoGucu_text"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/trafoSerino"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/trafoSerino"
+            app:layout_constraintTop_toTopOf="@+id/trafoSerino" />
+
+
+        <TextView
+            android:id="@+id/trafoGucu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Gücü:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/trafoSerino" />
+
+        <EditText
+            android:id="@+id/trafoGucu_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:inputType="number"
+            android:nextFocusDown="@+id/trafoGerilimi_text"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/trafoGucu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/trafoGucu"
+            app:layout_constraintTop_toTopOf="@+id/trafoGucu" />
+
+        <TextView
+            android:id="@+id/trafoGerilimi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Gerilimi:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/trafoGucu" />
+
+        <EditText
+            android:id="@+id/trafoGerilimi_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:inputType="number"
+            android:nextFocusDown="@+id/trafoImalYili_text"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/trafoGerilimi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/trafoGerilimi"
+            app:layout_constraintTop_toTopOf="@+id/trafoGerilimi" />
+
+
+        <TextView
+            android:id="@+id/trafoImalYili"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="İmal Yılı:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/trafoGerilimi" />
+
+        <EditText
+            android:id="@+id/trafoImalYili_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:inputType="date"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/trafoImalYili"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/trafoImalYili"
+            app:layout_constraintTop_toTopOf="@+id/trafoImalYili" />
+
+
+
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Geri Dön"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/trafoImalYili" />
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kaydet"
+            app:layout_constraintBottom_toBottomOf="@+id/back_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@id/back_btn"
+            app:layout_constraintTop_toTopOf="@+id/back_btn" />
+
+
+    </android.support.constraint.ConstraintLayout>
+    <!--    </android.widget.HorizontalScrollView>-->
+</ScrollView>

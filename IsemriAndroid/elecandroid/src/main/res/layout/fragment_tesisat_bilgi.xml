@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/textIslemTipi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/shape"
+        android:text=""
+        android:textSize="@dimen/elecTextSize"
+        android:paddingLeft = "2sp" />
+    
+    <TextView
+        android:id="@+id/textUnvan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textIslemTipi"
+        android:layout_below="@+id/textIslemTipi"
+        android:layout_marginTop="4dp"
+        android:layout_toStartOf="@+id/textKarneNo"
+        android:background="@drawable/shape"
+        android:maxLines="4"
+        android:paddingLeft = "2sp"
+        android:textSize="@dimen/elecTextSize"
+        android:text="Ünvan" />
+
+    <TextView
+        android:id="@+id/textKarneNo"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textUnvan"
+        android:layout_alignBottom="@+id/textUnvan"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/shape"
+        android:text="Karne/Sıra "
+        android:textSize="@dimen/elecTextSize"
+        android:paddingLeft = "2sp" />
+
+    <TextView
+        android:id="@+id/textAdres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/textUnvan"
+        android:layout_below="@+id/textUnvan"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/shape"
+        android:lines="2"
+        android:maxLines="2"
+        android:text="Adres"
+        android:textSize="@dimen/elecTextSize"
+        android:paddingLeft = "2sp" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/textAciklama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/textAdres"
+        android:layout_below="@+id/textAdres"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/shape"
+        android:lines="2"
+        android:maxLines="2"
+        android:text="Açıklama"
+        android:textSize="@dimen/elecTextSize"
+        android:paddingLeft = "2sp" />
+
+</RelativeLayout>

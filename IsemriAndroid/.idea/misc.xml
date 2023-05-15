@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/elecandroid/src/main/res/drawable/buton_arkaplan.xml" value="0.3205" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/elecandroid/src/main/res/drawable/buton_arkaplan_mavi.xml" value="0.3205" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/elecandroid/src/main/res/drawable/buton_arkaplan_yesil.xml" value="0.3205" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/elecandroid/src/main/res/layout/activity_isemri_detay.xml" value="0.264" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/elecandroid/src/main/res/layout/activity_isemri_index.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/elecandroid/src/main/res/layout/activity_isemri_indir.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/elecandroid/src/main/res/layout/activity_isemri_liste.xml" value="0.19202898550724637" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/elecandroid/src/main/res/layout/activity_islem_liste.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/elecandroid/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/elecandroid/src/main/res/layout/activity_muhur_islem_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/elecandroid/src/main/res/layout/activity_okuma_rapor.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/elecandroid/src/main/res/layout/activity_okuma_yap.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/elecandroid/src/main/res/layout/activity_saha_isemri.xml" value="0.176" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/elecandroid/src/main/res/layout/activity_tesisat_sorgu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/elecandroid/src/main/res/layout/activity_tesisat_yukle.xml" value="0.16077898550724637" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/elecandroid/src/main/res/layout/activity_yazici_ayar.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/elecandroid/src/main/res/layout/fragment_tesisat_bilgi.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/elecandroid/src/main/res/layout/row_isemri.xml" value="0.19202898550724637" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/elecandroid/src/main/res/layout/row_karneler.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/elecandroid/src/main/res/layout/row_with_button.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/elecandroid/src/main/res/layout/tool_bar.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/elecandroid/src/main/res/menu/isemri_liste.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/libdroid/src/main/res/layout/activity_Main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/libdroid/src/main/res/layout/activity_camera.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/libdroid/src/main/res/layout/activity_detay.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/libdroid/src/main/res/layout/activity_foto.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/medasAndroid/src/main/res/layout/activity_isemri_index2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/medasAndroid/src/main/res/layout/activity_isemri_menu2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/medasAndroid/src/main/res/layout/activity_kacak_giris.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/medasAndroid/src/main/res/layout/activity_okuma_yap2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/medasAndroid/src/main/res/layout/activity_sayac_takma2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/medasAndroid/src/main/res/layout/activity_sayac_takma_aciklama.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/medasAndroid/src/main/res/layout/activity_yikik_giris.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/medasAndroid/src/main/res/layout/content_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/medasAndroid/src/main/res/layout/dialog_unvan.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/medasAndroid/src/main/res/layout/fragment_olcu2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/medasAndroid/src/main/res/layout/fragment_olcu3.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/medasAndroid/src/main/res/layout/fragment_olcu4.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/medasAndroid/src/main/res/layout/fragment_olcu_sokulen_muhur.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/medasAndroid/src/main/res/layout/fragment_olcu_takilan_sayac_endex.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/medasAndroid/src/main/res/menu/kacak_giris.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/medasAndroid/src/main/res/menu/menu2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AndroidStudioProjects/Android Projeler/isemri-master/IsemriAndroid/IsemriAndroid/medasAndroid/src/main/res/menu/menu_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AppData/Local/Android/Sdk/platforms/android-26/data/res/layout/simple_list_item_1.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mdskln2663/AppData/Local/Android/Sdk/platforms/android-26/data/res/layout/simple_spinner_item.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

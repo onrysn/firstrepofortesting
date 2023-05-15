@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Medaş İş Emri</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_sayac_takma2">Sayaç Takma</string>
+    <string name="title_activity_endeks_activity2">Takılan Sayaç Endeks</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_kacak_giris">Kaçak Girişi</string>
+    <string name="title_activity_tespit2">Tespit</string>
+    <string name="title_activity_zabit2">Zabıt</string>
+    <string name="title_activity_tespit_activity2">Tespit</string>
+    <string name="title_activity_maps">Harita</string>
+    <string name="title_activity_index2">Endeks Girişi</string>
+    <string name="title_activity_okuma_yap2">Sayaç Okuma</string>
+    <string name="title_activity_sayac_takma_aciklama">Sayaç Takma Açıklama</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="sokulen_muhur_list">
+        <item>Sabit açıklama seçiniz...</item>
+        <item>İç tesisat tadilarlarının yapılması</item>
+        <item>Gerekli topraklamaların yapılması</item>
+        <item>Sayaç veya pano yerinin değiştirilmesi</item>
+        <item>Kofre kapağı olmadığından dolayı kofre kapağı takılması</item>
+        <item>Güç tespiti neticesinde, Kurulu Gücün …………………. Kwh ve Sözleşme Gücünün
+        ……………. Kwh olması gerektiğinden dolayı güç artırımının yapılması</item>
+        <item>Tespit edilen diğer eksiklikler: ………………………………………………………………………… </item>
+    </string-array>
+
+    <string-array name="polarite_list">
+        <item>P1/S1/S2</item>
+        <item>P2/S2/S1</item>
+        <item>P1/S2/S1</item>
+        <item>P2/S1/S2</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,11 @@
+apply plugin: 'java-library'
+
+compileJava.options.encoding = 'UTF-8'
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    api project(':common')
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"

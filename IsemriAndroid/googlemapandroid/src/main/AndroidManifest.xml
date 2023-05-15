@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mobit.android.GoogleMap">
+
+
+    
+    <application 
+        android:allowBackup="true">
+
+        <!--
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCP0kxu7HNPEZP_S5Mq2JypOyViOxlDX2o"/>
+
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="5089000" />
+        -->
+
+        <activity
+            android:name="mobit.android.GoogleMap.MapsActivity"
+            android:label="@string/title_activity_maps" >
+            <!--  
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+            <!--  
+            <intent-filter>
+                <action android:name="mobit.android.GoogleMap.MAPS_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            -->
+        </activity>
+    </application>
+
+</manifest>

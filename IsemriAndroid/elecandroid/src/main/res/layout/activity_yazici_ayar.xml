@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mobit.elec.android.YaziciAyarActivity" >
+
+    <TextView
+        android:id="@+id/textMac1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:textSize="12dp"
+        android:text="Yazıcı 1 :"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <EditText
+        android:id="@+id/editMac1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textMac1"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/textMac1"
+        android:ems="10"
+        android:textSize="12dp"
+        android:maxLength="17" />
+
+    <Button
+        android:id="@+id/buttonArama1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/editMac1"
+        android:layout_alignBaseline="@+id/editMac1"
+        android:layout_marginStart="10dp"
+        android:textSize="10dp"
+        android:text="Arama" />
+
+     
+     <TextView
+        android:id="@+id/textMac2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textMac1"
+        android:layout_below="@+id/textMac1"
+        android:layout_marginTop="20dp"
+         android:textSize="12dp"
+        android:text="Yazıcı 2 :"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/editMac2"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textMac2"
+        android:layout_alignStart="@+id/editMac1"
+        android:layout_toLeftOf="@+id/buttonArama1"
+        android:textSize="12dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+	<Button
+        android:id="@+id/buttonArama2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/editMac2"
+        android:layout_alignBaseline="@+id/textMac2"
+        android:layout_marginStart="10dp"
+        android:textSize="10dp"
+        android:text="Arama" />
+
+    <Button
+        android:id="@+id/buttonKaydet"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editMac2"
+        android:layout_alignStart="@+id/editMac2"
+        android:layout_marginStart="182dp"
+        android:layout_marginTop="28dp"
+        android:text="Kaydet"
+        android:textSize="12dp"
+        android:textColor="#fff"
+        android:background="#78c158"/>
+
+    <Spinner
+    android:id="@+id/formlar"
+    android:layout_width="match_parent"
+    android:layout_height="80px"
+    android:layout_below="@+id/buttonKaydet"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="60dp"
+    android:background="@drawable/shape" />
+
+    <Button
+        android:id="@+id/buttonTestYazdir"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/formlar"
+        android:layout_marginTop="20dp"
+        android:background="#78c158"
+        android:text="Test Yazdır"
+        android:textColor="#fff"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/buttonSendGraphic"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/formlar"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/buttonTestYazdir"
+        android:background="#78c"
+        android:text="İmza Kaydet"
+        android:textColor="#fff"
+        android:textSize="12dp" />
+
+
+    <Button
+        android:id="@+id/yaziciayaryukle"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/formlar"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="100dp"
+        android:background="#be0000"
+        android:visibility="invisible"
+        android:text="Yazıcı Yeni Ayar Yükle"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>

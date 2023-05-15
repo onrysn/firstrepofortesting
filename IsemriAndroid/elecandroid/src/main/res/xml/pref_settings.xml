@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+    <PreferenceCategory
+        android:title="SUNUCU BİLGİSİ">
+        <EditTextPreference
+            android:title="Sunucu"
+            android:summary="Sunucu IP adresi"
+            android:key="Host" />
+        <EditTextPreference
+            android:title="Sunucu Port"
+            android:summary="TCP port"
+            android:key="Port" />
+        <EditTextPreference
+            android:title="Apn"
+            android:summary="GPRS APN adı"
+            android:key="Apn" />
+        
+    </PreferenceCategory>
+ 
+    <PreferenceCategory android:title="Yazıcı">
+ 
+        <ListPreference
+                android:key="printerModels"
+                android:title="Yazıcı Modelleri"
+                android:summary="Yazıcı Modelleri"
+                android:entries="@array/printerModels"
+                android:entryValues="@array/returnPrinterModels"
+                android:dialogTitle="Yazıcı Seçin" />
+        
+        <EditTextPreference
+            android:title="MAC"
+            android:summary="Yazıcı Bluetooth MAC adresi"
+            android:key="yazici_mac" />
+        
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="OPTİK PORT">
+ 
+        <EditTextPreference
+            android:title="Tip"
+            android:summary="Optik Port Tipi"
+            android:key="port_tip" />
+        
+        <EditTextPreference
+            android:title="MAC"
+            android:summary="Optik Port Bluetooth MAC adresi"
+            android:key="optik_mac" />
+        
+ 
+    </PreferenceCategory>
+ 
+    <PreferenceCategory
+        android:title="Sub Screens">
+ 
+        <PreferenceScreen
+            android:key="voicemail_category"
+            android:title="Voicemail"
+            android:persistent="false">
+ 
+            <Preference
+                android:title="Provider"
+                android:summary="Airtel"
+                android:key="provider" />
+ 
+            <!-- and other preference objects ... -->
+ 			
+ 			<CheckBoxPreference
+            android:title="Receive Notifications"
+            android:summary="Want to receive Push Notifications ?"
+            android:key="receiveNotifications"
+            android:defaultValue="true" />
+ 			
+        </PreferenceScreen>
+ 
+    </PreferenceCategory>
+ 
+</PreferenceScreen>

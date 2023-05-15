@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="bixolon" target="1.7" />
+      <module name="common" target="1.7" />
+      <module name="cpcl" target="1.7" />
+      <module name="eemr" target="1.7" />
+      <module name="elec" target="1.7" />
+      <module name="mbs" target="1.7" />
+      <module name="medas" target="1.7" />
+      <module name="mobit" target="1.7" />
+      <module name="webservice" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

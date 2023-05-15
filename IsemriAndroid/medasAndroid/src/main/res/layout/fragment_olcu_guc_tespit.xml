@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false"
+    tools:context=".OlcuGucTespitFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".OlcuGucTespitBilgileriFragment">
+
+        <TextView
+            android:id="@+id/Baslik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="Güç Tespit Bilgileri"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/editTextContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.10"
+            tools:context=".OlcuGucTespitSabitBilgileriFragment">
+
+
+            <TextView
+                android:id="@+id/cins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cins:"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/cins_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="8"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:nextFocusDown="@+id/adet_text"
+                app:layout_constraintBottom_toBottomOf="@+id/cins"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@id/cins"
+                app:layout_constraintTop_toTopOf="@+id/cins" />
+
+
+            <TextView
+                android:id="@+id/adet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Adet:"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cins" />
+
+            <EditText
+                android:id="@+id/adet_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="7"
+                android:inputType="number"
+                android:textSize="15sp"
+                android:nextFocusDown="@+id/guc_text"
+                app:layout_constraintBottom_toBottomOf="@+id/adet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/adet"
+                app:layout_constraintTop_toTopOf="@+id/adet" />
+
+
+            <TextView
+                android:id="@+id/guc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Güç:"
+                app:layout_constraintBottom_toBottomOf="@+id/adet"
+                app:layout_constraintEnd_toStartOf="@id/guc_text"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@id/adet_text"
+                app:layout_constraintTop_toTopOf="@+id/adet"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/guc_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="7"
+                android:inputType="numberDecimal"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@id/adet_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/adet_text" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <Button
+            android:id="@+id/add_btn"
+            android:layout_width="81dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/medasMavi"
+            android:text="Ekle"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextContainer" />
+
+        <ListView
+            android:id="@+id/listContainer"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:background="@drawable/shape"
+            android:choiceMode="multipleChoice"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_btn"
+            app:layout_constraintVertical_bias="0.35"
+            tools:ignore="MissingConstraints"></ListView>
+
+
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Geri Dön"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listContainer" />
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kaydet"
+            app:layout_constraintBottom_toBottomOf="@+id/back_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@id/back_btn"
+            app:layout_constraintTop_toTopOf="@+id/back_btn" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+</ScrollView>

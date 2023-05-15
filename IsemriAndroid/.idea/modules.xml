@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/IsemriAndroid.iml" filepath="$PROJECT_DIR$/.idea/modules/IsemriAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ZSDK_ANDROID_API/IsemriAndroid.ZSDK_ANDROID_API.iml" filepath="$PROJECT_DIR$/.idea/modules/ZSDK_ANDROID_API/IsemriAndroid.ZSDK_ANDROID_API.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/IsemriAndroid.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/IsemriAndroid.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bixolon/IsemriAndroid.bixolon.iml" filepath="$PROJECT_DIR$/.idea/modules/bixolon/IsemriAndroid.bixolon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bixolon/IsemriAndroid.bixolon.main.iml" filepath="$PROJECT_DIR$/.idea/modules/bixolon/IsemriAndroid.bixolon.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bixolon/IsemriAndroid.bixolon.test.iml" filepath="$PROJECT_DIR$/.idea/modules/bixolon/IsemriAndroid.bixolon.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bixolonandroid/IsemriAndroid.bixolonandroid.iml" filepath="$PROJECT_DIR$/.idea/modules/bixolonandroid/IsemriAndroid.bixolonandroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bixolonandroid/IsemriAndroid.bixolonandroid.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/bixolonandroid/IsemriAndroid.bixolonandroid.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bixolonandroid/IsemriAndroid.bixolonandroid.main.iml" filepath="$PROJECT_DIR$/.idea/modules/bixolonandroid/IsemriAndroid.bixolonandroid.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bixolonandroid/IsemriAndroid.bixolonandroid.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/bixolonandroid/IsemriAndroid.bixolonandroid.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/IsemriAndroid.common.iml" filepath="$PROJECT_DIR$/.idea/modules/common/IsemriAndroid.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/IsemriAndroid.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/IsemriAndroid.common.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/IsemriAndroid.common.test.iml" filepath="$PROJECT_DIR$/.idea/modules/common/IsemriAndroid.common.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cpcl/IsemriAndroid.cpcl.iml" filepath="$PROJECT_DIR$/.idea/modules/cpcl/IsemriAndroid.cpcl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cpcl/IsemriAndroid.cpcl.main.iml" filepath="$PROJECT_DIR$/.idea/modules/cpcl/IsemriAndroid.cpcl.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cpcl/IsemriAndroid.cpcl.test.iml" filepath="$PROJECT_DIR$/.idea/modules/cpcl/IsemriAndroid.cpcl.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eemr/IsemriAndroid.eemr.iml" filepath="$PROJECT_DIR$/.idea/modules/eemr/IsemriAndroid.eemr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eemr/IsemriAndroid.eemr.main.iml" filepath="$PROJECT_DIR$/.idea/modules/eemr/IsemriAndroid.eemr.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eemr/IsemriAndroid.eemr.test.iml" filepath="$PROJECT_DIR$/.idea/modules/eemr/IsemriAndroid.eemr.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eemrlib/IsemriAndroid.eemrlib.iml" filepath="$PROJECT_DIR$/.idea/modules/eemrlib/IsemriAndroid.eemrlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eemrlib/IsemriAndroid.eemrlib.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/eemrlib/IsemriAndroid.eemrlib.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eemrlib/IsemriAndroid.eemrlib.main.iml" filepath="$PROJECT_DIR$/.idea/modules/eemrlib/IsemriAndroid.eemrlib.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eemrlib/IsemriAndroid.eemrlib.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/eemrlib/IsemriAndroid.eemrlib.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/elec/IsemriAndroid.elec.iml" filepath="$PROJECT_DIR$/.idea/modules/elec/IsemriAndroid.elec.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/elec/IsemriAndroid.elec.main.iml" filepath="$PROJECT_DIR$/.idea/modules/elec/IsemriAndroid.elec.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/elec/IsemriAndroid.elec.test.iml" filepath="$PROJECT_DIR$/.idea/modules/elec/IsemriAndroid.elec.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/elecandroid/IsemriAndroid.elecandroid.iml" filepath="$PROJECT_DIR$/.idea/modules/elecandroid/IsemriAndroid.elecandroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/elecandroid/IsemriAndroid.elecandroid.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/elecandroid/IsemriAndroid.elecandroid.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/elecandroid/IsemriAndroid.elecandroid.main.iml" filepath="$PROJECT_DIR$/.idea/modules/elecandroid/IsemriAndroid.elecandroid.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/elecandroid/IsemriAndroid.elecandroid.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/elecandroid/IsemriAndroid.elecandroid.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/google-play-services_lib/IsemriAndroid.google-play-services_lib.iml" filepath="$PROJECT_DIR$/.idea/modules/google-play-services_lib/IsemriAndroid.google-play-services_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/google-play-services_lib/IsemriAndroid.google-play-services_lib.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/google-play-services_lib/IsemriAndroid.google-play-services_lib.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/google-play-services_lib/IsemriAndroid.google-play-services_lib.main.iml" filepath="$PROJECT_DIR$/.idea/modules/google-play-services_lib/IsemriAndroid.google-play-services_lib.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/google-play-services_lib/IsemriAndroid.google-play-services_lib.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/google-play-services_lib/IsemriAndroid.google-play-services_lib.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/googlemapandroid/IsemriAndroid.googlemapandroid.iml" filepath="$PROJECT_DIR$/.idea/modules/googlemapandroid/IsemriAndroid.googlemapandroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/googlemapandroid/IsemriAndroid.googlemapandroid.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/googlemapandroid/IsemriAndroid.googlemapandroid.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/googlemapandroid/IsemriAndroid.googlemapandroid.main.iml" filepath="$PROJECT_DIR$/.idea/modules/googlemapandroid/IsemriAndroid.googlemapandroid.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/googlemapandroid/IsemriAndroid.googlemapandroid.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/googlemapandroid/IsemriAndroid.googlemapandroid.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libdroid/IsemriAndroid.libdroid.iml" filepath="$PROJECT_DIR$/.idea/modules/libdroid/IsemriAndroid.libdroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libdroid/IsemriAndroid.libdroid.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/libdroid/IsemriAndroid.libdroid.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libdroid/IsemriAndroid.libdroid.main.iml" filepath="$PROJECT_DIR$/.idea/modules/libdroid/IsemriAndroid.libdroid.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libdroid/IsemriAndroid.libdroid.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/libdroid/IsemriAndroid.libdroid.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mbs/IsemriAndroid.mbs.iml" filepath="$PROJECT_DIR$/.idea/modules/mbs/IsemriAndroid.mbs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mbs/IsemriAndroid.mbs.main.iml" filepath="$PROJECT_DIR$/.idea/modules/mbs/IsemriAndroid.mbs.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mbs/IsemriAndroid.mbs.test.iml" filepath="$PROJECT_DIR$/.idea/modules/mbs/IsemriAndroid.mbs.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/medas/IsemriAndroid.medas.iml" filepath="$PROJECT_DIR$/.idea/modules/medas/IsemriAndroid.medas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/medas/IsemriAndroid.medas.main.iml" filepath="$PROJECT_DIR$/.idea/modules/medas/IsemriAndroid.medas.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/medas/IsemriAndroid.medas.test.iml" filepath="$PROJECT_DIR$/.idea/modules/medas/IsemriAndroid.medas.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/medasAndroid/IsemriAndroid.medasAndroid.iml" filepath="$PROJECT_DIR$/.idea/modules/medasAndroid/IsemriAndroid.medasAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/medasAndroid/IsemriAndroid.medasAndroid.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/medasAndroid/IsemriAndroid.medasAndroid.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/medasAndroid/IsemriAndroid.medasAndroid.main.iml" filepath="$PROJECT_DIR$/.idea/modules/medasAndroid/IsemriAndroid.medasAndroid.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/medasAndroid/IsemriAndroid.medasAndroid.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/medasAndroid/IsemriAndroid.medasAndroid.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mobit/IsemriAndroid.mobit.iml" filepath="$PROJECT_DIR$/.idea/modules/mobit/IsemriAndroid.mobit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mobit/IsemriAndroid.mobit.main.iml" filepath="$PROJECT_DIR$/.idea/modules/mobit/IsemriAndroid.mobit.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mobit/IsemriAndroid.mobit.test.iml" filepath="$PROJECT_DIR$/.idea/modules/mobit/IsemriAndroid.mobit.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sqldroid/IsemriAndroid.sqldroid.iml" filepath="$PROJECT_DIR$/.idea/modules/sqldroid/IsemriAndroid.sqldroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sqldroid/IsemriAndroid.sqldroid.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sqldroid/IsemriAndroid.sqldroid.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sqldroid/IsemriAndroid.sqldroid.main.iml" filepath="$PROJECT_DIR$/.idea/modules/sqldroid/IsemriAndroid.sqldroid.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sqldroid/IsemriAndroid.sqldroid.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sqldroid/IsemriAndroid.sqldroid.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/webservice/IsemriAndroid.webservice.iml" filepath="$PROJECT_DIR$/.idea/modules/webservice/IsemriAndroid.webservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/webservice/IsemriAndroid.webservice.main.iml" filepath="$PROJECT_DIR$/.idea/modules/webservice/IsemriAndroid.webservice.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/webservice/IsemriAndroid.webservice.test.iml" filepath="$PROJECT_DIR$/.idea/modules/webservice/IsemriAndroid.webservice.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zebraandroid/IsemriAndroid.zebraandroid.iml" filepath="$PROJECT_DIR$/.idea/modules/zebraandroid/IsemriAndroid.zebraandroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zebraprinter/IsemriAndroid.zebraprinter.iml" filepath="$PROJECT_DIR$/.idea/modules/zebraprinter/IsemriAndroid.zebraprinter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zxing/IsemriAndroid.zxing.iml" filepath="$PROJECT_DIR$/.idea/modules/zxing/IsemriAndroid.zxing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zxing/IsemriAndroid.zxing.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/zxing/IsemriAndroid.zxing.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zxing/IsemriAndroid.zxing.main.iml" filepath="$PROJECT_DIR$/.idea/modules/zxing/IsemriAndroid.zxing.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zxing/IsemriAndroid.zxing.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/zxing/IsemriAndroid.zxing.unitTest.iml" />
+    </modules>
+  </component>
+</project>

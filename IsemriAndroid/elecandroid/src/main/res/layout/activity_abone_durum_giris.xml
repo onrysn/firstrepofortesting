@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mobit.elec.android.AboneDurumGirisActivity" >
+
+    <ListView
+        android:id="@+id/listDurumlar"
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+		android:textSize="10dp"
+        android:choiceMode="multipleChoice"
+        android:background="@drawable/shape" >
+    </ListView>
+    
+    <TextView
+    	android:id="@+id/listAciklamalar"
+    	android:layout_width="180dp"
+    	android:layout_height="wrap_content"
+    	android:layout_alignEnd="@+id/listDurumlar"
+        android:layout_alignStart="@+id/listDurumlar"
+    	android:layout_below="@+id/listDurumlar"
+    	android:layout_alignParentStart="true"
+    	android:layout_marginTop="20dp"
+    	android:background="@drawable/shape"
+    	android:hint="Sabit açıklama seçiniz..." />
+
+    <EditText
+        android:id="@+id/editAciklama"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_alignEnd="@+id/listAciklamalar"
+        android:layout_alignStart="@+id/listAciklamalar"
+        android:layout_below="@+id/listAciklamalar"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:maxLength="94"
+        android:singleLine="false"
+        android:hint="Açıklama..."
+        android:gravity="top"
+        android:lines="4"
+        android:background="@drawable/shape" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonResimCekme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:textSize="12dp"
+        android:layout_alignLeft="@+id/editAciklama"
+        android:layout_below="@+id/editAciklama"
+        android:text="Resim Çekme" />
+    
+    <Button
+        android:id="@+id/buttonTamam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/buttonResimCekme"
+        android:layout_marginStart="50dp"
+		android:textSize="12dp"
+        android:layout_alignBaseline="@+id/buttonResimCekme"
+        android:text="Tamam" />
+
+</RelativeLayout>

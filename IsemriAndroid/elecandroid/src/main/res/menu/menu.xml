@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.medas.MenuActivity" >
+
+    <item
+        android:id="@+id/sifreDegistir"
+        android:orderInCategory="100"
+        android:title="Şifre Değiştirme"
+        app:showAsAction="never"/>
+
+</menu>

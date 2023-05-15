@@ -1,0 +1,96 @@
+<PrintConfig>
+    <Properties>
+        <Property Name="FormTipi" Value="kesme_ihbar_form" />
+        <Property Name="Unit" Value="x10mm" />
+        <Property Name="Tur" Value="Yapisal" />
+        <Property Name="X-Referans" Value="0" />
+        <Property Name="Y-Referans" Value="0" />
+        <Property Name="CX-Sinir" Value="0" />
+        <Property Name="CY-Sinir" Value="0" />
+        <Property Name="XDPI" Value="203" />
+        <Property Name="YDPI" Value="203" />
+        <Property Name="PAGESIZE" Value="3020" />
+        <Property Name="PAGEWIDTH" Value="960" />
+        <Property Name="QUANTITY" Value="1"/>
+        <Property Name="PrinterNo" Value="0" />
+        <Property Name="BlackMark" Value="0" />
+
+    </Properties>
+    <CPCLFonts>
+        <CPCLFont Id="1" Name="1" Size="1"/>
+        <CPCLFont Id="2" Name="2" Size="1"/>
+        <CPCLFont Id="3" Name="3" Size="1"/>
+    </CPCLFonts>
+
+    <PageItems>
+
+        <Image Name="imza_sur" Value="1" Left="20" Right="566" Top="0" Bottom = "250" File="perakende_imza2.bmp" Suret="1" />
+
+        <Text Name="m_fatura_seri"  Left="180" Top="135" Right="550" Bottom="320" FontId="2" Style="l" />
+        <Text Name="fatura_no"  Left="180" Top="135" Right="550" Bottom="320"  FontId="2" Style="l" />
+        <Text Name="m_fatura_no" Left="350" Top="135" Right="410" Bottom="320" FontId="2" Style="l" />
+
+        <Text Name="tesisat_no" Left="410" Top="205" Right="710" Bottom="395" FontId="4" Style="l" Bold="true" />
+
+        <Text Name="unvan" Left="185" Top="290" Right="710" Bottom="460" FontId="3" Style="l"  Bold="true"/>
+        <Text Name="tc_kimlik_no" Left="185" Top="393" Right="710" Bottom="530" FontId="2" Style="l" />
+        <Text Name="vergi_no" Left="185" Top="393" Right="300" Bottom="580" FontId="2" Style="l"/>
+        <Text Name="vergi_daire" Left="350" Top="393" Right="710" Bottom="580" FontId="2" Style="l"/>
+        <Text Name="adres_1" Left="185" Top="313" Right="710" Bottom="660" FontId="2" Style="l" />
+        <Text Name="adres_2" Left="40" Top="330" Right="710" Bottom="690" FontId="2" Style="l" />
+        <Text Name="tarife_adi" Left="185" Top="355" Right="710" Bottom="725" FontId="2" Style="l" />
+
+        <!--<Text Name="" Left="0" Top="530" Right="200" Bottom="765" >Tedarik Durumu:</Text>-->
+        <Text Name="tedarik_durumu" Left="60" Top="520" Right="710" Bottom="765" FontId="2" Style="l" />
+
+        <!--
+                <Text Name="" Left="0" Top="560" Right="200" Bottom="845" FontId="2" Style="l">Sözleşme Gücü :</Text>
+                <Text Name="sozlesme_gucu" Left="180" Top="560" Right="710" Bottom="845" FontId="2" Style="l" />
+
+                <Text Name="" Left="0" Top="585" Right="280" Bottom="880" FontId="2" Style="l">Otomatik Ödeme Talimatı:</Text>
+                <Text Name="banka_talimat" Left="585" Top="650" Right="700" Bottom="880" FontId="2" Style="l" />
+
+                <Text Name="" Left="0" Top="605" Right="120" Bottom="925" FontId="2" Style="l">Sayaç No:</Text>
+                <Text Name="s1_sayac_no" Left="115" Top="605" Right="200" Bottom="925" FontId="2" Style="r" />
+                <Text Name="" Left="225" Top="605" Right="375" Bottom="925" FontId="2" Style="l">Sayaç Marka:</Text>
+                <Text Name="s1_marka" Left="370" Top="605" Right="450" Bottom="925" FontId="2" Style="r" />
+                <Text Name="" Left="450" Top="605" Right="550" Bottom="925" FontId="2" Style="l">Çarpan:</Text>
+                <Text Name="carpan" Left="520" Top="605" Right="675" Bottom="925" FontId="2" Style="r" />
+
+                <Text Name="" Left="0" Top="630" Right="140" Bottom="1150" FontId="2" Style="l">İlk Okuma</Text>
+                <Text Name="" Left="110" Top="630" Right="245" Bottom="1150" FontId="2" Style="l">Son Okuma</Text>
+                <Text Name="" Left="230" Top="630" Right="365" Bottom="1150" FontId="2" Style="l">Okuma Saati</Text>
+                <Text Name="" Left="350" Top="630" Right="520" Bottom="1150" FontId="2" Style="l">Fatura Tar.</Text>
+                <Text Name="" Left="450" Top="630" Right="690" Bottom="1150" FontId="2" Style="l">SonrakiDonem</Text>
+
+                <Text Name="ilk_okuma_tarihi" Left="0" Top="660" Right="140" Bottom="1180" FontId="2" Style="l" />
+                <Text Name="ilk_okuma_tarihi" Left="0" Top="660" Right="140" Bottom="1180" FontId="2" Style="l" />
+                <Text Name="okuma_tarihi" Left="110" Top="660" Right="245" Bottom="1180" FontId="2" Style="l" />
+                <Text Name="okuma_saati" Left="230" Top="660" Right="365" Bottom="1180" FontId="2" Style="l" />
+                <Text Name="tahakkuk_tarihi" Left="350" Top="660" Right="520" Bottom="1180" FontId="2" Style="l" />
+                <Text Name="sonraki_donem_no" Left="450" Top="660" Right="690" Bottom="1180" FontId="2" Style="l" />
+        -->
+        <Text  Left="290" Top="600" Right="710" Bottom="395" FontId="2" Style="l" >Tarih:</Text>
+        <Text Name="okuma_tarihi" Left="410" Top="600" Right="710" Bottom="395" FontId="2" Style="l" />
+        <Text  Left="0" Top="970" Right="690" Bottom="1000" FontId="4" Style="l"  Bold="true">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</Text>
+        <Text  Left="0" Top="1000" Right="690" Bottom="1040" FontId="4" Style="l"  Bold="true">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</Text>
+        <Text Name="form_baslik" Left="160" Top="1035" Right="305" Bottom="1100" FontId="4" Style="l"  Bold="true"/>
+        <Text Left="0" Top="1065" Right="200" Bottom="1166" FontId="4" Style="c"  Bold="true">Geçmiş Dönem borcunuz bulunmaktadır.</Text>
+        <Text  Left="0" Top="1095" Right="200" Bottom="1196" FontId="4" Style="c"  Bold="true">Ödeme yükümlülüğünüzü 5 iş günü içerisinde</Text>
+        <Text   Left="0" Top="1125" Right="200" Bottom="1226" FontId="4" Style="c"  Bold="true">yerine getirmemeniz halinde elektrik</Text>
+        <Text  Left="0" Top="1155" Right="200" Bottom="1256" FontId="4" Style="c"  Bold="true">enerjiniz kesilecektir.</Text>
+        <Text  Left="0" Top="1185" Right="200" Bottom="1286" FontId="4" Style="c"  Bold="true">Ödeme yaptıysanız bu bildirimi dikkate</Text>
+        <Text  Left="0" Top="1215" Right="200" Bottom="1316" FontId="4" Style="c"  Bold="true">almayınız.</Text>
+
+        <Text Name="" Left="0" Top="1270" Right="220" Bottom="1450" FontId="4" Style="l"  Bold="true">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</Text>
+        <Text Name="" Left="0" Top="1300" Right="220" Bottom="1490" FontId="4" Style="l"  Bold="true">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</Text>
+
+
+
+        <Text Name="borc_tutar" Left="90" Top="540" Right="660" Bottom="2065" FontId="5" Style="c"  Bold="true" />
+        <!--<Text Name="" Left="300"  Top="540" Right="710" Bottom="2065" FontId="5" Style="c"  Bold="true" >TL</Text>-->
+
+
+    </PageItems>
+
+</PrintConfig>
